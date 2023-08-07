@@ -49,6 +49,7 @@ export function ProjectCollab() {
         setPosts={setPosts}
         setCreated={setCreated}
         created={created}
+        forum={"ProjectCollaboration"}
       ></CreatePost>
       <button onClick={prevClick}>Previous</button>
       <button onClick={nextClick}>Next</button>
