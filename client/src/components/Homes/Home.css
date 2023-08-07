@@ -1,0 +1,210 @@
+.home-page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--background, #EEE);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 0px 100px;
+    align-items: center;
+    gap: 60px;
+}
+
+.left{
+    display: flex;
+    box-sizing: border-box;
+    width: 53%;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.logo-container{
+    display: flex;
+    height: 97.333px;
+    align-items: center;
+    gap: 33.333px;
+}
+
+.logo-container h2{
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 26.667px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.133px;
+}
+
+h1{
+    align-self: stretch;
+    color: var(--primary, #455487);
+    font-family: Manrope;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px; /* 133.333% */
+}
+
+p {
+    margin-top: -14px;
+    margin-bottom: 30px;
+    align-self: stretch;
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+
+.join-button{
+    display: flex;
+    padding: 12px 30px;
+    align-items: center;
+    border-radius: 10px;
+    background: var(--primary, #455487e9);
+    color: var(--background-secondary, #FAFAFA);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.join-button:hover{
+    background-color: #1c2850ec;
+    cursor: pointer;
+}
+
+.log-in-button{
+    display: flex;
+    padding: 12px 30px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid var(--primary, #455487);
+    color: var(--primary, #455487);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.log-in-button:hover{
+    cursor: pointer;
+    background-color: #dedfe0;
+}
+
+@media screen and (max-width: 1040px) {
+    .teaching-image {
+      display: none !important; 
+    }
+
+    .logo-container{
+        height: 50px;
+        gap: 16px;
+    }
+    .logo-image{
+        width: 96px !important;
+        height: 64.8px !important;
+    }
+    .logo-container h2{
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 40px;
+        line-height: normal;
+    }
+    .left{
+        width: 85%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .teaching-image {
+      display: none !important; 
+    }
+
+    .logo-container{
+        height: 50px;
+        gap: 16px;
+    }
+    .logo-image{
+        width: 96px !important;
+        height: 64.8px !important;
+    }
+    .logo-container h2{
+        font-size: 16px;
+        letter-spacing: 1.2px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 35px;
+        line-height: normal;
+    }
+    .left{
+        width: 85%;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .container{
+        padding: 40px;
+    }
+    .teaching-image {
+        display: none !important; 
+    }
+    .logo-container{
+        height: 38.933px;
+        gap: 13.333px;
+    }
+    .logo-image{
+        width: 48px !important;
+        height: 32px !important;
+    }
+    .logo-container h2{
+        font-size: 10.667px;
+        letter-spacing: 0.853px;
+    }
+
+    h1{
+        align-self: stretch;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+    }
+
+    p{
+        font-size: 16px;
+    }
+}

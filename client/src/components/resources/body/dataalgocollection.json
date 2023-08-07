@@ -1,0 +1,656 @@
+[
+  {
+    "title": "Asymptotic Analysis",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "Harvard CS50",
+        "name": "Asymptotic Notation",
+        "link": "https://www.youtube.com/watch?v=iOq5kSKqeR4"
+      },
+      {
+        "type": "Video",
+        "owner": "Derek Banas",
+        "name": "Big-O Notation",
+        "link": "https://www.youtube.com/watch?v=V6mKVRU1evU"
+      },
+      {
+        "type": "Video",
+        "owner": "Professor Byrne",
+        "name": "Big-O Notation",
+        "link": "https://www.youtube.com/watch?v=ei-A_wy5Yxw&index=2&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN"
+      },
+      {
+        "type": "Video",
+        "owner": "Professor Skiena",
+        "name": "Analysis of Algorithms",
+        "link": "https://www.youtube.com/watch?v=z1mkCe3kVUA"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Asymptotic Analysis",
+        "link": "https://archive.org/details/ucberkeley_webcast_VIS4YDpuP98"
+      },
+      {
+        "type": "Video",
+        "owner": "Professor Byrne",
+        "name": "Amortized Analysis",
+        "link": "https://www.youtube.com/watch?v=B3SpQZaAZP4&index=10&list=PL1BaGV1cIH4UhkL8a9bJGG356covJ76qN"
+      },
+      {
+        "type": "Article",
+        "owner": "TopCoder",
+        "name": "Computational Complexity: Part 1",
+        "link": "https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20one"
+      },
+      {
+        "type": "Article",
+        "owner": "TopCoder",
+        "name": "Computational Complexity: Part 2",
+        "link": "https://www.topcoder.com/thrive/articles/Computational%20Complexity%20part%20two"
+      },
+      {
+        "type": "Article",
+        "owner": "TO-DO",
+        "name": "Big-O Cheat Sheet",
+        "link": "http://bigocheatsheet.com/"
+      },
+      {
+        "type": "Video",
+        "owner": "Micheal Sambol",
+        "name": "Big-O Notation in 5 Minutes",
+        "link": "https://www.youtube.com/watch?v=__vX2sjlpXU"
+      }
+    ]
+  },
+  {
+    "title": "Arrays",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "Harvard CS50",
+        "name": "Arrays",
+        "link": "https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Arrays",
+        "link": "https://www.coursera.org/lecture/data-structures/arrays-OsBSF"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Linear and Multi-dimensional Arrays",
+        "link": "https://archive.org/details/ucberkeley_webcast_Wp8oiO_CZZE"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Dynamic Arrays",
+        "link": "https://www.coursera.org/lecture/data-structures/dynamic-arrays-EwbnV"
+      },
+      {
+        "type": "Video",
+        "owner": "Hermant Maurya",
+        "name": "Jagged Arrays",
+        "link": "https://www.youtube.com/watch?v=1jtrQqYpt7g"
+      }
+    ]
+  },
+  {
+    "title": "Linked Lists",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "Harvard CS50",
+        "name": "Linked Lists",
+        "link": "https://www.youtube.com/watch?v=tI_tIZFyKBw&t=3009s"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Singly-linked Lists",
+        "link": "https://www.coursera.org/lecture/data-structures/singly-linked-lists-kHhgK"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Linked Lists: Part 1",
+        "link": "https://archive.org/details/ucberkeley_webcast_htzJdKoEmO0"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Linked Lists: Part 2",
+        "link": "https://archive.org/details/ucberkeley_webcast_-c4I3gFYe3w"
+      },
+      {
+        "type": "Video",
+        "owner": "Micheal Sambol",
+        "name": "Linked Lists in 4 Minutes",
+        "link": "https://www.youtube.com/watch?v=F8AbOfQwl1c"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Core: Linked Lists vs. Arrays",
+        "link": "https://www.coursera.org/lecture/data-structures-optimizing-performance/core-linked-lists-vs-arrays-rjBs9"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "In the Real World: Lists vs. Arrays",
+        "link": "https://www.coursera.org/lecture/data-structures-optimizing-performance/in-the-real-world-lists-vs-arrays-QUaUd"
+      },
+      {
+        "type": "Video",
+        "owner": "Bjarne Stroustrup",
+        "name": "Why You Should Avoid Linked Lists",
+        "link": "https://www.youtube.com/watch?v=YQs6IC-vgmo"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Doubly-linked Lists",
+        "link": "https://www.coursera.org/lecture/data-structures/doubly-linked-lists-jpGKD"
+      }
+    ]
+  },
+  {
+    "title": "Stacks",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Stacks",
+        "link": "https://www.coursera.org/lecture/data-structures/stacks-UdKzQ"
+      },
+      {
+        "type": "Video",
+        "owner": "Micheal Sambol",
+        "name": "Stacks in 3 Minutes",
+        "link": "https://www.youtube.com/watch?v=KcT3aVgrrpU"
+      }
+    ]
+  },
+  {
+    "title": "Queues",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Queues",
+        "link": "https://www.coursera.org/lecture/data-structures/queues-EShpq"
+      },
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Circular Buffer / FIFO",
+        "link": "https://en.wikipedia.org/wiki/Circular_buffer"
+      },
+      {
+        "type": "Video",
+        "owner": "Micheal Sambol",
+        "name": "Queues in 3 Minutes",
+        "link": "https://www.youtube.com/watch?v=D6gu-_tmEpQ"
+      }
+    ]
+  },
+  {
+    "title": "Hash Tables",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Hashing with Chaining",
+        "link": "https://www.youtube.com/watch?v=0M_kIqhwbFo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=9"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Table Doubling & Karp-Rabin",
+        "link": "https://www.youtube.com/watch?v=BRO7mVIFt08&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=10"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Open Addressing & Cryptographic Hashing",
+        "link": "https://www.youtube.com/watch?v=rvdJDijO2Ro&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=11"
+      },
+      {
+        "type": "Video",
+        "owner": "PyCon 2010",
+        "name": "The Mighty Dictionary",
+        "link": "https://www.youtube.com/watch?v=C4Kc8xzcA68"
+      },
+      {
+        "type": "Video",
+        "owner": "PyCon 2017",
+        "name": "The Dictionary Even Mighter",
+        "link": "https://www.youtube.com/watch?v=66P5FMkWoVU"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Randomization: Universal & Perfect Hashing",
+        "link": "https://www.youtube.com/watch?v=z0lJ2k0sl1g&list=PLUl4u3cNGP6317WaSNfmCvGym2ucw3oGp&index=12"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.854",
+        "name": "Perfect Hashing",
+        "link": "https://www.youtube.com/watch?v=N0COwN14gt0&list=PL2B4EEwhKD-NbwZ4ezj7gyc_3yNrojKM9&index=5"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Hash Tables in 4 Minutes",
+        "link": "https://www.youtube.com/watch?v=knV86FlSXJ8"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Core: Hash Tables",
+        "link": "https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Phone Book Data Structure",
+        "link": "https://www.coursera.org/lecture/data-structures-optimizing-performance/core-hash-tables-m7UuP"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Julia's Diary",
+        "link": "https://www.coursera.org/lecture/data-structures/instant-uploads-and-storage-optimization-in-dropbox-DvaIb"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Julia's Bank",
+        "link": "https://www.coursera.org/lecture/data-structures/distributed-hash-tables-tvH8H"
+      }
+    ]
+  },
+  {
+    "title": "Binary Search",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "Harvard CS50",
+        "name": "Binary Search",
+        "link": "https://www.youtube.com/watch?v=D5SrAga1pno"
+      },
+      {
+        "type": "Article",
+        "owner": "Khan Academy",
+        "name": "Binary Search",
+        "link": "https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search"
+      },
+      {
+        "type": "Article",
+        "owner": "TopCoder",
+        "name": "Binary Search",
+        "link": "https://www.topcoder.com/thrive/articles/Binary%20Search"
+      },
+      {
+        "type": "Article",
+        "owner": "LeetCode",
+        "name": "Powerful Ultimate Binary Search Template",
+        "link": "https://leetcode.com/discuss/general-discussion/786126/python-powerful-ultimate-binary-search-template-solved-many-problems"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Binary Search in 4 Minutes",
+        "link": "https://www.youtube.com/watch?v=fDKIpRe8GW4"
+      }
+    ]
+  },
+  {
+    "title": "Bitwise Operations",
+    "content": [
+      {
+        "type": "Article",
+        "owner": "GitHub",
+        "name": "Bits Cheat Sheet",
+        "link": "https://github.com/jwasham/coding-interview-university/blob/main/extras/cheat%20sheets/bits-cheat-sheet.pdf"
+      },
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Word (Computer Architecture)",
+        "link": "https://en.wikipedia.org/wiki/Word_(computer_architecture)"
+      },
+      {
+        "type": "Video",
+        "owner": "Make School",
+        "name": "Bit Manipulation",
+        "link": "https://www.youtube.com/watch?v=7jkIUgLC29I"
+      },
+      {
+        "type": "Video",
+        "owner": "YouTube",
+        "name": "C Programming Tutorial: Bitwise Operators",
+        "link": "https://www.youtube.com/watch?v=d0AwjSpNXR0"
+      },
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Bit Manipulation",
+        "link": "https://en.wikipedia.org/wiki/Bit_manipulation"
+      },
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Bitwise Operation",
+        "link": "https://en.wikipedia.org/wiki/Bitwise_operation"
+      },
+      {
+        "type": "Article",
+        "owner": "Stanford",
+        "name": "Bit Twiddling Hacks",
+        "link": "https://graphics.stanford.edu/~seander/bithacks.html"
+      },
+      {
+        "type": "Article",
+        "owner": "Stephan Brumme",
+        "name": "The Bit Twiddler",
+        "link": "https://bits.stephan-brumme.com/"
+      },
+      {
+        "type": "Misc",
+        "owner": "Stephan Brumme",
+        "name": "Interactive Bit Manipulator",
+        "link": "https://bits.stephan-brumme.com/interactive.html"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.172",
+        "name": "Bit Hacks",
+        "link": "https://www.youtube.com/watch?v=ZusiKXcz_ac"
+      },
+      {
+        "type": "Misc",
+        "owner": "Professor Conrad",
+        "name": "Practice Operations",
+        "link": "https://pconrad.github.io/old_pconrad_cs16/topics/bitOps/"
+      },
+      {
+        "type": "Video",
+        "owner": "Computerphile",
+        "name": "Binary: Plusses and Minuses",
+        "link": "https://www.youtube.com/watch?v=lKTsv6iVxV4"
+      },
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "One's Complement",
+        "link": "https://en.wikipedia.org/wiki/Ones%27_complement"
+      },
+      {
+        "type": "Video",
+        "owner": "Wikipedia",
+        "name": "Two's Complement",
+        "link": "https://en.wikipedia.org/wiki/Two%27s_complement#Converting_from_two's_complement_representation"
+      },
+      {
+        "type": "Video",
+        "owner": "Deege U",
+        "name": "4 Ways to Count Bits in a Byte",
+        "link": "https://www.youtube.com/watch?v=Hzuzo9NJrlc"
+      },
+      {
+        "type": "Article",
+        "owner": "Stephan Brumme",
+        "name": "Swap Two Values",
+        "link": "https://bits.stephan-brumme.com/swap.html"
+      },
+      {
+        "type": "Article",
+        "owner": "Stephan Brumme",
+        "name": "Absolute Value of An Integer",
+        "link": "https://bits.stephan-brumme.com/absInteger.html"
+      }
+    ]
+  },
+  {
+    "title": "Trees",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Trees",
+        "link": "https://www.coursera.org/lecture/data-structures/trees-95qda"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Tree Traversal",
+        "link": "https://www.coursera.org/lecture/data-structures/tree-traversal-fr51b"
+      },
+      {
+        "type": "Video",
+        "owner": "Vivekanand Khyade",
+        "name": "BFS and DFS in a Binary Tree",
+        "link": "https://www.youtube.com/watch?v=uWL6FJhq5fM"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Breadth-first Search in 4 Minutes",
+        "link": "https://youtu.be/HZ5YTanv5QE"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Tree Traversal Algos",
+        "link": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZO1JC2RgEi04nLy6D-rKk6b"
+      }
+    ]
+  },
+  {
+    "title": "Binary Search Trees",
+    "content": [
+      {
+        "type": "Video",
+        "owner": "David Taylor",
+        "name": "B-Trees",
+        "link": "link"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Binary Search Trees: Introduction",
+        "link": "https://www.coursera.org/lecture/data-structures/introduction-E7cXP"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Binary Trees",
+        "link": "https://www.youtube.com/watch?v=76dhtgZt38A"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Search Tree: Implementation in C/C++",
+        "link": "https://www.youtube.com/watch?v=COZK7NATh4k&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "BST Implementation: Memory Allocation in Stack and Heap",
+        "link": "https://www.youtube.com/watch?v=hWokyBoo0aI&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=29"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Find min and max in a Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=Ut90klNN264&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=30"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Find Height of a Binary Tree",
+        "link": "https://www.youtube.com/watch?v=_pnqMz5nrRs&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=31"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree Traversal: Breadth-first and Depth-first Strategies",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=32"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree: Level Order Traversal",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=33"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Binary Tree Traversal: Preorder, Inorder, Postorder",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=34"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Check If A Binary Tree is Binary Search Tree or Not",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=35"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Delete Node from Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=36"
+      },
+      {
+        "type": "Video",
+        "owner": "My Code School",
+        "name": "Inorder Successor in a Binary Search Tree",
+        "link": "https://www.youtube.com/watch?v=9RHO6jU--GU&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P&index=37"
+      }
+    ]
+  },
+  {
+    "title": "Heap / Priority Queue",
+    "content": [
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Heap",
+        "link": "https://en.wikipedia.org/wiki/Heap_(data_structure)"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Priority Queues: Introduction",
+        "link": "https://www.coursera.org/lecture/data-structures/introduction-2OpTs"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Priority Queues: Binary Heaps",
+        "link": "https://www.coursera.org/lecture/data-structures/binary-trees-GRV2q"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Basic Operations",
+        "link": "https://www.coursera.org/lecture/data-structures/basic-operations-0g1dl"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Complete Binary Trees",
+        "link": "https://www.coursera.org/lecture/data-structures/complete-binary-trees-gl5Ni"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Pseudocode",
+        "link": "https://www.coursera.org/lecture/data-structures/pseudocode-HxQo9"
+      },
+      {
+        "type": "Video",
+        "owner": "Shai Simonson",
+        "name": "Heap Sort",
+        "link": "https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Heap Sort",
+        "link": "https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO"
+      },
+      {
+        "type": "Video",
+        "owner": "UC San Diego",
+        "name": "Building a Heap",
+        "link": "https://www.coursera.org/lecture/data-structures/building-a-heap-dwrOS"
+      },
+      {
+        "type": "Video",
+        "owner": "MIT 6.006",
+        "name": "Heaps and Heap Sort",
+        "link": "https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5"
+      },
+      {
+        "type": "Video",
+        "owner": "UC Berkeley CS61B",
+        "name": "Priority Queues",
+        "link": "https://archive.org/details/ucberkeley_webcast_yIUFT6AKBGE"
+      },
+      {
+        "type": "Video",
+        "owner": "SJSU",
+        "name": "Linear Time BuildHeap",
+        "link": "https://www.youtube.com/watch?v=MiyLo8adrWw"
+      },
+      {
+        "type": "Video",
+        "owner": "Michael Sambol",
+        "name": "Heaps",
+        "link": "https://www.youtube.com/playlist?list=PL9xmBV_5YoZNsyqgPW-DNwUeT8F8uhWc6"
+      }
+    ]
+  },
+  {
+    "title": "Sorting",
+    "content": [
+      {
+        "type": "Article",
+        "owner": "Wikipedia",
+        "name": "Sorting Algorithm",
+        "link": "https://en.wikipedia.org/wiki/Sorting_algorithm#Stability"
+      },
+      {
+        "type": "Article",
+        "owner": "GeeksforGeeks",
+        "name": "Stable and Unstable Sorting Algorithms",
+        "link": "https://www.geeksforgeeks.org/stable-and-unstable-sorting-algorithms/"
+      },
+      {
+        "type": "Article",
+        "owner": "GeeksforGeeks",
+        "name": "Merge Sort for Linked Lists",
+        "link": "https://www.geeksforgeeks.org/merge-sort-for-linked-list/"
+      },
+      {
+        "type": "Video",
+        "owner": "Princeton",
+        "name": "Buttom-up Mergesort",
+        "link": "https://www.coursera.org/lecture/algorithms-part1/bottom-up-mergesort-PWNEl"
+      },
+      {
+        "type": "Video",
+        "owner": "Princeton",
+        "name": "Sorting Complexity",
+        "link": "https://www.coursera.org/lecture/algorithms-part1/sorting-complexity-xAltF"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2236 @@
+[
+    {
+        "company": "Akuna Capital",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Trading",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5132302"
+            },
+            {
+                "role": "Performance Engineering",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5148034"
+            },
+            {
+                "role": "Quantitative Strategy",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5148064"
+            },
+            {
+                "role": "Quantitative Development",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5082870"
+            },
+            {
+                "role": "Quantitative Research",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5147854"
+            },
+            {
+                "role": "Software Engineering - C++",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5138367"
+            },
+            {
+                "role": "Software Engineering - Data Platform",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5102027"
+            },
+            {
+                "role": "Software Engineering - .NET Desktop",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5139650"
+            },
+            {
+                "role": "Software Engineering - Python",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5095385"
+            },
+            {
+                "role": "Software Engineering - Web",
+                "link": "https://www.akunacapital.com/job-details?gh_jid=5144445"
+            }
+        ]
+    },
+    {
+        "company": "Panasonic",
+        "locations": [
+            "The Colony, TX"
+        ],
+        "roles": [
+            {
+                "role": "Software Electrical Engineering",
+                "link": "https://careers.na.panasonic.com/careers/software-electrical-engineer-intern"
+            }
+        ]
+    },
+    {
+        "company": "Internet Brands",
+        "locations": [
+            "Los Angeles, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.jobvite.com/internetbrands/job/oUZQnfwQ"
+            }
+        ]
+    },
+    {
+        "company": "Citi",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Analytics",
+                "link": "https://jobs.citi.com/job/new-york/nam-quantitative-analysis-summer-analyst-new-york-city-north-america-2024/287/51453955504"
+            }
+        ]
+    },
+    {
+        "company": "Tower Research Capital",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Trading",
+                "link": "https://www.tower-research.com/open-positions/?gh_jid=4360111"
+            }
+        ]
+    },
+    {
+        "company": "PDT Partners",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/pdtpartners/jobs/4423823"
+            }
+        ]
+    },
+    {
+        "company": "Rocket Lab",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/rocketlab/jobs/5679154003"
+            }
+        ]
+    },
+    {
+        "company": "PwC",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Digital Assurance & Transparency Technology",
+                "link": "https://jobs.us.pwc.com/job/atlanta/digital-assurance-and-transparency-dat-tech-intern-summer-2024/932/51608860064"
+            },
+            {
+                "role": "Digital Assurance & Transparency Data Science",
+                "link": "https://jobs.us.pwc.com/job/los-angeles/digital-assurance-and-transparency-dat-data-intern-summer-2024/932/51608839968"
+            },
+            {
+                "role": "Cyber Security and Technology",
+                "link": "https://jobs.us.pwc.com/job/birmingham/nis-cyber-security-and-technology-intern-summer-2024/932/52142558336"
+            }
+        ]
+    },
+    {
+        "company": "Sensata Technologies",
+        "locations": [
+            "Attleboro, MA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://sensata.wd1.myworkdayjobs.com/Sensata-Careers/job/Attleboro-Massachusetts/Software-Engineer-Intern--Summer-2024_IRC90446"
+            }
+        ]
+    },
+    {
+        "company": "Point72",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Development",
+                "link": "https://careers.point72.com/CSJobDetail?jobName=summer-2024-quantitative-developer-internship&jobCode=CSS-0010069"
+            },
+            {
+                "role": "Data Science - Proprietary Research",
+                "link": "https://boards.greenhouse.io/point72/jobs/6875674002"
+            },
+            {
+                "role": "Data Engineering - Proprietary Research",
+                "link": "https://boards.greenhouse.io/point72/jobs/6875691002"
+            }
+        ]
+    },
+    {
+        "company": "Truist",
+        "locations": [
+            "Charlotte, NC",
+            "Atlanta, GA"
+        ],
+        "roles": [
+            {
+                "role": "Technology and Innovation",
+                "link": "https://careers.truist.com/us/en/job/TBJTBFUSR0078021EXTERNALENUS/2024-Technology-and-Innovation-Internship"
+            }
+        ]
+    },
+    {
+        "company": "DRW",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Accounting",
+                "link": "https://boards.greenhouse.io/drweng/jobs/5125244"
+            },
+            {
+                "role": "Software Development",
+                "link": "https://drw.com/work-at-drw/listings/software-developer-intern-2567189"
+            },
+            {
+                "role": "Site Reliability Engineering",
+                "link": "https://drw.com/work-at-drw/listings/site-reliability-engineer-sre-intern-2569887"
+            },
+            {
+                "role": "Quantitative Trading Analytics",
+                "link": "https://drw.com/work-at-drw/listings/quantitative-trading-analyst-intern-2551092"
+            }
+        ]
+    },
+    {
+        "company": "BNP Paribas",
+        "locations": [
+            "Jersey City, NJ"
+        ],
+        "roles": [
+            {
+                "role": "Technology Analytics",
+                "link": "https://bnppus.tal.net/vx/mobile-0/appcentre-ext/brand-7/candidate/so/pm/1/pl/2/opp/778-2024-Summer-Analyst-Internship-Technology/en-GB"
+            }
+        ]
+    },
+    {
+        "company": "Morgan Stanley",
+        "locations": [
+            "Alpharetta, GA"
+        ],
+        "roles": [
+            {
+                "role": "Technology Analytics",
+                "link": "https://morganstanley.tal.net/vx/candidate/apply/15076"
+            }
+        ]
+    },
+    {
+        "company": "Nomura",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Information Technology Analytics",
+                "link": "https://nomuracampus.tal.net/vx/lang-en-GB/mobile-0/appcentre-1/brand-4/xf-3348347fc789/candidate/so/pm/1/pl/1/opp/877-2024-Information-Technology-Summer-Analyst-Program/en-GB"
+            }
+        ]
+    },
+    {
+        "company": "Blackstone",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Strategy",
+                "link": "https://blackstone.wd1.myworkdayjobs.com/en-US/Blackstone_Campus_Careers/job/New-York/XMLNAME-2024-Blackstone-Insurance-Solutions--Quantitative-Strategy-Summer-Analyst_26308-1"
+            }
+        ]
+    },
+    {
+        "company": "KeyBank",
+        "locations": [
+            "Brooklyn, OH"
+        ],
+        "roles": [
+            {
+                "role": "Digital Banking",
+                "link": "https://keybank.wd5.myworkdayjobs.com/en-US/External_Career_Site/job/Summer-2024-Digital-Banking-Internship---Cleveland_R-19981"
+            }
+        ]
+    },
+    {
+        "company": "Royal Bank of Canada",
+        "locations": [
+            "Jersey City, NJ"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Technology Services",
+                "link": "https://jobs.rbc.com/ca/en/job/RBCAA0088R0000062764EXTERNALENCA"
+            }
+        ]
+    },
+    {
+        "company": "Walmart",
+        "locations": [
+            "Bentonville, AR",
+            "Dallas, TX",
+            "Union City, NJ",
+            "Sunnyvale, CA"
+        ],
+        "roles": [
+            {
+                "role": "Supply Chain Innovation & Automation PM",
+                "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Bentonville-AR/XMLNAME-2024-Summer-Intern--Supply-Chain-Innovation---Automation---Product-Manager_R-1437295"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://walmart.wd5.myworkdayjobs.com/WalmartExternal/job/Bentonville-AR/XMLNAME-2024-Summer-Intern--Software-Engineer-II--Bentonville--AR-_R-1391200"
+            }
+        ]
+    },
+    {
+        "company": "Fetch",
+        "locations": [
+            "Madison, WI"
+        ],
+        "roles": [
+            {
+                "role": "Mobile Engineering - iOS",
+                "link": "https://boards.greenhouse.io/fetchrewards/jobs/5210272003"
+            },
+            {
+                "role": "Mobile Engineering - Android",
+                "link": "https://boards.greenhouse.io/fetchrewards/jobs/4386323003"
+            },
+            {
+                "role": "Backend Engineering",
+                "link": "https://boards.greenhouse.io/fetchrewards/jobs/5428201003"
+            },
+            {
+                "role": "Frontend Engineering",
+                "link": "https://boards.greenhouse.io/fetchrewards/jobs/5391139003"
+            }
+        ]
+    },
+    {
+        "company": "Global Atlantic Financial Group",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Investment",
+                "link": "https://boards.greenhouse.io/gainternships/jobs/5150526"
+            }
+        ]
+    },
+    {
+        "company": "Optiver",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Trading",
+                "link": "https://optiver.com/working-at-optiver/career-opportunities/6793142002/?gh_jid=6793142002"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://optiver.com/working-at-optiver/career-opportunities/6837118002/?gh_jid=6837118002"
+            },
+            {
+                "role": "HFT Research",
+                "link": "https://optiver.com/working-at-optiver/career-opportunities/6796767002/?gh_jid=6796767002"
+            }
+        ]
+    },
+    {
+        "company": "SpaceX",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/spacex/jobs/6675035002?gh_jid=6675035002"
+            }
+        ]
+    },
+    {
+        "company": "Wabtec Corporation",
+        "locations": [
+            "Erie, PA",
+            "Fort Worth, TX"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://wabtec.wd1.myworkdayjobs.com/wabtec_careers/job/Erie-PA/Summer-2024-Engineering-Internship_R0075202?source=LinkedIn_corporate_page"
+            }
+        ]
+    },
+    {
+        "company": "Caterpillar",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Digital & Analytics",
+                "link": "https://cat.wd5.myworkdayjobs.com/en-US/CaterpillarCareers/details/XMLNAME-2024-Summer-Corporate-Intern---Digital-and-Analytics_R0000211914?q=Summer+2024"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://cat.wd5.myworkdayjobs.com/en-US/CaterpillarCareers/details/XMLNAME-2024-Summer-Corporate-Intern---Engineering_R0000211130?q=Engineering"
+            }
+        ]
+    },
+    {
+        "company": "The Allen Institute for AI",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Research",
+                "link": "https://boards.greenhouse.io/thealleninstitute/jobs/2171532"
+            }
+        ]
+    },
+    {
+        "company": "Waabi",
+        "locations": [
+            "Toronto, ON, Canada",
+            "San Francisco, CA",
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Research",
+                "link": "https://jobs.lever.co/waabi/ad3c77da-5607-4c4f-8784-8407478cbace/apply"
+            }
+        ]
+    },
+    {
+        "company": "Cherry Bekaert",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Digital Platform & Analytics",
+                "link": "https://recruiting.ultipro.com/CHE1006CBH/JobBoard/fee83a4e-4604-4753-bd3a-98e8811baf6f/OpportunityDetail?opportunityId=0ced27e9-9198-4f3b-a2ba-4d18d75b0935"
+            },
+            {
+                "role": "Cybersecurity",
+                "link": "https://recruiting.ultipro.com/CHE1006CBH/JobBoard/fee83a4e-4604-4753-bd3a-98e8811baf6f/OpportunityDetail?opportunityId=b37f522e-3724-45df-8033-3b8c3bab795f"
+            }
+        ]
+    },
+    {
+        "company": "Konrad Group",
+        "locations": [
+            "Toronto, ON"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://boards.greenhouse.io/konradgroup/jobs/5598015003"
+            }
+        ]
+    },
+    {
+        "company": "WebFX",
+        "locations": [
+            "Harrisburg, PA"
+        ],
+        "roles": [
+            {
+                "role": "Business Data Analytics",
+                "link": "https://jobs.lever.co/webfx/cf2e63c1-94ba-4478-b1cd-acc54cadfc75/apply"
+            },
+            {
+                "role": "Web Development",
+                "link": "https://jobs.lever.co/webfx/1032ba2b-a4fc-4625-83d5-34f43063de7b/apply"
+            }
+        ]
+    },
+    {
+        "company": "Ambi Robotics",
+        "locations": [
+            "Oakland, CA"
+        ],
+        "roles": [
+            {
+                "role": "ML Software Engineering",
+                "link": "https://jobs.lever.co/ambirobotics/e533e041-2c8f-4fb9-863e-e595b6e106fe/apply"
+            }
+        ]
+    },
+    {
+        "company": "Northwestern Mutual",
+        "locations": [
+            "Milwaukee, WI"
+        ],
+        "roles": [
+            {
+                "role": "Public Investments - Municipal Trading Analytics",
+                "link": "https://northwesternmutual.wd5.myworkdayjobs.com/corporate-careers/job/Milwaukee-WI-Corporate/Public-Investments---Municipal-Trading-Analytics-Internship--Summer-2024_JR-38135"
+            },
+            {
+                "role": "Investment Analytics - Private Debt & Equity",
+                "link": "https://northwesternmutual.wd5.myworkdayjobs.com/corporate-careers/job/Milwaukee-WI-Corporate/Investment-Analyst-Intern---Private-Debt---Equity--Summer-2024_JR-38246-1"
+            }
+        ]
+    },
+    {
+        "company": "Fyusion",
+        "locations": [
+            "San Francisco, CA"
+        ],
+        "roles": [
+            {
+                "role": "Computer Vision - Deep Learning",
+                "link": "https://jobs.lever.co/fyusion/31540b34-b559-4f3b-8c0a-688d504d7288/apply"
+            },
+            {
+                "role": "Computer Vision - Geometry",
+                "link": "https://jobs.lever.co/fyusion/0f5d1729-562f-49a7-9c67-eff1341a2620/apply"
+            }
+        ]
+    },
+    {
+        "company": "Sanctuary",
+        "locations": [
+            "Vancouver, BC"
+        ],
+        "roles": [
+            {
+                "role": "Systems Integration",
+                "link": "https://jobs.lever.co/sanctuary/44a0385e-a11d-476c-85f3-ce317da06e15/apply"
+            },
+            {
+                "role": "AI/Automation",
+                "link": "https://jobs.lever.co/sanctuary/bcf04309-4791-4204-b9de-04d1e1fc63b2/apply"
+            },
+            {
+                "role": "Firmware Engineering",
+                "link": "https://jobs.lever.co/sanctuary/1921b72f-fca2-4181-b3c2-7a6b30d62e1e/apply"
+            }
+        ]
+    },
+    {
+        "company": "Covariant",
+        "locations": [
+            "Oakland, CA"
+        ],
+        "roles": [
+            {
+                "role": "Machine Learning - AI Research",
+                "link": "https://jobs.lever.co/covariant/6578b4ae-8ce4-4921-9df5-6358334bb64a/apply"
+            }
+        ]
+    },
+    {
+        "company": "Formlabs",
+        "locations": [
+            "Cambridge, MA"
+        ],
+        "roles": [
+            {
+                "role": "Algorithms Software",
+                "link": "https://careers.formlabs.com/job/5070317/apply/?gh_jid=5070317"
+            },
+            {
+                "role": "Embedded Software",
+                "link": "https://careers.formlabs.com/job/5083680/apply/?gh_jid=5083680"
+            }
+        ]
+    },
+    {
+        "company": "JBS USA",
+        "locations": [
+            "Greeley, CO"
+        ],
+        "roles": [
+            {
+                "role": "Information Technology",
+                "link": "https://jobs.jbsfoodsgroup.com/us/en/job/JBUSUS47677EXTERNALENUS/2024-IT-Summer-Internship-Program"
+            }
+        ]
+    },
+    {
+        "company": "The Block",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Research - Data",
+                "link": "https://jobs.lever.co/theblockcrypto/00ecc02c-b30e-4d1b-a02b-2f400e53e66a/apply"
+            }
+        ]
+    },
+    {
+        "company": "PointClickCare",
+        "locations": [
+            "Mississauga, ON"
+        ],
+        "roles": [
+            {
+                "role": "Database Administrattion",
+                "link": "https://jobs.lever.co/pointclickcare/c9fecaa4-6c6f-477b-8b91-abb745aeb455/apply"
+            }
+        ]
+    },
+    {
+        "company": "SIG",
+        "locations": [
+            "Bala Cynwyd, PA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers.sig.com/job/7102/Software-Engineering-Internship-Program-Summer-2024-Expression-of-Interest"
+            }
+        ]
+    },
+    {
+        "company": "Docugami",
+        "locations": [
+            "Kirkland, WA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/docugami/jobs/4014838003"
+            }
+        ]
+    },
+    {
+        "company": "Uncountable",
+        "locations": [
+            "San Francisco, CA",
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Full-Stack",
+                "link": "https://jobs.lever.co/uncountable/6328427a-9047-44d5-82d6-56d533d8622e/apply"
+            }
+        ]
+    },
+    {
+        "company": "Capstone",
+        "locations": [
+            "London, UK"
+        ],
+        "roles": [
+            {
+                "role": "Investment",
+                "link": "https://boards.greenhouse.io/capstoneinvestmentadvisors/jobs/6792345002"
+            },
+            {
+                "role": "Quantitative Risk",
+                "link": "https://boards.greenhouse.io/capstoneinvestmentadvisors/jobs/6787732002"
+            }
+        ]
+    },
+    {
+        "company": "Körber",
+        "locations": [
+            "Fargo, ND"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://jobs.koerber.com/pharma/job/Fargo-Software-Developer-Intern-ND-58102/954269201/"
+            }
+        ]
+    },
+    {
+        "company": "Ekimetrics",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Strategy & Data Science",
+                "link": "https://jobs.lever.co/ekimetrics/d8f0b664-ad5b-4111-a1dc-a8143934bf24/apply"
+            }
+        ]
+    },
+    {
+        "company": "Enphase Energy",
+        "locations": [
+            "Austin, TX"
+        ],
+        "roles": [
+            {
+                "role": "Embedded Firmware Engineering",
+                "link": "https://jobs.jobvite.com/enphase-energy/job/oFPRmfwr"
+            }
+        ]
+    },
+    {
+        "company": "Symplicity",
+        "locations": [
+            "Arlington, VA"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://jobs.lever.co/symplicity/8d69ce1d-af08-4172-b7a3-74ac8700b69b/apply"
+            }
+        ]
+    },
+    {
+        "company": "Entrust",
+        "locations": [
+            "Sunrise, FL"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://entrust.wd1.myworkdayjobs.com/EntrustCareers/job/United-States---Sunrise-FL/Software-Engineering-Intern_R002369"
+            }
+        ]
+    },
+    {
+        "company": "Klue",
+        "locations": [
+            "Canada"
+        ],
+        "roles": [
+            {
+                "role": "Data Analytics",
+                "link": "https://jobs.lever.co/klue/b88e45c3-c067-410b-a7d3-ca23142b9bef/apply"
+            }
+        ]
+    },
+    {
+        "company": "Autodesk",
+        "locations": [
+            "Toronto, ON, Canada"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - Business Process",
+                "link": "https://autodesk.wd1.myworkdayjobs.com/Ext/job/Toronto-ON-CAN/Intern--Software-Engineer--Fall-2023-_23WD67856-1"
+            },
+            {
+                "role": "Software Engineering - Managed Collaboration",
+                "link": "https://autodesk.wd1.myworkdayjobs.com/Ext/job/Toronto-ON-CAN/Intern--Software-Engineer--Fall-2023-_23WD67857-1"
+            },
+            {
+                "role": "Software Development - Fusion",
+                "link": "https://autodesk.wd1.myworkdayjobs.com/Ext/job/Montreal-QC-CAN/Intern--Software-Developer---Fusion-360--FALL-2023-_23WD70798-1"
+            },
+            {
+                "role": "Software Development - Alias",
+                "link": "https://autodesk.wd1.myworkdayjobs.com/Ext/job/Toronto-ON-CAN/Intern--Software-Developer---Alias--FALL-2023-_23WD67883-1"
+            }
+        ]
+    },
+    {
+        "company": "Sandhills",
+        "locations": [
+            "Lincoln, NE"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://www.sandhills.com/careers-and-internships/details/careers/sandhills/1195/software-development-intern"
+            }
+        ]
+    },
+    {
+        "company": "Plexus",
+        "locations": [
+            "Raleigh, NC"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://plexus.wd5.myworkdayjobs.com/en-US/Plexus_Careers/job/Raleigh-NC/Intern---Software-Engineer-Intern---Fall-2023_R022285"
+            }
+        ]
+    },
+    {
+        "company": "Squarepoint Capital",
+        "locations": [
+            "Montreal, QC"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://boards.greenhouse.io/embed/job_app?token=4781381"
+            },
+            {
+                "role": "Quant Research",
+                "link": "https://boards.greenhouse.io/embed/job_app?token=243853"
+            }
+        ]
+    },
+    {
+        "company": "Lendbuzz",
+        "locations": [
+            "Cambridge, MA"
+        ],
+        "roles": [
+            {
+                "role": "Fullstack Engineering",
+                "link": "https://jobs.lever.co/lendbuzz/20680ca7-89fb-4fb4-9b5c-c0e3ab78deff/apply"
+            }
+        ]
+    },
+    {
+        "company": "Zipline",
+        "locations": [
+            "San Bruno, CA"
+        ],
+        "roles": [
+            {
+                "role": "Embedded Systems Software",
+                "link": "https://legacy.flyzipline.com/job?gh_jid=5606609003"
+            }
+        ]
+    },
+    {
+        "company": "NVIDIA",
+        "locations": [
+            "Santa Clara, CA"
+        ],
+        "roles": [
+            {
+                "role": "System Validation Engineering",
+                "link": "https://nvidia.wd5.myworkdayjobs.com/en-us/nvidiaexternalcareersite/job/US-OR-Hillsboro/System-Validation-Engineer-Intern---Fall-2023_JR1968096-1"
+            },
+            {
+                "role": "Silicon Validation Engineering",
+                "link": "https://nvidia.wd5.myworkdayjobs.com/en-us/nvidiaexternalcareersite/job/US-CA-Santa-Clara/Silicon-Validation-Engineering-Intern---Fall-2023_JR1969414"
+            }
+        ]
+    },
+    {
+        "company": "Truveta",
+        "locations": [
+            "Seattle, WA"
+        ],
+        "roles": [
+            {
+                "role": "Research",
+                "link": "https://boards.greenhouse.io/truveta/jobs/4748034004"
+            }
+        ]
+    },
+    {
+        "company": "Two Sigma",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Research",
+                "link": "https://careers.twosigma.com/careers/JobDetail/New-York-New-York-United-States-Quantitative-Researcher-Internship-2024-Summer/12004"
+            }
+        ]
+    },
+    {
+        "company": "Certik",
+        "locations": [
+            "Seattle, WA",
+            "San Francisco, CA",
+            "New York, NY",
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Development",
+                "link": "https://jobs.lever.co/certik/2e33570a-f495-44ef-9d7d-a0c5a7fd8190"
+            },
+            {
+                "role": "Platform Engineering",
+                "link": "https://jobs.lever.co/certik/095fdcff-99e8-408d-bb8a-e638e44d0b40"
+            },
+            {
+                "role": "Fullstack",
+                "link": "https://jobs.lever.co/certik/ca67aab6-9b8b-4c2f-ad80-ff5855292f48"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.lever.co/certik/cc4bc2b7-ee87-43be-81c9-09c8b0411a7e"
+            }
+        ]
+    },
+    {
+        "company": "Citadel",
+        "locations": [
+            "Chicago, IL",
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.citadel.com/careers/details/software-engineer-intern-us/"
+            },
+            {
+                "role": "Investment & Trading",
+                "link": "https://www.citadel.com/careers/details/investment-trading-intern-us/"
+            },
+            {
+                "role": "Quant Research",
+                "link": "https://www.citadel.com/careers/details/quantitative-researcher-phd-intern-us/"
+            },
+            {
+                "role": "Quantitative Research Analytics",
+                "link": "https://www.citadel.com/careers/details/quantitative-research-analyst-intern-us/"
+            }
+        ]
+    },
+    {
+        "company": "JPMorgan Chase",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers.jpmorgan.com/us/en/students/programs/software-engineer-summer"
+            }
+        ]
+    },
+    {
+        "company": "NimbleRx",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.lever.co/nimblerx/f1b1c7ab-60f4-4051-93ea-d2dbba1cee9c/apply"
+            }
+        ]
+    },
+    {
+        "company": "Accenture",
+        "locations": [
+            "Tampa, FL"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.accenture.com/us-en/careers/jobdetails?id=R00155153_en"
+            }
+        ]
+    },
+    {
+        "company": "Chewie Labs",
+        "locations": [
+            "San Bruno, CA"
+        ],
+        "roles": [
+            {
+                "role": "Electrical Engineering",
+                "link": "https://boards.greenhouse.io/mill/jobs/4288705005"
+            }
+        ]
+    },
+    {
+        "company": "GE Aerospace",
+        "locations": [
+            "Cincinnati, OH",
+            "Van Buren Township, MI"
+        ],
+        "roles": [
+            {
+                "role": "Digital Technology",
+                "link": "https://ge.wd5.myworkdayjobs.com/en-US/GE_ExternalSite/job/GE-Aerospace-US-Digital-Technology-Intern---Summer-2024_R3718425-1"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://ge.wd5.myworkdayjobs.com/en-US/GE_ExternalSite/job/GE-Aerospace-Engineering-Engines-Computer-or-Software-Engineering-Intern---Summer-2024_R3726060"
+            },
+            {
+                "role": "Systems Engineering",
+                "link": "https://ge.wd5.myworkdayjobs.com/en-US/GE_ExternalSite/job/GE-Aerospace-Systems-Engineering-Intern---Summer-2024_R3696296-1"
+            }
+        ]
+    },
+    {
+        "company": "Elbit Systems of America",
+        "locations": [
+            "Birdsboro, PA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.smartrecruiters.com/ElbitSystemsOfAmerica/743999907500503-software-engineering-intern-ref1380b-"
+            }
+        ]
+    },
+    {
+        "company": "Kodiak Robotics",
+        "locations": [
+            "Mountain View, CA"
+        ],
+        "roles": [
+            {
+                "role": "Video Visualization Engineering",
+                "link": "https://jobs.lever.co/kodiak/3e67f1e9-242a-4af0-8b2a-4bb05c5de92c/apply"
+            }
+        ]
+    },
+    {
+        "company": "Skyworks Solutions",
+        "locations": [
+            "Andover, CA"
+        ],
+        "roles": [
+            {
+                "role": "Analytics",
+                "link": "https://careers.skyworksinc.com/job/Andover-Analytics-Co-Op-SummerFall-Co-Op-CA/1055209600"
+            }
+        ]
+    },
+    {
+        "company": "Hewlett Packard (HP)",
+        "locations": [
+            "Spring, TX"
+        ],
+        "roles": [
+            {
+                "role": "Treasury",
+                "link": "https://hp.wd5.myworkdayjobs.com/ExternalCareerSite/job/Spring-Texas-United-States-of-America/Treasury-Intern_3106331"
+            }
+        ]
+    },
+    {
+        "company": "Scholastic",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://scholastic.wd5.myworkdayjobs.com/en-US/External/job/Scholastic-Summer-Software-Development-Engineer-In-Test-Intern_R12103"
+            }
+        ]
+    },
+    {
+        "company": "Symbotic",
+        "locations": [
+            "Burlington, MA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://symbotic.wd1.myworkdayjobs.com/en-US/Symbotic/job/USA-Wilmington--MA---HQ/Co-Op-Software-Engineer_R2096"
+            }
+        ]
+    },
+    {
+        "company": "UKG",
+        "locations": [
+            "Lowell, MA",
+            "Weston, FL"
+        ],
+        "roles": [
+            {
+                "role": "DevOps Engineering",
+                "link": "https://careers.ukg.com/careers/JobDetail/DevOps-Engineering-Internship-Fall-2023/46143"
+            }
+        ]
+    },
+    {
+        "company": "Milliman",
+        "locations": [
+            "Milwaukee, WI",
+            "Chicago, IL",
+            "Hartford, CT",
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Healthcare Analytics",
+                "link": "https://recruiting2.ultipro.com/MIL1017/JobBoard/f54234e9-dfde-b183-fd20-4fbdb19cba7a/OpportunityDetail?opportunityId=13902acc-1b58-407a-8c0f-c093d7b8cc5a"
+            }
+        ]
+    },
+    {
+        "company": "Neuralink",
+        "locations": [
+            "Fremont, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/neuralink/jobs/5552197003"
+            },
+            {
+                "role": "Neuroengineering",
+                "link": "https://boards.greenhouse.io/neuralink/jobs/5583062003"
+            },
+            {
+                "role": "Embedded Software Engineering",
+                "link": "https://boards.greenhouse.io/neuralink/jobs/5627630003"
+            },
+            {
+                "role": "Software Engineering - Implant",
+                "link": "https://boards.greenhouse.io/neuralink/jobs/5469297003"
+            }
+        ]
+    },
+    {
+        "company": "RSM",
+        "locations": [
+            "Denver, CO",
+            "Dallas, TX"
+        ],
+        "roles": [
+            {
+                "role": "Data Migration Consulting",
+                "link": "https://jobs.rsmus.com/job/18650418/data-migration-consulting-intern-summer-2024-dallas-tx/"
+            },
+            {
+                "role": "Intelligent Automation Consulting",
+                "link": "https://jobs.rsmus.com/job/17580693/intelligent-automation-consulting-intern-summer-2024-denver-co/"
+            }
+        ]
+    },
+    {
+        "company": "Tesla",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Various roles",
+                "link": "https://www.tesla.com/careers/search/?site=US&type=3"
+            },
+            {
+                "role": "Software Automation Engineering - Cell Manufacturing",
+                "link": "https://www.tesla.com/careers/search/job/cell-manufacturing-controls-and-software-automation-engineering-internship-spring-summer-2024-206610"
+            },
+            {
+                "role": "Software Engineering & Machine Learning - Vehicle Hardware",
+                "link": "https://www.tesla.com/careers/search/job/vehicle-hardware-software-engineering-and-machine-learning-internship-spring-summer-2024-206421"
+            },
+            {
+                "role": "Software Engineering - Energy",
+                "link": "https://www.tesla.com/careers/search/job/energy-software-engineering-spring-summer-2024-206805"
+            }
+        ]
+    },
+    {
+        "company": "Marotta Controls",
+        "locations": [
+            "Parsippany, NJ"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://marotta.com/job-openings/?gnk=job&gni=8a7883ac879c5eca0187ef4d715d4fd8&lang=en"
+            }
+        ]
+    },
+    {
+        "company": "AlphaGrep Securities",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Trading",
+                "link": "https://boards.greenhouse.io/alphagrepsecurities/jobs/6340385002"
+            },
+            {
+                "role": "Quantitative Development",
+                "link": "https://boards.greenhouse.io/alphagrepsecurities/jobs/6830868002"
+            }
+        ]
+    },
+    {
+        "company": "Skydio",
+        "locations": [
+            "Burlingame, CA"
+        ],
+        "roles": [
+            {
+                "role": "Embedded Software Engineering",
+                "link": "https://boards.greenhouse.io/skydio/jobs/5639641003?gh_src=b2366f993us"
+            }
+        ]
+    },
+    {
+        "company": "Medpace",
+        "locations": [
+            "Cincinnati, OH"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://uscareers-medpace.icims.com/jobs/8878/software-development-co-op---fall-2023/job"
+            }
+        ]
+    },
+    {
+        "company": "Langan",
+        "locations": [
+            "Parsippany, NJ"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers.langan.com/job/Parsippany-Software-Development-Intern-or-Co-op-Fall-2023-NJ-07054-2172/1045849800/"
+            }
+        ]
+    },
+    {
+        "company": "Bodo.ai",
+        "locations": [
+            "Pittsburgh, PA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - Cloud Infrastructure",
+                "link": "https://jobs.lever.co/bodo/f95f11b7-9089-4072-a217-473ad82b6e8f/apply"
+            }
+        ]
+    },
+    {
+        "company": "Mercedes-Benz",
+        "locations": [
+            "Sunnyvale, CA"
+        ],
+        "roles": [
+            {
+                "role": "Data Products",
+                "link": "https://jobs.lever.co/MBRDNA/59ae463c-5d10-4bb6-9dfd-4e26c7d84a69"
+            }
+        ]
+    },
+    {
+        "company": "Vivacity Tech",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://vivacitytech.applytojob.com/apply/Wnw5Abrw6U/Engineer-Software-Intern"
+            }
+        ]
+    },
+    {
+        "company": "Garmin",
+        "locations": [
+            "Olath, KS"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers.garmin.com/careers-home/jobs/10499"
+            }
+        ]
+    },
+    {
+        "company": "Protiviti",
+        "locations": [
+            "Phoenix, AZ"
+        ],
+        "roles": [
+            {
+                "role": "Technology Consulting",
+                "link": "https://roberthalf.wd1.myworkdayjobs.com/en-US/ProtivitiNA/job/PHOENIX/Phoenix-Technology-Consulting-Intern---2024_JR-248209-2?Location_Country=bc33aa3152ec42d4995f4791a106ed09&Location_Region_State_Province=c7b20b0d4bc04711a00900569e9afabd"
+            }
+        ]
+    },
+    {
+        "company": "Amazon Robotics",
+        "locations": [
+            "North Reading, MA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.amazon.jobs/en/jobs/2345448/amazon-robotics-software-development-engineer-sde-co-op-fall-2023"
+            }
+        ]
+    },
+    {
+        "company": "Bank of America",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Technology Analytics",
+                "link": "https://bankcampuscareers.tal.net/vx/lang-en-GB/mobile-0/brand-4/xf-91c0e92d74a1/candidate/so/pm/1/pl/1/opp/10165-Global-Technology-Summer-Analyst-Program-2024/en-GB"
+            }
+        ]
+    },
+    {
+        "company": "Amazon",
+        "locations": [
+            "San Francisco, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - CQC",
+                "link": "https://www.amazon.jobs/en/jobs/2383729/software-engineering-intern-aws-center-for-quantum-computing-aws-center-for-quantum-computing"
+            },
+            {
+                "role": "Software Development",
+                "link": "https://www.amazon.jobs/en/jobs/2408098/software-development-engineer-internship-2024-us"
+            }
+        ]
+    },
+    {
+        "company": "D.E. Shaw",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://www.deshaw.com/careers/software-developer-intern-new-york-summer-2024-4803"
+            },
+            {
+                "role": "Systems Technical Program Managment",
+                "link": "https://www.deshaw.com/careers/systems-technical-program-manager-intern-new-york-summer-2024-4786"
+            },
+            {
+                "role": "Systems Administration",
+                "link": "https://www.deshaw.com/careers/systems-administrator-intern-new-york-summer-2024-4782"
+            },
+            {
+                "role": "Systems Technology",
+                "link": "https://www.deshaw.com/careers/systems-technologist-intern-new-york-summer-2024-4785"
+            }
+        ]
+    },
+    {
+        "company": "Diffuse Bio",
+        "locations": [
+            "Menlo Park, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/diffusebio/jobs/4011744006"
+            }
+        ]
+    },
+    {
+        "company": "Capstone Investment Advisors",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.capstoneco.com/careers/2024-summer-internship-software-engineer-nyc/?gh_jid=6784275002"
+            }
+        ]
+    },
+    {
+        "company": "Verkada",
+        "locations": [
+            "Burlingame, CA"
+        ],
+        "roles": [
+            {
+                "role": "Technical Support Engineering",
+                "link": "https://jobs.lever.co/verkada/7ccd1de5-19b2-45f5-85df-04dcc87c9f3b/apply"
+            }
+        ]
+    },
+    {
+        "company": "Workato",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Technical Writing",
+                "link": "https://boards.greenhouse.io/workato/jobs/6612972002"
+            }
+        ]
+    },
+    {
+        "company": "Mosaic ML",
+        "locations": [
+            "San Francisco, CA",
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Research Science",
+                "link": "https://boards.greenhouse.io/mosaicml/jobs/4170454004"
+            }
+        ]
+    },
+    {
+        "company": "Perpetua Labs",
+        "locations": [
+            "Toronto, ON"
+        ],
+        "roles": [
+            {
+                "role": "Software Development Engineering",
+                "link": "https://jobs.lever.co/perpetualabs.com/ae01932f-e8e8-43d6-8b42-c4bad3442cd5/apply"
+            }
+        ]
+    },
+    {
+        "company": "Rivos",
+        "locations": [
+            "Austin, TX",
+            "Fort Collins, CO",
+            "Mountain View, CA",
+            "Portland, OR"
+        ],
+        "roles": [
+            {
+                "role": "Silicon Microarchitecture & Logic Design",
+                "link": "https://jobs.lever.co/rivosinc/68135caa-e8cd-4e01-a69e-ab753c1635e4/apply"
+            }
+        ]
+    },
+    {
+        "company": "Apple",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.apple.com/en-us/details/200480063/software-engineering-internships"
+            },
+            {
+                "role": "ML/AI",
+                "link": "https://jobs.apple.com/en-us/details/200480066/machine-learning-ai-internships"
+            },
+            {
+                "role": "Engineering PM",
+                "link": "https://jobs.apple.com/en-us/details/200480064/engineering-program-management-internships"
+            }
+        ]
+    },
+    {
+        "company": "Second Order Effects",
+        "locations": [
+            "El Segundo, CA"
+        ],
+        "roles": [
+            {
+                "role": "Systems Integration/Test Engineering",
+                "link": "https://boards.greenhouse.io/soeffects/jobs/5671927003"
+            }
+        ]
+    },
+    {
+        "company": "Epic",
+        "locations": [
+            "Madison, WI"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://epic.avature.net/Careers/FolderDetail/Software-Developer-Intern---Summer-2024/23429"
+            }
+        ]
+    },
+    {
+        "company": "The Boring Company",
+        "locations": [
+            "Las Vegas, NV"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.lever.co/boringcompany/3af50cd9-82a7-4ee1-9cf5-b757d83f7c23/apply"
+            }
+        ]
+    },
+    {
+        "company": "Emerson Automation Solutions",
+        "locations": [
+            "Elyria, OH"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://hdjq.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions/preview/23007214"
+            }
+        ]
+    },
+    {
+        "company": "Achronix Semiconductor",
+        "locations": [
+            "Santa Clara, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/achronixsemiconductor/jobs/4011616006"
+            }
+        ]
+    },
+    {
+        "company": "KPMG",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Engineering & IT",
+                "link": "https://app.ripplematch.com/v2/public/job/6f5894f6/details?utm_source=RM&utm_medium=organic_social&utm_campaign=growth_github&utm_content=kpmg&utm_term=null"
+            }
+        ]
+    },
+    {
+        "company": "Mathworks",
+        "locations": [
+            "Natick, MA"
+        ],
+        "roles": [
+            {
+                "role": "Engineering Development",
+                "link": "https://www.mathworks.com/company/jobs/opportunities/25610-multiple-openings-engineering-development-group-internship"
+            }
+        ]
+    },
+    {
+        "company": "Databento",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/databento/jobs/4374815?"
+            }
+        ]
+    },
+    {
+        "company": "Goldman Sachs",
+        "locations": [
+            "Global"
+        ],
+        "roles": [
+            {
+                "role": "Analytics",
+                "link": "https://www.goldmansachs.com/careers/students/programs/americas/summer-analyst-program.html"
+            }
+        ]
+    },
+    {
+        "company": "Artisan Partners",
+        "locations": [
+            "Milwaukee, WI"
+        ],
+        "roles": [
+            {
+                "role": "Software Development - Marketing & Distribution",
+                "link": "https://www.artisanpartners.com/careers/career-opportunities.html?gh_jid=5259816"
+            }
+        ]
+    },
+    {
+        "company": "Capital One",
+        "locations": [
+            "Plano, TX",
+            "McLean, VA"
+        ],
+        "roles": [
+            {
+                "role": "Cybersecurity",
+                "link": "https://capitalone.wd1.myworkdayjobs.com/Capital_One/job/McLean-VA/Cyber-Security-Internship-Program---Summer-2024_R169958"
+            },
+            {
+                "role": "Data Analytics",
+                "link": "https://capitalone.wd1.myworkdayjobs.com/Capital_One/job/McLean-VA/Data-Analyst-Intern---Summer-2024_R169960-1"
+            }
+        ]
+    },
+    {
+        "company": "Alarm.com",
+        "locations": [
+            "Needham, MA"
+        ],
+        "roles": [
+            {
+                "role": "Embedded Engineering",
+                "link": "https://boards.greenhouse.io/alarmcom/jobs/6400067002"
+            }
+        ]
+    },
+    {
+        "company": "Vestmark",
+        "locations": [
+            "Wakefield, MA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/vestmark/jobs/5125520"
+            }
+        ]
+    },
+    {
+        "company": "Flow Traders",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Trading",
+                "link": "https://boards.greenhouse.io/flowtraders/jobs/5231161"
+            }
+        ]
+    },
+    {
+        "company": "Alert Innovation",
+        "locations": [
+            "Andover, MA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/alertinnovation/jobs/4222910005"
+            }
+        ]
+    },
+    {
+        "company": "Gecko Robotics",
+        "locations": [
+            "Pittsburgh, PA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - Robot Systems",
+                "link": "https://www.geckorobotics.com/careers/apply?gh_jid=5699541003"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://www.geckorobotics.com/careers/apply?gh_jid=5695257003"
+            }
+        ]
+    },
+    {
+        "company": "Red Ventures",
+        "locations": [
+            "Charlotte, NC"
+        ],
+        "roles": [
+            {
+                "role": "Data Analytics",
+                "link": "https://www.redventures.com/careers/apply/5209748?gh_jid=5209748"
+            }
+        ]
+    },
+    {
+        "company": "Five Rings",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://fiverings.avature.net/careers/FolderDetail/New-York-New-York-United-States-Software-Developer-Summer-Intern-2024/649"
+            },
+            {
+                "role": "Quant Research",
+                "link": "https://fiverings.avature.net/careers/FolderDetail/New-York-New-York-United-States-Quantitative-Researcher-Summer-Intern-2024/645"
+            },
+            {
+                "role": "Quant Trading",
+                "link": "https://fiverings.avature.net/careers/FolderDetail/New-York-New-York-United-States-Quantitative-Trader-Summer-Intern-2024/643"
+            }
+        ]
+    },
+    {
+        "company": "PCMI Corporation",
+        "locations": [
+            "Park Ridge, IL"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Analytics",
+                "link": "https://www.indeed.com/cmp/Pcmi-Corporation-2/jobs?jk=e35b465c20d1a7c2&start=0&clearPrefilter=1"
+            }
+        ]
+    },
+    {
+        "company": "Protective",
+        "locations": [
+            "Birmingham, AL"
+        ],
+        "roles": [
+            {
+                "role": "Technology",
+                "link": "https://jobs.lever.co/protective/2761edea-63bc-4be7-8b48-6e925c1be3f8/?lever-source%5B%5D=DiversityJobs"
+            }
+        ]
+    },
+    {
+        "company": "PepsiCo",
+        "locations": [
+            "Purchase, NY",
+            "Plano, TX"
+        ],
+        "roles": [
+            {
+                "role": "Software Development & Engineering",
+                "link": "https://www.pepsicojobs.com/internshipsprograms/jobs/241240?lang=en-us&previousLocale=en-US"
+            }
+        ]
+    },
+    {
+        "company": "Jane Street",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.janestreet.com/join-jane-street/position/6834728002/"
+            },
+            {
+                "role": "Quantitative Trading",
+                "link": "https://www.janestreet.com/join-jane-street/position/6850721002/"
+            },
+            {
+                "role": "Quantitative Research",
+                "link": "https://www.janestreet.com/join-jane-street/position/6838982002/"
+            }
+        ]
+    },
+    {
+        "company": "General Motors",
+        "locations": [
+            "Detroit, MI"
+        ],
+        "roles": [
+            {
+                "role": "Data Analyst/Data Scientist",
+                "link": "https://generalmotors.wd5.myworkdayjobs.com/en-US/Careers_GM/job/Detroit-Michigan-United-States-of-America/XMLNAME-2024-Summer-Intern---Digital-Transformation---Data-Analyst-or-Data-Scientist_JR-202313389"
+            }
+        ]
+    },
+    {
+        "company": "SkyWorks",
+        "locations": [
+            "Austin, TX"
+        ],
+        "roles": [
+            {
+                "role": "Embedded Firmware",
+                "link": "https://careers.skyworksinc.com/job/Austin-Embedded-FW-Summer-Intern-2024-TX-73301/1054957600"
+            }
+        ]
+    },
+    {
+        "company": "Cole Engineering Services, Inc.",
+        "locations": [
+            "Orlando, FL"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=5055dea5-b670-4a19-adb1-2aea04ba5207&ccId=19000101_000001&type=MP&lang=en_US&jobId=472432"
+            }
+        ]
+    },
+    {
+        "company": "Steris",
+        "locations": [
+            "Richmond, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers.steris.com/job/RICHMOND-Software-Engineering-Intern-CA-94804/1054522400/"
+            }
+        ]
+    },
+    {
+        "company": "Aquaveo",
+        "locations": [
+            "Provo, UT"
+        ],
+        "roles": [
+            {
+                "role": "Geospatial Web Development",
+                "link": "https://www.aquaveo.com/jobs-geospatial-web-developer-intern"
+            }
+        ]
+    },
+    {
+        "company": "Prudential",
+        "locations": [
+            "Newark, NJ"
+        ],
+        "roles": [
+            {
+                "role": "Coding & Development",
+                "link": "https://wd5.myworkdaysite.com/recruiting/pru/Careers/job/Newark-NJ-USA/PGIM--2024-Fixed-Income--Coding---Developer-Internship-Program--Technology-Solutions-Group-_R-114814-1"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://wd5.myworkdaysite.com/recruiting/pru/Careers/job/Newark-NJ-USA/Prudential--2024-Global-Technology--Software-Engineering-Internship-Program--_R-114845-2"
+            }
+        ]
+    },
+    {
+        "company": "Deloitte",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - Technology Assets",
+                "link": "https://apply.deloitte.com/careers/JobDetail/Deloitte-Risk-Financial-Advisory-Software-Engineer-Intern-Technology-Assets-Summer-2024/150371"
+            },
+            {
+                "role": "Software Engineering - Digital Assets/Blockchain",
+                "link": "https://apply.deloitte.com/careers/JobDetail/Deloitte-Risk-Financial-Advisory-Software-Engineer-Intern-Digital-Assets-Blockchain-Summer-2024/150369"
+            }
+        ]
+    },
+    {
+        "company": "Johnson & Johnson",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Technology",
+                "link": "https://jobs.jnj.com/en/jobs/2306128806w/technology-internship-2024-summer-jjt-intern/"
+            }
+        ]
+    },
+    {
+        "company": "Ramp",
+        "locations": [
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Backend Software Engineering",
+                "link": "https://jobs.ashbyhq.com/ramp/16ebfcfc-467b-40e5-b23e-a4d95db05539"
+            }
+        ]
+    },
+    {
+        "company": "Kimley-Horn",
+        "locations": [
+            "Raleigh, NC"
+        ],
+        "roles": [
+            {
+                "role": "Software Development",
+                "link": "https://careers-kimley-horn.icims.com/jobs/9773/software-developer-intern/job"
+            }
+        ]
+    },
+    {
+        "company": "Castleton Commodities International",
+        "locations": [
+            "Stamford, CT"
+        ],
+        "roles": [
+            {
+                "role": "Data Science",
+                "link": "https://osv-cci.wd1.myworkdayjobs.com/CCICareers/job/Stamford-CT/Data-Science-Internship--Summer-2023-_R622"
+            }
+        ]
+    },
+    {
+        "company": "Medtronic",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://medtronic.eightfold.ai/careers/job/17363492"
+            }
+        ]
+    },
+    {
+        "company": "TransMarket Group",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Trading",
+                "link": "https://boards.greenhouse.io/transmarketgroup/jobs/4023644007?t=295a85457us"
+            },
+            {
+                "role": "Algorithmic Trading",
+                "link": "https://boards.greenhouse.io/transmarketgroup/jobs/4023650007?t=295a85457us"
+            }
+        ]
+    },
+    {
+        "company": "Allegiant Air",
+        "locations": [
+            "Las Vegas, NV"
+        ],
+        "roles": [
+            {
+                "role": "Reliability",
+                "link": "https://jobs.lever.co/allegiantair/33b54082-691d-4f5f-836e-baeea8aaf34c/apply"
+            }
+        ]
+    },
+    {
+        "company": "Sentry",
+        "locations": [
+            "Toronto, ON"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/sentry/jobs/5193538"
+            }
+        ]
+    },
+    {
+        "company": "National Instruments",
+        "locations": [
+            "Austin, TX"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://pef.fa.us1.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/requisitions?keyword=Software+Engineering+Intern&mode=location&sortBy=RELEVANCY"
+            }
+        ]
+    },
+    {
+        "company": "Torc Robotics",
+        "locations": [
+            "Blacksburg, VA",
+            "Austin, TX",
+            "Albuquerque, NM",
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering - Localization",
+                "link": "https://boards.greenhouse.io/torcrobotics/jobs/6867126002"
+            }
+        ]
+    },
+    {
+        "company": "Radix Trading",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "C++ Quantitative Technology",
+                "link": "https://boards.greenhouse.io/radixtrading/jobs/6629921002"
+            },
+            {
+                "role": "Quantitative Research",
+                "link": "https://boards.greenhouse.io/radixtrading/jobs/6629919002"
+            }
+        ]
+    },
+    {
+        "company": "Northrop Grumman",
+        "locations": [
+            "Woodland Hills, CA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://ngc.wd1.myworkdayjobs.com/en-US/Northrop_Grumman_External_Site/job/XMLNAME-2024-Software-Engineer-Intern--Woodland-Hills--CA_R10122550?redirect=%252FNorthrop_Grumman_External_Site%252Fjob%252FUnited-States-California-Woodland-Hills%252FXMLNAME-2024-Software-Engineer-Intern--Woodland-Hills--CA_R10122550%252Fapply%253Fcode%253DAPPLICANT_SOURCE-3-436&source=APPLICANT_SOURCE-3-436"
+            },
+            {
+                "role": "Cyber Software",
+                "link": "https://ngc.wd1.myworkdayjobs.com/en-US/Northrop_Grumman_External_Site/job/United-States-California-San-Jose/XMLNAME-2024---Intern-Technical--Cyber-Software--San-Jose--CA_R10122712?q=internship&redirect=/Northrop_Grumman_External_Site/job/United-States-California-Woodland-Hills/XMLNAME-2024-Software-Engineer-Intern--Woodland-Hills--CA_R10122550/apply?code=APPLICANT_SOURCE-3-436&source=APPLICANT_SOURCE-3-436"
+            }
+        ]
+    },
+    {
+        "company": "Wells Fargo",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Data Analytics",
+                "link": "https://www.wellsfargojobs.com/en/jobs/r-295402/2024-summer-internship-early-careers-analytics-data?jClickId=0f76a32d-92ba-4e35-8e19-d7a3a2b682ce&publisher=Linkedin%2520Flat%2520bid&utm_source=joveo"
+            }
+        ]
+    },
+    {
+        "company": "Chic-Fil-A",
+        "locations": [
+            "Atlanta, GA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://careers-chickfila.icims.com/jobs/14373/dtt-software-engineering-summer-2024-intern/job?mode=job&iis=Job+Board&iisn=LinkedIn&mobile=false&width=1519&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240"
+            }
+        ]
+    },
+    {
+        "company": "Stoke Space",
+        "locations": [
+            "Kent, WA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.stokespace.com/careers/current-openings/?gh_jid=4944845004"
+            }
+        ]
+    },
+    {
+        "company": "Skyworks",
+        "locations": [
+            "Hillsboro, OR"
+        ],
+        "roles": [
+            {
+                "role": "AI Engineering",
+                "link": "https://careers.skyworksinc.com/job/Hillsboro-AI-Engineering-Intern-OR-97006/1050573100/"
+            },
+            {
+                "role": "Web Development",
+                "link": "https://careers.skyworksinc.com/job/Hillsboro-Intern-Web-Development-OR-97006/1057407200/"
+            }
+        ]
+    },
+    {
+        "company": "Cisco",
+        "locations": [
+            "Multiple locations"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering I",
+                "link": "https://jobs.cisco.com/jobs/ProjectDetail/Software-Engineer-I-Intern-United-States/1404710?source=Cisco+Jobs+Career+Site&tags=CDC+Browse+all+jobs"
+            },
+            {
+                "role": "Software Engineering II",
+                "link": "https://jobs.cisco.com/jobs/ProjectDetail/Software-Engineer-II-Intern-United-States/1405259?source=Cisco+Jobs+Career+Site&tags=CDC+Browse+all+jobs"
+            },
+            {
+                "role": "Software Consulting Engineering",
+                "link": "https://jobs.cisco.com/jobs/ProjectDetail/Software-Consulting-Engineer-Intern-United-States/1405375?source=Cisco+Jobs+Career+Site&tags=CDC+Browse+all+jobs"
+            },
+            {
+                "role": "Data Science",
+                "link": "https://jobs.cisco.com/jobs/ProjectDetail/Data-Scientist-Intern-United-States/1405351?source=Cisco+Jobs+Career+Site&tags=CDC+Browse+all+jobs"
+            },
+            {
+                "role": "Data Engineering",
+                "link": "https://jobs.cisco.com/jobs/ProjectDetail/Data-Engineer-Intern-United-States/1405278?source=Cisco+Jobs+Career+Site&tags=CDC+Browse+all+jobs"
+            }
+        ]
+    },
+    {
+        "company": "HRL Laboratories",
+        "locations": [
+            "Calabasas, CA"
+        ],
+        "roles": [
+            {
+                "role": "Machine Learning and Reasoning",
+                "link": "https://jobs.lever.co/dodmg/2bdf0a93-c552-49b7-bdee-bd93dc5ed20b/apply"
+            },
+            {
+                "role": "Active Prediction",
+                "link": "https://jobs.lever.co/dodmg/4c1bd473-1649-479d-9aa0-1d08c9c01ff0/apply"
+            },
+            {
+                "role": "Operational Autonomy Centers - Formal Methods",
+                "link": "https://jobs.lever.co/dodmg/cb3d3448-6548-4b5e-bd47-d5e87331feac/apply"
+            },
+            {
+                "role": "Natural Language Processing",
+                "link": "https://jobs.lever.co/dodmg/2520ad21-8174-49d1-87db-806b46c5115d/apply"
+            },
+            {
+                "role": "Graph Machine Learning",
+                "link": "https://jobs.lever.co/dodmg/1f412a07-6754-4444-a8f2-3c3bab279e4d/apply"
+            },
+            {
+                "role": "AI Software Engineering",
+                "link": "https://jobs.lever.co/dodmg/a9cc6286-0ce4-4331-8704-afdf4d351b74/apply"
+            },
+            {
+                "role": "Autonomous Driving Research",
+                "link": "https://jobs.lever.co/dodmg/d7c242a8-1241-48a6-aaea-a7eb5b03c897/apply"
+            },
+            {
+                "role": "Virtual Cyber Network Operations",
+                "link": "https://jobs.lever.co/dodmg/95ffb1f4-252c-41da-b414-cb8821e316e0/apply"
+            },
+            {
+                "role": "Causal Inference and Reasoning",
+                "link": "https://jobs.lever.co/dodmg/c65fe8cc-b107-4bf4-8c3f-a962bbff9d3e/apply"
+            }
+        ]
+    },
+    {
+        "company": "Virtu Financial",
+        "locations": [
+            "Austin, TX",
+            "Chicago, IL",
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Trading",
+                "link": "https://boards.greenhouse.io/virtu/jobs/6702651002"
+            },
+            {
+                "role": "Development",
+                "link": "https://boards.greenhouse.io/virtu/jobs/6771390002"
+            }
+        ]
+    },
+    {
+        "company": "Lockheed Martin",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.lockheedmartinjobs.com/job/orlando/software-engineering-intern/694/52455467776"
+            }
+        ]
+    },
+    {
+        "company": "Sezzle",
+        "locations": [
+            "Minneapolis, MN"
+        ],
+        "roles": [
+            {
+                "role": "Data Science",
+                "link": "https://boards.greenhouse.io/sezzle/jobs/5703601003"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://boards.greenhouse.io/sezzle/jobs/5703577003"
+            }
+        ]
+    },
+    {
+        "company": "Belvedere Trading",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Trading",
+                "link": "https://jobs.lever.co/belvederetrading/2faf3199-5312-4f58-bbb4-4504d565168d/apply"
+            },
+            {
+                "role": "Software Engineering",
+                "link": "https://jobs.lever.co/belvederetrading/f63b36b4-a5b6-4697-97cf-2af02a47e9d9/apply"
+            }
+        ]
+    },
+    {
+        "company": "Fidelity Investments",
+        "locations": [
+            "Cambridge, MA",
+            "Durham, NC",
+            "Merrimack, NH",
+            "New York, NY"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Development",
+                "link": "https://wd1.myworkdaysite.com/recruiting/fmr/FidelityCareers/job/Boston-MA/Quantitative-Development-Internship_2081276-1"
+            }
+        ]
+    },
+    {
+        "company": "JD.com Inc",
+        "locations": [
+            "Fontana, CA"
+        ],
+        "roles": [
+            {
+                "role": "Data Analytics - Logistics/Supply Chain",
+                "link": "https://boards.greenhouse.io/jdcom/jobs/6452990002"
+            }
+        ]
+    },
+    {
+        "company": "Databricks",
+        "locations": [
+            "Mountain View, CA",
+            "San Francisco, CA",
+            "Bellevue, WA"
+        ],
+        "roles": [
+            {
+                "role": "Software Engineering",
+                "link": "https://www.databricks.com/company/careers/open-positions?department=University%20Recruiting&location=AMER"
+            }
+        ]
+    },
+    {
+        "company": "Jump Trading",
+        "locations": [
+            "Chicago, IL"
+        ],
+        "roles": [
+            {
+                "role": "Quantitative Research",
+                "link": "https://www.jumptrading.com/careers/4674090?gh_jid=4674090"
+            }
+        ]
+    },
+    {
+        "company": "Crowdstrike",
+        "locations": [
+            "Remote"
+        ],
+        "roles": [
+            {
+                "role": "Sales Excellence Data Analytics",
+                "link": "https://crowdstrike.wd5.myworkdayjobs.com/en-us/crowdstrikecareers/job/USA---Remote-TX/Sales-Excellence-Data-Analytics-Extended-Intern--Remote-_R14069"
+            }
+        ]
+    },
+    {
+        "company": "Taboola",
+        "locations": [
+            "Los Angeles, CA"
+        ],
+        "roles": [
+            {
+                "role": "Backend Engineering",
+                "link": "https://www.taboola.com/careers/job/5231820?gh_jid=5231820"
+            }
+        ]
+    }
+]
