@@ -19,7 +19,7 @@ export const CreatePost = (props) => {
   };
 
   const calculateTextareaHeight = (value) => {
-    return { height: `${value.split("\n").length * 30}px` };
+    return { height: `${value.split("\n").length * 20}px` };
   };
   const handleClick = async () => {
     const title = titleValue;

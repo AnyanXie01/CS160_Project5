@@ -40,7 +40,7 @@
 
 .heart-comment-container {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     margin-top: -30px;
 }
 .heart-comment-container button{
@@ -51,3 +51,56 @@
     border: none;
     gap: 10px;
 }
+.comment-container{
+    width: 100%;
+}
+.comment-container textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  #comment_input {
+    color: var(--grey, #606060);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px
+  }
+
+  .add-comment-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+  }
+  .submit-button {
+    display: flex;
+    height: 30px;
+    width: 60px;
+    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--background-secondary, #fafafa);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 10px;
+    background: var(--primary, #455487);
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  .comment-Block{
+    background: var(--background, #EEE);
+    width: 100%;
+  }

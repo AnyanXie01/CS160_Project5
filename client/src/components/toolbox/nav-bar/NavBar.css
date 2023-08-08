@@ -106,6 +106,17 @@
         background: var(--white, #FFF);
         box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
     }
+    .side-menu-container{
+        position: fixed;
+        width: 10vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        left: 0px;
+        top: 0px;
+        gap: 20px;
+        background-color: aqua;
+    }
 }
 
 

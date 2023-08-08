@@ -5,6 +5,7 @@ import mode from './images/Moon.png'
 import profileImage from './images/Profile.png';
 import logImage from './images/Logo.png';
 import menu from './images/Hamburger.png';
+import { PhoneSideMenu } from "../phone-size-sideMenu/PhoneSideMenu";
 
 
 export function NavBar(props){
@@ -17,6 +18,19 @@ export function NavBar(props){
     function hideSideMenu(){
         setSideMenu(false);
     }
+
+
+    /* const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+      };
+      window.addEventListener('resize', handleResize);
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []); */
 
     return(<nav>
                 <div className="nav-container">
@@ -33,17 +47,11 @@ export function NavBar(props){
                     </div>
                 </div>
                 <div className="nav-small-container">
-                    { sideMenu ? (
-                        null
-                    ) : (
-                        <>
-                            <button className="hambuger-container" onClick={showSideMenu}> <img src={menu} alt="menu button" style={{width: '60px', height: '60px'}}/></button>
-                        </>
-                    
-                    )
-
-                    }
+                    <button className="hambuger-container" onClick={showSideMenu}> <img src={menu} alt="menu button" style={{width: '60px', height: '60px'}}/></button>
                     <Link to="/profile"><img src={profileImage} alt="profile" className="profile-pic nav-link" style={{ width: "48px", height: "48px"}}/></Link>
+                </div>
+                <div className="side-menu-container">
+                { sideMenu ? (<PhoneSideMenu/>) : (<></>)}
                 </div>
         </nav>);
 }

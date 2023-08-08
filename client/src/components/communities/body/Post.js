@@ -56,6 +56,16 @@ export const Post = (props) => {
   const handleHideComment = () => {
     setHideComments(!hideComment);
   };
+
+  const [contentValue, setContentValue] = useState("");
+  const handleContentChange = (event) => {
+    setContentValue(event.target.value);
+  };
+  const calculateTextareaHeight = (value) => {
+    return { height: `${value.split("\n").length * 20}px` };
+  };
+
+
   return (
     <>
       <div className="post-container">
@@ -65,7 +75,9 @@ export const Post = (props) => {
         </div>
 
         <div className="header">{post.title}</div>
-        <img src={imageUrl} style={{ width: "60%" }} />
+        {
+          imageUrl && <img src={imageUrl} style={{ width: "60%" }} />
+        }
         <p>{post.description}</p>
         <div className="heart-comment-container">
           <button>
@@ -82,15 +94,23 @@ export const Post = (props) => {
           </button>
         </div>
         {hideComment ? null : (
-          <div id="comment_hide_session">
-            <div id="fill_in0">
-              <button onClick={handleMakeComment}>make comment</button>
-              <input type="text" id="comment_input" name="comment"></input>
+          <div className="comment-container">
+            <div className="add-comment-container">
+              <textarea
+              id="comment_input" 
+              name="comment"
+              type="text"
+              className="auto-expanding-textarea"
+              placeholder="Add a comment"
+              value={contentValue}
+              onChange={handleContentChange}
+              style={calculateTextareaHeight(contentValue)}
+              />
+              <button onClick={handleMakeComment} className="submit-button"> submit </button>
             </div>
 
-            <div>comments:</div>
             {comments.map((cmt) => {
-              return <div>{cmt}</div>;
+              return <div className="comment-Block">{cmt}</div>;
             })}
           </div>
         )}

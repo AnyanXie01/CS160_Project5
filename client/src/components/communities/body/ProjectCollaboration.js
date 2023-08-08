@@ -4,7 +4,7 @@ import { BodyHeader } from "../../toolbox/header/BodyHeader";
 import { useEffect, useState } from "react";
 import { getFeedPost } from "../../../utils.js";
 import { CreatePost } from "./CreatePost";
-
+import "./ProjectCollaboration.css";
 export function ProjectCollab() {
   let description =
     "Project Collaboration is a focused forum for student projects. Here, you can ask project-related questions, exchange ideas, or find team members for your projects. A practical platform for project discussion and team formation. Utilize this space for effective collaboration and knowledge exchange.";
@@ -43,7 +43,7 @@ export function ProjectCollab() {
     setTop(true);
   };
   return (
-    <>
+    <div className="ProjectCollab-body">
       <BodyHeader titleArr={titleArr} />
       <CreatePost
         setPosts={setPosts}
@@ -51,12 +51,18 @@ export function ProjectCollab() {
         created={created}
         forum={"ProjectCollaboration"}
       ></CreatePost>
-      <button onClick={prevClick}>Previous</button>
-      <button onClick={nextClick}>Next</button>
-      <button onClick={latestClick}>latest</button>
-      <button onClick={topClick}>top</button>
-      <br></br>
-      <br></br>
+
+      <div className="post-nav-buttons">
+        <div className="latest-top-container">
+          <button onClick={latestClick} className="blue-nav-button">Latest</button>
+          <button onClick={topClick} className="blue-nav-button">Top</button>
+        </div>
+        <div className="prev-next-container">
+          <button onClick={prevClick } className="black-nav-button">Prev</button>
+          <button onClick={nextClick} className="black-nav-button">Next</button>
+        </div>
+      </div>
+
       <span>{startingIndex}</span>
       {posts.map((post, index) => {
         if (index >= startingIndex && index < startingIndex + 5) {
@@ -64,6 +70,6 @@ export function ProjectCollab() {
           return <Post post={post}></Post>;
         }
       })}
-    </>
+    </div>
   );
 }

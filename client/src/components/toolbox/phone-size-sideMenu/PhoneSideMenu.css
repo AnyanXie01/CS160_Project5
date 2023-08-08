@@ -1,0 +1,4 @@
+.left-col-containers{
+    border: 0.25px solid var(--grey-lighter, #909090);
+    background-color: var(--background-secondary, #FAFAFA) !important;
+}
