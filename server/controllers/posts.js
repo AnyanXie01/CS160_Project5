@@ -7,8 +7,6 @@ export const createPost = async (req, res) => {
   try {
     const { userId, description, picturePath, title, forum } = req.body;
     const user = await User.findById(userId);
-    console.log(user);
-    console.log(user.userPicturePath);
     const newPost = new Post({
       userId: userId,
       firstName: user.firstName,
@@ -46,13 +44,9 @@ export const getFeedPosts = async (req, res) => {
           $sort: { numberOfLikes: -1 },
         },
       ]);
-      console.log("-------------");
-      console.log(post);
       res.status(200).json(post);
     } else {
       const post = await Post.find().sort({ createdAt: -1 });
-      console.log("-------------");
-      console.log(post);
       res.status(200).json(post);
     }
   } catch (err) {
@@ -88,7 +82,6 @@ export const likePost = async (req, res) => {
       { likes: post.likes },
       { new: true } // what is this for?
     );
-    post.save();
     res.status(200).json(updatedPost);
   } catch (err) {
     res.status(404).json({ message: err.message });
@@ -100,13 +93,12 @@ export const makeComment = async (req, res) => {
     const { id } = req.params; // comes from the /:id, the relevent post
     const { comment } = req.body;
     const post = await Post.findById(id);
-    post.comments.push(comment);
+    post.comments.unshift(comment);
     const updatedPost = await Post.findByIdAndUpdate(
       id,
       { comments: post.comments },
       { new: true } // what is this for?
     );
-    post.save();
     res.status(200).json(updatedPost);
   } catch (err) {
     res.status(404).json({ message: err.message });

@@ -60,7 +60,6 @@ export function ProjectCollab() {
       <span>{startingIndex}</span>
       {posts.map((post, index) => {
         if (index >= startingIndex && index < startingIndex + 5) {
-          console.log(post.userPicturePath);
           return <Post post={post}></Post>;
         }
       })}

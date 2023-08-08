@@ -1,12 +1,12 @@
 import "./Post.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import heartIcon from "./images/heart.png";
 import commentIcon from "./images/comment.png";
 import { likePost, makeComment } from "../../../utils.js";
 export const Post = (props) => {
   const [post, setPost] = useState(props.post);
   const [userName, setUserName] = useState(
-    `${post.firstName} ${post.firstName}: `
+    `${localStorage.getItem("userPicturePath")}: `
   );
   const [likeNumber, setLikeNumber] = useState(Object.keys(post.likes).length);
   const [comments, setComments] = useState(post.comments);
@@ -40,6 +40,7 @@ export const Post = (props) => {
   const handleMakeComment = async () => {
     const subComment = document.getElementById("comment_input").value;
     try {
+      setComments([]);
       const resp = await makeComment(
         post._id,
         `${userName}${subComment}`,
@@ -47,6 +48,7 @@ export const Post = (props) => {
       );
       setPost(resp);
       setComments(resp.comments);
+      document.getElementById("comment_input").value = "";
       alert("Successfully make comment!");
     } catch (err) {
       alert(err);
@@ -56,6 +58,13 @@ export const Post = (props) => {
   const handleHideComment = () => {
     setHideComments(!hideComment);
   };
+  const getUserPicturePathFromComment = (cmt) => {
+    return cmt.split(":")[0];
+  };
+  const getUserCommentFromComment = (cmt) => {
+    return cmt.split(":")[1];
+  };
+  useEffect(() => {}, [comments]);
   return (
     <>
       <div className="post-container">
@@ -78,7 +87,7 @@ export const Post = (props) => {
           </button>
           <button onClick={handleHideComment}>
             <img src={commentIcon} style={{ width: "24px", height: "24px" }} />
-            {post.length}
+            {comments.length}
           </button>
         </div>
         {hideComment ? null : (

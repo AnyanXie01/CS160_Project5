@@ -37,9 +37,7 @@ export const addRemoveFriend = async (req, res) => {
   try {
     const { id, friendId } = req.params;
     const user = await User.findById(id);
-    console.log(user);
     const friend = await User.findById(friendId);
-    console.log(friend);
     /* if the friendId is included in the user.friends */
     if (user.friends.includes(friendId)) {
       /* remove */
@@ -56,7 +54,6 @@ export const addRemoveFriend = async (req, res) => {
     const friends = await Promise.all(
       user.friends.map((id) => User.findById(id))
     );
-    // console.log(friends);
     const formattedFriends = friends.map(
       ({ _id, firstName, lastName, occupation, location, picturePath }) => {
         return { _id, firstName, lastName, occupation, location, picturePath };
