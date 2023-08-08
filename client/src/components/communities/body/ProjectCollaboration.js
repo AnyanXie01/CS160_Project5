@@ -51,19 +51,19 @@ export function ProjectCollab() {
         created={created}
         forum={"ProjectCollaboration"}
       ></CreatePost>
-
-      <div className="post-nav-buttons">
-        <div className="latest-top-container">
-          <button onClick={latestClick} className="blue-nav-button">Latest</button>
-          <button onClick={topClick} className="blue-nav-button">Top</button>
+      <div className="post-nav-container">
+        <div className="post-nav-buttons">
+          <div className="latest-top-container">
+            <button onClick={latestClick} className="blue-nav-button">Latest</button>
+            <button onClick={topClick} className="blue-nav-button">Top</button>
+          </div>
+          <div className="prev-next-container">
+            <button onClick={prevClick } className="black-nav-button">Prev</button>
+            <button onClick={nextClick} className="black-nav-button">Next</button>
+          </div>
         </div>
-        <div className="prev-next-container">
-          <button onClick={prevClick } className="black-nav-button">Prev</button>
-          <button onClick={nextClick} className="black-nav-button">Next</button>
-        </div>
+        <div className="page-number"><div>Page {startingIndex + 1}</div></div>
       </div>
-
-      <span>{startingIndex}</span>
       {posts.map((post, index) => {
         if (index >= startingIndex && index < startingIndex + 5) {
           return <Post post={post}></Post>;

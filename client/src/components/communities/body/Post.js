@@ -93,13 +93,13 @@ export const Post = (props) => {
           <button>
             <img
               src={heartIcon}
-              style={{ width: "24px", height: "24px" }}
+              style={{ width: "20px", height: "20px" }}
               onClick={handleLikes}
             />
             {likeNumber}
           </button>
           <button onClick={handleHideComment}>
-            <img src={commentIcon} style={{ width: "24px", height: "24px" }} />
+            <img src={commentIcon} style={{ width: "20px", height: "20px" }} />
             {comments.length}
           </button>
         </div>
