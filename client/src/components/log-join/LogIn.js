@@ -8,15 +8,15 @@ export function LogIn(){
                         <h2>INTERNCONNECT</h2>
                     </div>
                     <div className="header-container">
-                    <h1>Welcome back</h1>
+                        <h1>Welcome back</h1>
                     </div>
                     <div className="email-input-container">
                         <div>Email</div>
                         <input type="email"/>
                     </div>
                     <div className="password-input-container">
-                    <div>Email</div>
-                        <input type="email"/>
+                    <div>Password</div>
+                        <input type="password"/>
                     </div>
                     <button>Log in</button>
                     <div>
