@@ -85,6 +85,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    flex-wrap: wrap !important;
 }
 
 .sign-up{
