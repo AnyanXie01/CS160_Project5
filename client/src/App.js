@@ -20,6 +20,8 @@ function App() {
   return (
     <Provider store={store}>
       {localStorage.setItem("loggedIn", true)}
+      {localStorage.setItem("firstName", "test0")}
+      {localStorage.setItem("lastName", "test0")}
       {localStorage.setItem("userToken", userToken)}
       {localStorage.setItem("userId", userId)}
       {localStorage.setItem("userPicturePath", "Profile.png")}

@@ -6,18 +6,21 @@ import commentIcon from "./images/comment.png";
 import { likePost, makeComment } from "../../../utils.js";
 export const Post = (props) => {
   const [post, setPost] = useState(props.post);
-  const [userName, setUserName] = useState(
+  const [loggedInUserName, setloggedInUserName] = useState(
+    `${localStorage.getItem("firstName")} ${localStorage.getItem("lastName")}: `
+  );
+  const [loggedInUserPicturePath, setloggedInUserPicturePath] = useState(
     `${localStorage.getItem("userPicturePath")}: `
   );
   const [likeNumber, setLikeNumber] = useState(Object.keys(post.likes).length);
   const [comments, setComments] = useState(post.comments);
   const [hideComment, setHideComments] = useState(true);
-  const [imageUrl, setImageUrl] = useState(
+  const [postImageUrl, setpostImageUrl] = useState(
     post.picturePath !== undefined
       ? require("../../../pictures/" + post.picturePath)
       : null
   );
-  const [userImageUrl, setuserImageUrl] = useState(
+  const [postOwnerUserImageUrl, setpostOwnerUserImageUrl] = useState(
     props.post.userPicturePath !== undefined
       ? require("../../../pictures/" + props.post.userPicturePath)
       : null
@@ -44,7 +47,7 @@ export const Post = (props) => {
       setComments([]);
       const resp = await makeComment(
         post._id,
-        `${userName}${subComment}`,
+        `${loggedInUserPicturePath}${loggedInUserName}${subComment}`,
         localStorage.getItem("userToken")
       );
       setPost(resp);
@@ -71,35 +74,45 @@ export const Post = (props) => {
   const getUserPicturePathFromComment = (cmt) => {
     return cmt.split(":")[0];
   };
-  const getUserCommentFromComment = (cmt) => {
+  const getUserNamePathFromComment = (cmt) => {
     return cmt.split(":")[1];
   };
+  const getUserCommentFromComment = (cmt) => {
+    return cmt.split(":")[2];
+  };
   useEffect(() => {}, [comments]);
-
 
   return (
     <>
       <div className="post-container">
         <div className="user-container">
-          <img src={userImageUrl} style={{ width: "40px", height: "40px" }} />
-          <div>{userName}</div>
+          <img
+            src={postOwnerUserImageUrl}
+            style={{ width: "40px", height: "40px" }}
+          />
+          <div>
+            {post.firstName} {post.lastName}
+          </div>
         </div>
 
         <div className="header">{post.title}</div>
-        {imageUrl && <img src={imageUrl} style={{ width: "60%" }} />}
+        {postImageUrl && <img src={postImageUrl} style={{ width: "60%" }} />}
         <p>{post.description}</p>
         <div className="heart-comment-container">
           <button>
-            <img
-              src={heartIcon}
-              style={{ width: "20px", height: "20px" }}
-              onClick={handleLikes}
-            />
-{/*             <img
-              src={redHeartIcon}
-              style={{ width: "20px", height: "20px" }}
-              onClick={handleLikes}
-            /> */}
+            {post.likes[localStorage.getItem("userId")] ? (
+              <img
+                src={redHeartIcon}
+                style={{ width: "20px", height: "20px" }}
+                onClick={handleLikes}
+              />
+            ) : (
+              <img
+                src={heartIcon}
+                style={{ width: "20px", height: "20px" }}
+                onClick={handleLikes}
+              />
+            )}
             {likeNumber}
           </button>
           <button onClick={handleHideComment}>
@@ -127,7 +140,25 @@ export const Post = (props) => {
             </div>
             <div className="comment-Block-container">
               {comments.map((cmt) => {
-                return <div className="comment-Block">{cmt}</div>;
+                let pictureOfCommenter;
+                if (getUserPicturePathFromComment(cmt) !== undefined) {
+                  pictureOfCommenter = require("../../../pictures/" +
+                    getUserPicturePathFromComment(cmt));
+                } else {
+                  pictureOfCommenter = null;
+                }
+                const name = getUserNamePathFromComment(cmt);
+                const comment = getUserCommentFromComment(cmt);
+                return (
+                  <div className="comment-Block">
+                    {" "}
+                    <img
+                      src={pictureOfCommenter}
+                      style={{ width: "40px", height: "40px" }}
+                    />
+                    {name}:{comment}
+                  </div>
+                );
               })}
             </div>
           </div>
