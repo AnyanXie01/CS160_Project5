@@ -62,21 +62,25 @@
 }
 
 @media screen and (max-width: 700px) {
-    /* .header{
-        font-size: 12px;
+    .header{
+        display: none;
     }
     .side-menu-cotainer{
         gap: 5px;
         padding: 25px 35px;
+        flex-direction: row;
+        width: 100%;
+
     }
     
     .side-menu-row button{
-        font-size: 10px;
-    }
-    .side-menu-row button{
-        padding: 8px;
-    } */
+        font-size: 14px;
+        padding: 12px;
+    } 
     .side-menu-cotainer {
+        flex-direction: row;
+    }
+    .side-menu-cotainer img{
         display: none;
     }
 }
