@@ -7,6 +7,9 @@ export const CreatePost = (props) => {
   const [titleValue, setTitleValue] = useState("");
   const [contentValue, setContentValue] = useState("");
   const fixPicturePath = (path) => {
+    if (path === "") {
+      return undefined;
+    }
     const parts = path.split(/[\\\/]/);
     return parts[parts.length - 1];
   };
