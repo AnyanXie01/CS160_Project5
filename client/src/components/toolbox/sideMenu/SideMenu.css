@@ -84,3 +84,10 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 400px){
+    .side-menu-row button{
+        font-size: 8px;
+        padding: 6px;
+    } 
+}

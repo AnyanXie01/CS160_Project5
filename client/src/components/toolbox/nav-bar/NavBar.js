@@ -50,7 +50,7 @@ export function NavBar(props){
                         </Link>
                         <Link to="/resume-builder" className="nav-link"><button className={props.navButtonSelection==="resumeBuilder" ? 'selected-nav-Button' : ''}>Resume Builder</button></Link>
                         <Link to="/resources" className="nav-link"><button className={props.navButtonSelection==="resources" ? 'selected-nav-Button' : ''}>Resources</button></Link>
-                        <button><img src={mode} alt="mode switching" className="mode-icon nav-link" style={{ width: "24px", height: "24px"}}/></button>
+                        {/* <button><img src={mode} alt="mode switching" className="mode-icon nav-link" style={{ width: "24px", height: "24px"}}/></button> */}
                         <Link to="/profile"><img src={profileImage} alt="profile" className="profile-pic nav-link" style={{ width: "48px", height: "48px"}}/></Link>
                     </div>
                 </div>

@@ -47,10 +47,6 @@ export function CareerExperience() {
     setTop(true);
   };
   return (
-    // <>
-    //   <BodyHeader titleArr={titleArr} />
-    //   <CreatePost />
-    // </>
     <div className="ProjectCollab-body">
       <BodyHeader titleArr={titleArr} />
       <CreatePost
