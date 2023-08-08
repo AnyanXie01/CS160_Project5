@@ -1,4 +1,25 @@
-.left-col-containers{
+.phone-side-menu{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    padding: 30px 20px;
     border: 0.25px solid var(--grey-lighter, #909090);
-    background-color: var(--background-secondary, #FAFAFA) !important;
+    background-color: var(--background-secondary, #FAFAFA);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
+}
+
+.nav-link button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.736px;
 }

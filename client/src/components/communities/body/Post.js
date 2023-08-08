@@ -1,6 +1,7 @@
 import "./Post.css";
 import { useEffect, useState } from "react";
 import heartIcon from "./images/heart.png";
+import redHeartIcon from "./images/RedHeart.png";
 import commentIcon from "./images/comment.png";
 import { likePost, makeComment } from "../../../utils.js";
 export const Post = (props) => {
@@ -75,6 +76,7 @@ export const Post = (props) => {
   };
   useEffect(() => {}, [comments]);
 
+
   return (
     <>
       <div className="post-container">
@@ -93,6 +95,11 @@ export const Post = (props) => {
               style={{ width: "20px", height: "20px" }}
               onClick={handleLikes}
             />
+{/*             <img
+              src={redHeartIcon}
+              style={{ width: "20px", height: "20px" }}
+              onClick={handleLikes}
+            /> */}
             {likeNumber}
           </button>
           <button onClick={handleHideComment}>

@@ -79,7 +79,8 @@ export function PeerInterview() {
           </div>
         </div>
         <div className="page-number">
-          <div>Page {startingIndex + 1}</div>
+          
+          <div>Page {Math.floor(startingIndex / 5 )+ 1}</div>
         </div>
       </div>
       {posts.map((post, index) => {
