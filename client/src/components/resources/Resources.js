@@ -13,7 +13,7 @@ import "./Resources.css";
 export function Resources() {
   // a array of [row-content, icon image for the row content, reducer matched to that row]
   let sideMenuRowArr = [
-    ["Data Structure and Algorithms", DataAlgoIcon, showDataAlgo],
+    ["Data Structures and Algorithms", DataAlgoIcon, showDataAlgo],
     ["Internship Search", InternSearchIcon, showInternSearch],
     ["Sample Resumes", SampleResumeIcon, showSampleResume],
   ];

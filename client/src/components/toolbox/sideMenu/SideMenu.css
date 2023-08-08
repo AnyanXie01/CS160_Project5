@@ -33,6 +33,7 @@
     font-weight: 700;
     line-height: normal;
     border-radius: 40px;
+    text-align: left;
 }
 .side-menu-row .icon{
     width: 20px;
@@ -70,7 +71,7 @@
         padding: 25px 35px;
         flex-direction: row;
         width: 100%;
-
+        overflow:  scroll;
     }
     
     .side-menu-row button{

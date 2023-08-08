@@ -7,7 +7,7 @@
 
 .prev-next-container, .latest-top-container{
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
 
 .blue-nav-button {
@@ -54,8 +54,6 @@
   .post-nav-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 55vw;
   }
   .page-number{
     display: flex;
@@ -77,8 +75,8 @@
     outline: none;
     cursor: pointer;
   }
-  @media screen and (max-width: 700px){
+  /* @media screen and (max-width: 700px){
     .post-nav-container{
       width: 30vw;
     }
-  }
+  } */
