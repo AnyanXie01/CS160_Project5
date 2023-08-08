@@ -6,6 +6,13 @@ import { useEffect, useState } from "react";
 export const CreatePost = (props) => {
   const [titleValue, setTitleValue] = useState("");
   const [contentValue, setContentValue] = useState("");
+  const pictureArray = [
+    "Profile.png",
+    "proj4_1.png",
+    "proj4_2.png",
+    "proj4_3.png",
+    "sc2.png",
+  ];
   const fixPicturePath = (path) => {
     if (path === "") {
       return undefined;
@@ -28,6 +35,12 @@ export const CreatePost = (props) => {
     const title = titleValue;
     const description = contentValue;
     const picture = document.getElementById("file-input").value;
+    if (!pictureArray.includes(fixPicturePath(picture))) {
+      alert(
+        "Upload picture feature is in progress. Please choose the picture from src/picture folder."
+      );
+      return;
+    }
     if (!localStorage.getItem("loggedIn")) {
       alert("Please log in first");
       return;
