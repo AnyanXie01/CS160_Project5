@@ -99,40 +99,38 @@ const tools = [
 export function DataAlgo() {
   let titleArr = [DataAlgoIcon, "Data Structures and Algorithms", ""];
   return (
-    <>
+    <div className="content">
       <BodyHeader titleArr={titleArr} />
-      <div className="content">
-        <div className="section">
-          <div className="section-header">
-            <h2>Practice Tools</h2>
-          </div>
-          <div className="tool-container">
-            {tools.map((tool) => (
-              <Tool
-                name={tool.name}
-                logo={tool.logo}
-                link={tool.link}
-                key={tool.name}
-              />
-            ))}
-          </div>
+      <div className="section">
+        <div className="section-header">
+          <h2>Practice Tools</h2>
         </div>
-        <div className="section">
-          <div className="section-header">
-            <h2>Resources</h2>
-          </div>
-          <div className="resources-container">
-            {ResourcesCollection.map((topic, index) => (
-              <Collapsible
-                title={topic.title}
-                content={topic.content}
-                key={index}
-              />
-            ))}
-          </div>
+        <div className="tool-container">
+          {tools.map((tool) => (
+            <Tool
+              name={tool.name}
+              logo={tool.logo}
+              link={tool.link}
+              key={tool.name}
+            />
+          ))}
         </div>
       </div>
-    </>
+      <div className="section">
+        <div className="section-header">
+          <h2>Resources</h2>
+        </div>
+        <div className="resources-container">
+          {ResourcesCollection.map((topic, index) => (
+            <Collapsible
+              title={topic.title}
+              content={topic.content}
+              key={index}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 export default DataAlgo;

@@ -2,6 +2,7 @@ import "./InternshipSearch.css";
 import data from "./internshipscollection.json";
 
 import Tool from "../Tool";
+import { BodyHeader } from "../../toolbox/header/BodyHeader";
 
 import LinkIcon from "../images/icons/link arrow.png";
 import InternshipSearchIcon from "../images/icons/internshipsearch.png";
@@ -70,16 +71,10 @@ const tools = [
 ];
 
 export function InternshipSearch() {
+  let titleArr = [InternshipSearchIcon, "Internship Search", ""];
   return (
     <div className="content">
-      <div className="title">
-        <img
-          className="title-icon"
-          src={InternshipSearchIcon}
-          alt="Data Structures and Algorithms"
-        ></img>
-        <h1>Internship Search</h1>
-      </div>
+      <BodyHeader titleArr={titleArr} />
       <div className="section">
         <div className="section-header">
           <h2>Tools</h2>

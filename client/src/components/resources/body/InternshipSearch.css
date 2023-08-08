@@ -153,7 +153,7 @@
     gap: 8px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
     .position-card {
         gap: 2%;
     }
@@ -168,9 +168,19 @@
     .link-container {
         width: 45%;
     }
+    .tool-card {
+        width: 48%;
+    }   
+    .tool-container {
+        padding-right: 60px;
+        row-gap: 30px;
+        flex-wrap: wrap;
+    }
+    .resources-container {
+        padding-right: 60px;
+    }
 }
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
     .position-card {
         flex-direction: column;
         gap: 20px;
@@ -186,22 +196,15 @@
     .link-container {
         width: 100%;
     }
-}
-@media screen and (min-width: 700px) {
-    .tool-card {
-        width: 48%;
-    }   
-    .tool-container {
-        row-gap: 30px;
-        flex-wrap: wrap;
-    }
-}
-@media screen and (max-width: 700px) {
     .tool-card {
         width: 100%;
     }
     .tool-container {
+        padding-right: 0px;
         row-gap: 15px;
         flex-direction: column;
+    }
+    .resources-container {
+        padding-right: 0px;
     }
 }
