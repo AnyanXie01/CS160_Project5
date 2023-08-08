@@ -118,10 +118,11 @@ export const Post = (props) => {
               />
               <button onClick={handleMakeComment} className="submit-button"> submit </button>
             </div>
-
-            {comments.map((cmt) => {
-              return <div className="comment-Block">{cmt}</div>;
-            })}
+            <div className="comment-Block-container">
+              {comments.map((cmt) => {
+                return <div className="comment-Block">{cmt}</div>;
+              })}
+            </div>
           </div>
         )}
       </div>
