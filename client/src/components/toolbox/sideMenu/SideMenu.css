@@ -62,7 +62,18 @@
 }
 
 @media screen and (max-width: 700px) {
+    .header{
+        font-size: 12px;
+    }
     .side-menu-cotainer{
-        display: none;
+        gap: 5px;
+        padding: 25px 35px;
+    }
+    
+    .side-menu-row button{
+        font-size: 10px;
+    }
+    .side-menu-row button{
+        padding: 8px;
     }
 }
