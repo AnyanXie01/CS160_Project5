@@ -9,16 +9,17 @@
 
 .innerContainer{
     display: flex;
-    align-items: center;
+    padding: 30px;
     flex-direction: column;
-    width: 35%;
-    height: 80%;
-    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     border-radius: 20px;
     background: var(--background-secondary, #FAFAFA);
     box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
-    padding: 30px;
+    width: 30%;
 }
+
 .logo-header-container{
     display: flex;
     flex-direction: column;
@@ -42,12 +43,11 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 100%;
 }
 .logo-header-container h1{
     color: var(--primary, #455487); 
     font-family: Manrope;
-    font-size: 26px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -56,9 +56,7 @@
 
 .innerContainer button{
     display: flex;
-    padding: 12px 15px;
-    width: 78px;
-    height: 46px;
+    padding: 8px 10px;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
@@ -72,7 +70,9 @@
 }
 
 .innerContainer input{
-    width: 90% !important;
+    width: 100% !important;
+    background: var(--background, #EEE);
+    margin: 0;
 }
 
 .switch-to-sign-up{
@@ -88,11 +88,53 @@
     flex-wrap: wrap !important;
 }
 
-.sign-up{
+.sign-up {
     color: var(--primary, #455487) !important;
     font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    width: 100%;
+}
+
+.input-container p {
+    color: var(--grey, #606060);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.name-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+.profile-picture {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+    padding: 10.5px 7px 10.955px 13px;
+    border-radius: 100px;
+    background: var(--background, #EEE);
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .innerContainer {
+        width: 60%
+    }
 }
