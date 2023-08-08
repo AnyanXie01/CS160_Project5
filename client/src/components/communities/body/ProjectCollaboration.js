@@ -9,7 +9,7 @@ export function ProjectCollab() {
   let description =
     "Project Collaboration is a focused forum for student projects. Here, you can ask project-related questions, exchange ideas, or find team members for your projects. A practical platform for project discussion and team formation. Utilize this space for effective collaboration and knowledge exchange.";
   let titleArr = [ProjectCollabIcon, "Project Collaboration", description];
-
+  const forum = "ProjectCollaboration";
   const [posts, setPosts] = useState([]);
   const [startingIndex, setStartingIndex] = useState(0);
   const [top, setTop] = useState(false);
@@ -19,7 +19,11 @@ export function ProjectCollab() {
   }, [top, created]);
   const getPosts = async () => {
     try {
-      const resp = await getFeedPost(top, localStorage.getItem("userToken"));
+      const resp = await getFeedPost(
+        top,
+        forum,
+        localStorage.getItem("userToken")
+      );
       setPosts(resp);
     } catch (err) {
       alert(err);
@@ -49,17 +53,25 @@ export function ProjectCollab() {
         setPosts={setPosts}
         setCreated={setCreated}
         created={created}
-        forum={"ProjectCollaboration"}
+        forum={forum}
       ></CreatePost>
 
       <div className="post-nav-buttons">
         <div className="latest-top-container">
-          <button onClick={latestClick} className="blue-nav-button">Latest</button>
-          <button onClick={topClick} className="blue-nav-button">Top</button>
+          <button onClick={latestClick} className="blue-nav-button">
+            Latest
+          </button>
+          <button onClick={topClick} className="blue-nav-button">
+            Top
+          </button>
         </div>
         <div className="prev-next-container">
-          <button onClick={prevClick } className="black-nav-button">Prev</button>
-          <button onClick={nextClick} className="black-nav-button">Next</button>
+          <button onClick={prevClick} className="black-nav-button">
+            Prev
+          </button>
+          <button onClick={nextClick} className="black-nav-button">
+            Next
+          </button>
         </div>
       </div>
 

@@ -31,10 +31,13 @@ export const createPost = async (req, res) => {
 /* READ */
 export const getFeedPosts = async (req, res) => {
   try {
-    const { top } = req.params;
+    const { top, forum } = req.params;
 
     if (top === "true") {
       const post = await Post.aggregate([
+        {
+          $match: { forum: forum },
+        },
         {
           $addFields: {
             numberOfLikes: { $size: { $objectToArray: "$likes" } },
@@ -46,7 +49,7 @@ export const getFeedPosts = async (req, res) => {
       ]);
       res.status(200).json(post);
     } else {
-      const post = await Post.find().sort({ createdAt: -1 });
+      const post = await Post.find({ forum: forum }).sort({ createdAt: -1 });
       res.status(200).json(post);
     }
   } catch (err) {

@@ -49,8 +49,8 @@ export const createPost = async (data, userToken) => {
   return await response.json();
 };
 
-export const getFeedPost = async (top, userToken) => {
-  const loginUrl = `${domain}/posts/${top}`;
+export const getFeedPost = async (top, forum, userToken) => {
+  const loginUrl = `${domain}/posts/${top}/${forum}`;
   const data = { top: top };
   const response = await fetch(loginUrl, {
     method: "GET",

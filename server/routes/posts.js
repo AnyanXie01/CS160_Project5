@@ -11,7 +11,7 @@ const router = express.Router();
 
 /* READ */
 /* grab all feeds when we at the home page */
-router.get("/:top", verifyToken, getFeedPosts);
+router.get("/:top/:forum", verifyToken, getFeedPosts);
 router.get("/:userId/posts", verifyToken, getUserPosts);
 
 /* UPDATE */
