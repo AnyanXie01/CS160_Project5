@@ -59,7 +59,6 @@ export const Post = (props) => {
     setHideComments(!hideComment);
   };
 
-
   const [contentValue, setContentValue] = useState("");
   const handleContentChange = (event) => {
     setContentValue(event.target.value);
@@ -85,9 +84,7 @@ export const Post = (props) => {
         </div>
 
         <div className="header">{post.title}</div>
-        {
-          imageUrl && <img src={imageUrl} style={{ width: "60%" }} />
-        }
+        {imageUrl && <img src={imageUrl} style={{ width: "60%" }} />}
         <p>{post.description}</p>
         <div className="heart-comment-container">
           <button>
@@ -107,16 +104,19 @@ export const Post = (props) => {
           <div className="comment-container">
             <div className="add-comment-container">
               <textarea
-              id="comment_input" 
-              name="comment"
-              type="text"
-              className="auto-expanding-textarea"
-              placeholder="Add a comment"
-              value={contentValue}
-              onChange={handleContentChange}
-              style={calculateTextareaHeight(contentValue)}
+                id="comment_input"
+                name="comment"
+                type="text"
+                className="auto-expanding-textarea"
+                placeholder="Add a comment"
+                value={contentValue}
+                onChange={handleContentChange}
+                style={calculateTextareaHeight(contentValue)}
               />
-              <button onClick={handleMakeComment} className="submit-button"> submit </button>
+              <button onClick={handleMakeComment} className="submit-button">
+                {" "}
+                submit{" "}
+              </button>
             </div>
             <div className="comment-Block-container">
               {comments.map((cmt) => {
