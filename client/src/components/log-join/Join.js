@@ -38,12 +38,20 @@ export function Join() {
           <input type="password" />
         </div>
         <div className="profile-picture">
-          <img className="icon" src={AddProfile}></img>
+          {/* <img className="icon" src={AddProfile}></img> */}
+          <label htmlFor="profileImageInput">
+          <img className="icon" src={AddProfile} alt="Add Profile" />
+          </label>
+          <input
+            type="file"
+            id="profileImageInput"
+            style={{ display: "none" }}
+          />
         </div>
         <button>Create account</button>
         <div class="switch-to-sign-up">
           <div>Already have an account? </div>
-          <Link to="/join" className="link">
+          <Link to="/login" className="link">
             <div className="sign-up">Log in</div>
           </Link>
         </div>
