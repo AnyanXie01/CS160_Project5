@@ -6,23 +6,91 @@
     justify-content: center;
     align-items: center;
 }
+
 .innerContainer{
-    width: 480px;
-    height: 514px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+    height: 80%;
+    gap: 30px;
+    border-radius: 20px;
+    background: var(--background-secondary, #FAFAFA);
+    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.10);
+    padding: 30px;
 }
-.logo-container h2{
+.logo-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-container-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container-login h2{
     color: var(--text, #252525);
     font-family: Manrope;
-    font-size: 10px;
+    font-size: 10px !important;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
 }
-.header-container h2{
+.logo-header-container h1{
     color: var(--primary, #455487); 
     font-family: Manrope;
-    font-size: 20px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+.innerContainer button{
+    display: flex;
+    padding: 12px 15px;
+    width: 78px;
+    height: 46px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--primary, #455487);
+    color: var(--background-secondary, #FAFAFA);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.innerContainer input{
+    width: 90% !important;
+}
+
+.switch-to-sign-up{
+    display: flex;
+    width: 269px;
+    gap: 20px;
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sign-up{
+    color: var(--primary, #455487) !important;
+    font-family: Manrope;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
