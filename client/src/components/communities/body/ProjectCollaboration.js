@@ -47,6 +47,7 @@ export function ProjectCollab() {
     setPosts([]);
     setTop(true);
   };
+
   return (
     <div className="ProjectCollab-body">
       <BodyHeader titleArr={titleArr} />
