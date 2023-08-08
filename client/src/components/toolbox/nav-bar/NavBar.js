@@ -37,6 +37,7 @@ export function NavBar(props){
     }, []);
   
 
+
     return(<nav>
                 <div className="nav-container">
                     <Link to="/" className="nav-link nav-left-container">
@@ -44,7 +45,9 @@ export function NavBar(props){
                             <h2>InternConnect</h2>
                     </Link>
                     <div className="nav-right-container">
-                        <Link to="/communities" className="nav-link"><button className={props.navButtonSelection==="communities" ? 'selected-nav-Button' : ''}>Communities</button></Link>
+                        <Link to="/communities" className="nav-link">
+                        <button className={props.navButtonSelection==="communities" ? 'selected-nav-Button' : ''}>Communities</button>
+                        </Link>
                         <Link to="/resume-builder" className="nav-link"><button className={props.navButtonSelection==="resumeBuilder" ? 'selected-nav-Button' : ''}>Resume Builder</button></Link>
                         <Link to="/resources" className="nav-link"><button className={props.navButtonSelection==="resources" ? 'selected-nav-Button' : ''}>Resources</button></Link>
                         <button><img src={mode} alt="mode switching" className="mode-icon nav-link" style={{ width: "24px", height: "24px"}}/></button>
