@@ -13,7 +13,7 @@ export function NavBar(props) {
   const sideMenuRef = useRef(null);
   const profileImage =
     localStorage.getItem("userPicturePath") === ""
-      ? null
+      ? require("../../../pictures/place-holder.png")
       : require("../../../pictures/" + localStorage.getItem("userPicturePath"));
   useEffect(() => {
     const handleClickOutside = (event) => {

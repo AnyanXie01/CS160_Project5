@@ -23,7 +23,7 @@ export const Post = (props) => {
   const [postOwnerUserImageUrl, setpostOwnerUserImageUrl] = useState(
     props.post.userPicturePath !== ""
       ? require("../../../pictures/" + props.post.userPicturePath)
-      : null
+      : require("../../../pictures/place-holder.png")
   );
   const handleLikes = async () => {
     //(postId, userId, userToken)
