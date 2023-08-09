@@ -16,12 +16,12 @@ export const Post = (props) => {
   const [comments, setComments] = useState(post.comments);
   const [hideComment, setHideComments] = useState(true);
   const [postImageUrl, setpostImageUrl] = useState(
-    post.picturePath !== undefined
+    post.picturePath !== ""
       ? require("../../../pictures/" + post.picturePath)
       : null
   );
   const [postOwnerUserImageUrl, setpostOwnerUserImageUrl] = useState(
-    props.post.userPicturePath !== undefined
+    props.post.userPicturePath !== ""
       ? require("../../../pictures/" + props.post.userPicturePath)
       : null
   );
@@ -141,7 +141,7 @@ export const Post = (props) => {
             <div className="comment-Block-container">
               {comments.map((cmt) => {
                 let pictureOfCommenter;
-                if (getUserPicturePathFromComment(cmt) !== undefined) {
+                if (getUserPicturePathFromComment(cmt) !== "") {
                   pictureOfCommenter = require("../../../pictures/" +
                     getUserPicturePathFromComment(cmt));
                 } else {
