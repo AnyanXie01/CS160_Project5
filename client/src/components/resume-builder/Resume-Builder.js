@@ -10,12 +10,10 @@ function ResumeBuilder() {
   let sideMenuRowArr = [
     ["Profile", null],
     ["Education", null],
-    ["Work Experience", null],
-    ["Project", null],
-    ["Tool", null],
-    ["Award", null],
-    ["LeaderShip", null],
-    ["Finish", null],
+    ["Experiences", null],
+    ["Projects", null],
+    ["Languages", null],
+    ["Tools", null],
   ];
 
   return (

@@ -2,14 +2,20 @@ import React, { useState } from "react";
 import AddIcon from "./add.png";
 import DeleteIcon from "./delete.png";
 import "./ResumeBuilder.css";
+import MyDocument from "./generate-pdf";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 
-export function Profile() {
+export function Profile({ onExtractProfileData }) {
   const [profileData, setProfileData] = useState({
     name: "",
     email: "",
     github: "",
   });
-
+  const extractAllProfileData = () => {
+    if (profileData) {
+      onExtractProfileData(profileData);
+    }
+  };
   const handleProfileInputChange = (event) => {
     const { name, value } = event.target;
     setProfileData((profileData) => ({ ...profileData, [name]: value }));
@@ -48,13 +54,14 @@ export function Profile() {
             placeholder="github.com/chrisdeep"
             onChange={handleProfileInputChange}
           />
+          <button onClick={extractAllProfileData}>Extract</button>
         </div>
       </div>
     </div>
   );
 }
 
-export function Education() {
+export function Education({ onExtractEducationData }) {
   const [eduData, setEduData] = useState({
     education: [
       {
@@ -88,7 +95,11 @@ export function Education() {
       ],
     });
   };
-
+  const extractAllEducationData = () => {
+    if (eduData) {
+      onExtractEducationData(eduData);
+    }
+  };
   const deleteEducation = (index) => {
     const newEducation = [...eduData.education];
     newEducation.splice(index, 1);
@@ -140,7 +151,7 @@ export function Education() {
             <p>Expected Graduation Date</p>
             <input
               type="text"
-              name="egd"
+              name="gradDate"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="May 2024"
             />
@@ -150,7 +161,7 @@ export function Education() {
             <p>Related Coursework</p>
             <input
               type="text"
-              name="work"
+              name="coursework"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="CS 61A, CS 61B"
             />
@@ -161,11 +172,12 @@ export function Education() {
         <img className="small-icon" src={AddIcon}></img>
         <p>Add an education</p>
       </button>
+      <button onClick={extractAllEducationData}>Extract</button>
     </div>
   );
 }
 
-export function Experience() {
+export function Experience({ onExtractExperienceData }) {
   const [userData, setUserData] = useState({
     experiences: [
       {
@@ -180,6 +192,12 @@ export function Experience() {
       },
     ],
   });
+
+  const extractAllExperienceData = () => {
+    if (userData) {
+      onExtractExperienceData(userData);
+    }
+  };
   const handleExperienceInputChange = (index, event) => {
     const { name, value } = event.target;
     const newExperiences = [...userData.experiences];
@@ -304,11 +322,12 @@ export function Experience() {
         <img className="small-icon" src={AddIcon}></img>
         <p>Add an experience</p>
       </button>
+      <button onClick={extractAllExperienceData}>Extract</button>
     </div>
   );
 }
 
-export function Project() {
+export function Project({ onExtractProjectData }) {
   const [userData, setUserData] = useState({
     project: [
       {
@@ -318,6 +337,12 @@ export function Project() {
       },
     ],
   });
+
+  const extractAllProjectData = () => {
+    if (userData) {
+      onExtractProjectData(userData);
+    }
+  };
   const handleProjectInputChange = (index, event) => {
     const { name, value } = event.target;
     const newProject = [...userData.project];
@@ -390,11 +415,12 @@ export function Project() {
         <img className="small-icon" src={AddIcon}></img>
         <p>Add a project</p>
       </button>
+      <button onClick={extractAllProjectData}>Extract</button>
     </div>
   );
 }
 
-export function Language() {
+export function Language({ onExtractLanguageData }) {
   const [userData, setUserData] = useState({
     language: [
       {
@@ -402,6 +428,12 @@ export function Language() {
       },
     ],
   });
+
+  const extractAllLanguageData = () => {
+    if (userData) {
+      onExtractLanguageData(userData);
+    }
+  };
   const handleLanguageInputChange = (index, event) => {
     const { name, value } = event.target;
     const newLanguage = [...userData.language];
@@ -453,11 +485,12 @@ export function Language() {
         <img className="small-icon" src={AddIcon}></img>
         <p>Add a language</p>
       </button>
+      <button onClick={extractAllLanguageData}>Extract</button>
     </div>
   );
 }
 
-export function Tool() {
+export function Tool({ onExtractToolData }) {
   const [userData, setUserData] = useState({
     tools: [
       {
@@ -465,6 +498,11 @@ export function Tool() {
       },
     ],
   });
+  const extractAllToolData = () => {
+    if (userData) {
+      onExtractToolData(userData);
+    }
+  };
   const handleToolInputChange = (index, event) => {
     const { name, value } = event.target;
     const newTool = [...userData.tools];
@@ -513,20 +551,93 @@ export function Tool() {
         <img className="small-icon" src={AddIcon}></img>
         <p>Add a tool</p>
       </button>
+      <button onClick={extractAllToolData}>Extract</button>
     </div>
   );
 }
 
 export function ResumeBuilderBody() {
+  /* extractedProfileData stores the data as {name: 'a', email: 'a', github: 'a'}*/
+  const [extractedProfileData, setExtractedProfileData] = useState([]);
+  const handleExtractProfileData = (data) => {
+    setExtractedProfileData(data);
+  };
+  console.log(extractedProfileData);
+
+  /*it is an array of education objects */
+  const [extractedEducationData, setExtractedEducationData] = useState([]);
+  const handleExtractEducationData = (data) => {
+    setExtractedEducationData(data);
+  };
+  console.log(extractedEducationData);
+  console.log(extractedEducationData.education);
+
+  /*it is an array of experience objects */
+  const [extractedExperienceData, setExtractedExperienceData] = useState([]);
+  const handleExtractExperienceData = (data) => {
+    setExtractedExperienceData(data);
+  };
+  console.log(extractedExperienceData);
+
+  /*it is an array of project objects */
+  const [extractedProjectData, setExtractedProjectData] = useState([]);
+  const handleExtractProjectData = (data) => {
+    setExtractedProjectData(data);
+  };
+  console.log(extractedProjectData);
+
+  /*it is an array of project objects */
+  const [extractedLanguageData, setExtractedLanguageData] = useState([]);
+  const handleExtractLanguageData = (data) => {
+    setExtractedLanguageData(data);
+  };
+  console.log(extractedLanguageData);
+
+  /*it is an array of project objects */
+  const [extractedToolData, setExtractedToolData] = useState([]);
+  const handleExtractToolData = (data) => {
+    setExtractedToolData(data);
+  };
+  console.log(extractedToolData);
+
+  const consolidateAllData = () => {
+    const allData = {
+      profile: extractedProfileData,
+      education: extractedEducationData.education,
+      experience: extractedExperienceData.experiences,
+      project: extractedProjectData.project,
+      language: extractedLanguageData.language,
+      tool: extractedToolData.tools,
+    };
+    console.log(allData);
+  };
+
   return (
     <div className="content">
-      <Profile />
-      <Education />
-      <Experience />
-      <Project />
-      <Language />
-      <Tool />
-      <button className="finish-button">Finish</button>
+      <Profile onExtractProfileData={setExtractedProfileData} />
+      <Education onExtractEducationData={setExtractedEducationData} />
+      <Experience onExtractExperienceData={setExtractedExperienceData} />
+      <Project onExtractProjectData={setExtractedProjectData} />
+      <Language onExtractLanguageData={setExtractedLanguageData} />
+      <Tool onExtractToolData={setExtractedToolData} />
+      <button className="finish-button" onClick={consolidateAllData}>
+        Finish
+      </button>
+
+      <PDFDownloadLink
+        document={
+          <MyDocument
+            profile={extractedProfileData}
+            education={extractedEducationData.education}
+            experience={extractedExperienceData.experiences}
+            project={extractedProjectData.project}
+            language={extractedLanguageData.language}
+            tool={extractedToolData.tools}
+          ></MyDocument>
+        }
+      >
+        <button className="finish-button">Download</button>
+      </PDFDownloadLink>
     </div>
   );
 }
