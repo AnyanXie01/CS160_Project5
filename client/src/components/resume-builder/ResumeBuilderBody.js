@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import AddIcon from "./add.png";
+import DeleteIcon from "./delete.png";
+import "./ResumeBuilder.css";
 
 export function Profile() {
   const [profileData, setProfileData] = useState({
@@ -9,50 +12,50 @@ export function Profile() {
 
   const handleProfileInputChange = (event) => {
     const { name, value } = event.target;
-    setProfileData((prevData) => ({ ...prevData, [name]: value }));
+    setProfileData((profileData) => ({ ...profileData, [name]: value }));
   };
 
   return (
-    <div className="profile-section">
-      <p className="heading">Profile</p>
-
-      <label>
-        Name:
-        <input
-          type="text"
-          name="name"
-          value={profileData.name}
-          onChange={handleProfileInputChange}
-        />
-      </label>
-      <br />
-
-      <label>
-        Email:
-        <input
-          type="email"
-          name="email"
-          value={profileData.email}
-          onChange={handleProfileInputChange}
-        />
-      </label>
-      <br />
-
-      <label>
-        GitHub Account:
-        <input
-          type="text"
-          name="github"
-          value={profileData.github}
-          onChange={handleProfileInputChange}
-        />
-      </label>
+    <div className="resume-section">
+      <h1>Profile</h1>
+      <div className="resume-input-container">
+        <div className="input-container">
+          <p>Name</p>
+          <input
+            type="text"
+            name="name"
+            value={profileData.name}
+            placeholder="ChrisDeep"
+            onChange={handleProfileInputChange}
+          />
+        </div>
+        <div className="input-container">
+          <p>Email</p>
+          <input
+            type="email"
+            name="email"
+            value={profileData.email}
+            placeholder="chrisdeep@berkeley.edu"
+            onChange={handleProfileInputChange}
+          />
+        </div>
+        <div className="input-container">
+          <p>GitHub Account</p>
+          <input
+            type="text"
+            name="github"
+            value={profileData.github}
+            placeholder="github.com/chrisdeep"
+            onChange={handleProfileInputChange}
+          />
+        </div>
+      </div>
     </div>
   );
 }
 
 export function Education() {
-  const [userData, setUserData] = useState({
+  const [eduData, setEduData] = useState({
     education: [
       {
         degree: "",
@@ -65,16 +68,16 @@ export function Education() {
   });
   const handleEducationInputChange = (index, event) => {
     const { name, value } = event.target;
-    const newEducation = [...userData.education];
+    const newEducation = [...eduData.education];
     newEducation[index][name] = value;
-    setUserData({ ...userData, education: newEducation });
+    setEduData({ ...eduData, education: newEducation });
   };
 
   const addEducation = () => {
-    setUserData({
-      ...userData,
+    setEduData({
+      ...eduData,
       education: [
-        ...userData.education,
+        ...eduData.education,
         {
           degree: "",
           institution: "",
@@ -87,72 +90,75 @@ export function Education() {
   };
 
   const deleteEducation = (index) => {
-    const newEducation = [...userData.education];
+    const newEducation = [...eduData.education];
     newEducation.splice(index, 1);
-    setUserData({ ...userData, education: newEducation });
+    setEduData({ ...eduData, education: newEducation });
   };
 
   return (
-    <>
-      <p className="heading">Education</p>
-      {userData.education.map((edu, index) => (
-        <div className="resume-section" key={index}>
-          <label>
-            Degree:
+    <div className="resume-section">
+      <h1>Education</h1>
+      {eduData.education.map((edu, index) => (
+        <div className="resume-input-container" key={index}>
+          <div className="input-container">
+            <p>Degree</p>
             <input
               type="text"
               name="degree"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="Bachelor of Science (B.S.) in Computer Science"
             />
-          </label>
-          <br></br>
-          <label>
-            Institution:
+          </div>
+
+          <div className="input-container">
+            <p>Institution</p>
             <input
               type="text"
-              name="uni"
+              name="institution"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="React University"
             />
-          </label>
-          <br></br>
-          <label>
-            GPA:
+          </div>
+
+          <div className="input-container">
+            <p>GPA</p>
             <input
               type="text"
               name="gpa"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="3.8"
             />
-          </label>
-          <br></br>
-          <label>
-            Expected Graduation Date:
+          </div>
+
+          <div className="input-container">
+            <p>Expected Graduation Date</p>
             <input
               type="text"
               name="egd"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="May 2024"
             />
-          </label>
-          <br></br>
-          <label>
-            Related Coursework:
+          </div>
+
+          <div className="input-container">
+            <p>Related Coursework</p>
             <input
               type="text"
               name="work"
               onChange={(event) => handleEducationInputChange(index, event)}
               placeholder="CS 61A, CS 61B"
             />
-          </label>
+          </div>
           <button onClick={() => deleteEducation(index)}>
             Delete Experience
           </button>
         </div>
       ))}
-      <button onClick={addEducation}>Add Education</button>
-    </>
+      <button className="add-button" onClick={addEducation}>
+        <img className="small-icon" src={AddIcon}></img>
+        <p>Add an education</p>
+      </button>
+    </div>
   );
 }
 
@@ -204,96 +210,95 @@ export function Experience() {
   };
 
   return (
-    <>
-      <p className="heading">Experiences</p>
+    <div className="resume-section">
+      <h1>Experiences</h1>
       {userData.experiences.map((exp, index) => (
-        <div className="resume-section" key={index}>
-          <label>
-            Position:
+        <div className="resume-input-container" key={index}>
+          <div className="input-container">
+            <p>Position</p>
             <input
               type="text"
               name="position"
               placeholder="Software Engineering Intern"
               onChange={(event) => handleExperienceInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            Company:
+          </div>
+          <div className="input-container">
+            <p>Company</p>
             <input
               type="text"
               name="company"
               placeholder="Google"
               onChange={(event) => handleExperienceInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            City, State:
+          </div>
+          <div className="input-container">
+            <p>City, State</p>
             <input
               type="text"
               name="location"
               placeholder="Sunnyvale, CA"
               onChange={(event) => handleExperienceInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            Start Date:
+          </div>
+          <div className="input-container">
+            <p>Start Date</p>
             <input
               type="text"
               name="startdate"
               placeholder="May 2023"
               onChange={(event) => handleExperienceInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            End Date:
+          </div>
+
+          <div className="input-container">
+            <p>End Date</p>
             <input
               type="text"
               name="enddate"
               placeholder="August 2023"
               onChange={(event) => handleExperienceInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            Responsibility or Achievement 1:
+          </div>
+          <div className="input-container">
+            <p>Responsibility or Achievement 1</p>
             <input
               type="text"
               name="responsibility1"
               onChange={(event) => handleExperienceInputChange(index, event)}
               placeholder="Collaborated with the product development team to design, code, and implement new features in the company's main application, enhancing usability and performance. Utilized programming languages such as Python and Java, following Agile methodologies."
             />
-          </label>
-          <br></br>
-          <label>
-            Responsibility or Achievement 2:
+          </div>
+
+          <div className="input-container">
+            <p>Responsibility or Achievement 2</p>
             <input
               type="text"
               name="responsibility2"
               onChange={(event) => handleExperienceInputChange(index, event)}
               placeholder="Identified and fixed critical bugs in existing software, leading to a 25% reduction in customer-reported issues. Conducted code reviews and refactoring sessions to improve overall code quality and maintainability, contributing to best practices within the development team."
             />
-          </label>
-          <br></br>
-          <label>
-            Responsibility or Achievement 3:
+          </div>
+
+          <div className="input-container">
+            <p>Responsibility or Achievement 3</p>
             <input
               type="text"
               name="responsibility3"
               onChange={(event) => handleExperienceInputChange(index, event)}
               placeholder="Assisted in the creation and execution of automated test scripts, achieving a 40% reduction in manual testing time. Contributed to continuous integration (CI) and continuous deployment (CD) processes, enhancing the efficiency of development cycles and ensuring the reliability of software releases."
             />
-          </label>
+          </div>
           <button onClick={() => deleteExperience(index)}>
             Delete Experience
           </button>
         </div>
       ))}
-      <button onClick={addExperience}>Add Experience</button>
-    </>
+      <button className="add-button" onClick={addExperience}>
+        <img className="small-icon" src={AddIcon}></img>
+        <p>Add an experience</p>
+      </button>
+    </div>
   );
 }
 
@@ -318,7 +323,7 @@ export function Project() {
     setUserData({
       ...userData,
       project: [
-        ...userData.projects,
+        ...userData.project,
         {
           title: "",
           contribution1: "",
@@ -335,44 +340,46 @@ export function Project() {
   };
 
   return (
-    <>
-      <p className="heading">Projects</p>
+    <div className="resume-section">
+      <h1>Projects</h1>
       {userData.project.map((proj, index) => (
-        <div className="resume-section" key={index}>
-          <label>
-            Title:
+        <div className="resume-input-container" key={index}>
+          <div className="input-container">
+            <p>Title</p>
             <input
               type="text"
               name="title"
               placeholder="SmartHealth Tracker"
               onChange={(event) => handleProjectInputChange(index, event)}
             />
-          </label>
-          <br></br>
-          <label>
-            Contribution 1:
+          </div>
+
+          <div className="input-container">
+            <p>Contribution 1</p>
             <input
               type="text"
               name="contribution1"
               onChange={(event) => handleProjectInputChange(index, event)}
               placeholder="Developed mobile and web applications using React Native and React.js, and integrated real-time health data from multiple wearable devices using APIs."
             />
-          </label>
-          <br></br>
-          <label>
-            Contribution 2:
+          </div>
+          <div className="input-container">
+            <p>Contribution 2</p>
             <input
               type="text"
               name="contribution2"
               onChange={(event) => handleProjectInputChange(index, event)}
               placeholder="Implemented a personalized recommendation engine using machine learning algorithms that provided customized fitness and nutrition plans, and designed interactive features that led to a 30% increase in daily active users within three months."
             />
-          </label>
+          </div>
           <button onClick={() => deleteProject(index)}>Delete Project</button>
         </div>
       ))}
-      <button onClick={addProject}>Add Project</button>
-    </>
+      <button className="add-button" onClick={addProject}>
+        <img className="small-icon" src={AddIcon}></img>
+        <p>Add a project</p>
+      </button>
+    </div>
   );
 }
 
@@ -395,7 +402,7 @@ export function Language() {
     setUserData({
       ...userData,
       language: [
-        ...userData.Language,
+        ...userData.language,
         {
           language: "",
         },
@@ -410,24 +417,27 @@ export function Language() {
   };
 
   return (
-    <>
-      <p className="heading">Languages</p>
+    <div className="resume-section">
+      <h1>Languages</h1>
       {userData.language.map((lang, index) => (
-        <div className="resume-section" key={index}>
-          <label>
-            Language:
+        <div className="resume-input-container" key={index}>
+          <div className="input-container">
+            <p>Language</p>
             <input
               type="text"
               name="lang"
               placeholder="Python"
               onChange={(event) => handleLanguageInputChange(index, event)}
             />
-          </label>
+          </div>
           <button onClick={() => deleteLanguage(index)}>Delete Language</button>
         </div>
       ))}
-      <button onClick={addLanguage}>Add Language</button>
-    </>
+      <button className="add-button" onClick={addLanguage}>
+        <img className="small-icon" src={AddIcon}></img>
+        <p>Add a language</p>
+      </button>
+    </div>
   );
 }
 
@@ -435,14 +445,7 @@ export function Tool() {
   const [userData, setUserData] = useState({
     tools: [
       {
-        position: "",
-        company: "",
-        location: "",
-        startdate: "",
-        enddate: "",
-        responsibility1: "",
-        responsibility2: "",
-        responsibility3: "",
+        tool: "",
       },
     ],
   });
@@ -457,16 +460,9 @@ export function Tool() {
     setUserData({
       ...userData,
       tools: [
-        ...userData.Tool,
+        ...userData.tools,
         {
-          position: "",
-          company: "",
-          location: "",
-          startdate: "",
-          enddate: "",
-          responsibility1: "",
-          responsibility2: "",
-          responsibility3: "",
+          tool: "",
         },
       ],
     });
@@ -479,36 +475,45 @@ export function Tool() {
   };
 
   return (
-    <>
-      <p className="heading">Tools</p>
+    <div className="resume-section">
+      <h1 className="heading">Tools</h1>
       {userData.tools.map((tool, index) => (
-        <div className="resume-section" key={index}>
-          <label>
-            Tool:
+        <div className="resume-input-container" key={index}>
+          <button className="delete-button" onClick={() => deleteTool(index)}>
+            <img
+              className="icon"
+              src={DeleteIcon}
+              style={{ paddingLeft: 0 }}
+            ></img>
+          </button>
+          <div className="input-container">
+            <p>Tool</p>
             <input
               type="text"
-              name="lang"
+              name="tool"
               placeholder="Figma"
               onChange={(event) => handleToolInputChange(index, event)}
             />
-          </label>
-          <button onClick={() => deleteTool(index)}>Delete Tool</button>
+          </div>
         </div>
       ))}
-      <button onClick={addTool}>Add Tool</button>
-    </>
+      <button className="add-button" onClick={addTool}>
+        <img className="small-icon" src={AddIcon}></img>
+        <p>Add a tool</p>
+      </button>
+    </div>
   );
 }
 
 export function ResumeBuilderBody() {
   return (
-    <>
+    <div className="content">
       <Profile />
       <Education />
       <Experience />
       <Project />
       <Language />
       <Tool />
-    </>
+    </div>
   );
 }
