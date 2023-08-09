@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import React, { useState } from 'react';
 import "./NavBar.css";
-import mode from './images/Moon.png'
 import profileImage from './images/Profile.png';
 import logImage from './images/Logo.png';
 import menu from './images/Hamburger.png';
@@ -12,6 +11,30 @@ export function NavBar(props){
 
     const [sideMenu, setSideMenu] = useState(false);
     const [showHamburger, setShowHamburger] = useState(true);
+    const sideMenuRef = useRef(null);
+
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+          if (
+              sideMenu &&
+              sideMenuRef.current &&
+              !sideMenuRef.current.contains(event.target) &&
+              !event.target.classList.contains('hambuger-container')
+          ) {
+              setSideMenu(false);
+              setShowHamburger(true);
+          }
+      };
+
+      if (sideMenu) {
+          document.addEventListener('mousedown', handleClickOutside);
+      }
+
+      return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, [sideMenu]);
+
     function showSideMenu(){
         setSideMenu(true);
         setShowHamburger(false); 
@@ -55,7 +78,7 @@ export function NavBar(props){
                     <Link to="/profile"><img src={profileImage} alt="profile" className="profile-pic nav-link" style={{ width: "48px", height: "48px"}}/></Link>
                 </div>
                 
-                { sideMenu ? (<div className="side-menu-container">{sideMenu && <PhoneSideMenu/>}</div>) : (<></>)}
+                { sideMenu ? (<div className="side-menu-container">{sideMenu && <PhoneSideMenu sideMenuRef={sideMenuRef}/>}</div>) : (<></>)}
                 
         </nav>);
 }
