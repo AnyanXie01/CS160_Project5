@@ -27,6 +27,7 @@ export function LogIn() {
       localStorage.setItem("userId", resp.user._id);
       localStorage.setItem("userPicturePath", resp.user.userPicturePath);
       alert("Successfully logged in");
+      window.location.href = "http://localhost:3000/communities";
     } catch (err) {
       alert(err);
       console.log(err);
