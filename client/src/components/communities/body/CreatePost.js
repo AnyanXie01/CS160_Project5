@@ -15,7 +15,7 @@ export const CreatePost = (props) => {
   ];
   const fixPicturePath = (path) => {
     if (path === "") {
-      return undefined;
+      return "";
     }
     const parts = path.split(/[\\\/]/);
     return parts[parts.length - 1];
@@ -35,7 +35,7 @@ export const CreatePost = (props) => {
     const title = titleValue;
     const description = contentValue;
     const picture = document.getElementById("file-input").value;
-    if (!pictureArray.includes(fixPicturePath(picture))) {
+    if (picture !== "" && !pictureArray.includes(fixPicturePath(picture))) {
       alert(
         "Upload picture feature is in progress. Please choose the picture from src/picture folder."
       );

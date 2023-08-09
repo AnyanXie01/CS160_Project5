@@ -79,7 +79,7 @@ export const likePost = async (postId, userId, userToken) => {
   if (response.status > 300) {
     throw Error("Fail to create");
   }
-  console.log("processing");
+  // console.log("processing");
   return await response.json();
 };
 
