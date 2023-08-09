@@ -7,7 +7,7 @@ import logImage from './images/Logo.png';
 import menu from './images/Hamburger.png';
 import { PhoneSideMenu } from "../phone-size-sideMenu/PhoneSideMenu";
 import { useEffect } from "react";
-
+import { useRef } from "react";
 export function NavBar(props){
 
     const [sideMenu, setSideMenu] = useState(false);
@@ -16,7 +16,6 @@ export function NavBar(props){
         setSideMenu(true);
         setShowHamburger(false); 
     }
-
     useEffect(() => {
       const handleResize = () => {
         if (window.innerWidth >= 700) {
@@ -34,9 +33,7 @@ export function NavBar(props){
       return () => {
         window.removeEventListener('resize', handleResize);
       };
-    }, []);
-  
-
+    }, []); 
 
     return(<nav>
                 <div className="nav-container">
@@ -50,7 +47,6 @@ export function NavBar(props){
                         </Link>
                         <Link to="/resume-builder" className="nav-link"><button className={props.navButtonSelection==="resumeBuilder" ? 'selected-nav-Button' : ''}>Resume Builder</button></Link>
                         <Link to="/resources" className="nav-link"><button className={props.navButtonSelection==="resources" ? 'selected-nav-Button' : ''}>Resources</button></Link>
-                        {/* <button><img src={mode} alt="mode switching" className="mode-icon nav-link" style={{ width: "24px", height: "24px"}}/></button> */}
                         <Link to="/profile"><img src={profileImage} alt="profile" className="profile-pic nav-link" style={{ width: "48px", height: "48px"}}/></Link>
                     </div>
                 </div>
@@ -59,7 +55,7 @@ export function NavBar(props){
                     <Link to="/profile"><img src={profileImage} alt="profile" className="profile-pic nav-link" style={{ width: "48px", height: "48px"}}/></Link>
                 </div>
                 
-                { sideMenu ? (<div className="side-menu-container"><PhoneSideMenu/></div>) : (<></>)}
+                { sideMenu ? (<div className="side-menu-container">{sideMenu && <PhoneSideMenu/>}</div>) : (<></>)}
                 
         </nav>);
 }
