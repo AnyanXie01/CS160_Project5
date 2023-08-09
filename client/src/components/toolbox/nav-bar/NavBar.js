@@ -59,7 +59,15 @@ export function NavBar(props) {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  const handleLogOut = () => {
+    localStorage.removeItem("loggedIn");
+    localStorage.removeItem("firstName");
+    localStorage.removeItem("lastName");
+    localStorage.removeItem("userToken");
+    localStorage.removeItem("userId");
+    localStorage.removeItem("userPicturePath");
+    window.location.href = "http://localhost:3000/login";
+  };
   return (
     <nav>
       <div className="nav-container">
@@ -71,6 +79,7 @@ export function NavBar(props) {
           />
           <h2>InternConnect</h2>
         </Link>
+        <button onClick={handleLogOut}>Log out</button>
         <div className="nav-right-container">
           <Link to="/communities" className="nav-link">
             <button

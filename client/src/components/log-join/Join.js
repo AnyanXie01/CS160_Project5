@@ -4,6 +4,14 @@ import { Link } from "react-router-dom";
 import { register } from "../../utils.js";
 
 export function Join() {
+  const pictureArray = [
+    "Profile.png",
+    "proj4_1.png",
+    "proj4_2.png",
+    "proj4_3.png",
+    "sc2.png",
+    "place-holder.png",
+  ];
   const fixPicturePath = (path) => {
     if (path === "") {
       return "";
@@ -24,6 +32,13 @@ export function Join() {
       lastName === null
     ) {
       alert("Please enter first four fields");
+      return;
+    }
+    if (picture !== "" && !pictureArray.includes(fixPicturePath(picture))) {
+      alert(
+        "Upload picture feature is in progress. Please choose the picture from src/picture folder."
+      );
+      document.getElementById("profileImageInput").value = "";
       return;
     }
     const credential = {

@@ -12,6 +12,7 @@ export const CreatePost = (props) => {
     "proj4_2.png",
     "proj4_3.png",
     "sc2.png",
+    "place-holder.png",
   ];
   const fixPicturePath = (path) => {
     if (path === "") {
