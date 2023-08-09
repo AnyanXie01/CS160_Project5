@@ -18,7 +18,7 @@ export function Profile() {
   return (
     <div className="resume-section">
       <h1>Profile</h1>
-      <div className="resume-input-container">
+      <div className="resume-input-container" style={{ paddingTop: 30 }}>
         <div className="input-container">
           <p>Name</p>
           <input
@@ -100,6 +100,12 @@ export function Education() {
       <h1>Education</h1>
       {eduData.education.map((edu, index) => (
         <div className="resume-input-container" key={index}>
+          <button
+            className="delete-button"
+            onClick={() => deleteEducation(index)}
+          >
+            <img className="icon" src={DeleteIcon}></img>
+          </button>
           <div className="input-container">
             <p>Degree</p>
             <input
@@ -149,9 +155,6 @@ export function Education() {
               placeholder="CS 61A, CS 61B"
             />
           </div>
-          <button onClick={() => deleteEducation(index)}>
-            Delete Experience
-          </button>
         </div>
       ))}
       <button className="add-button" onClick={addEducation}>
@@ -214,6 +217,12 @@ export function Experience() {
       <h1>Experiences</h1>
       {userData.experiences.map((exp, index) => (
         <div className="resume-input-container" key={index}>
+          <button
+            className="delete-button"
+            onClick={() => deleteExperience(index)}
+          >
+            <img className="icon" src={DeleteIcon}></img>
+          </button>
           <div className="input-container">
             <p>Position</p>
             <input
@@ -289,9 +298,6 @@ export function Experience() {
               placeholder="Assisted in the creation and execution of automated test scripts, achieving a 40% reduction in manual testing time. Contributed to continuous integration (CI) and continuous deployment (CD) processes, enhancing the efficiency of development cycles and ensuring the reliability of software releases."
             />
           </div>
-          <button onClick={() => deleteExperience(index)}>
-            Delete Experience
-          </button>
         </div>
       ))}
       <button className="add-button" onClick={addExperience}>
@@ -344,6 +350,12 @@ export function Project() {
       <h1>Projects</h1>
       {userData.project.map((proj, index) => (
         <div className="resume-input-container" key={index}>
+          <button
+            className="delete-button"
+            onClick={() => deleteProject(index)}
+          >
+            <img className="icon" src={DeleteIcon}></img>
+          </button>
           <div className="input-container">
             <p>Title</p>
             <input
@@ -372,7 +384,6 @@ export function Project() {
               placeholder="Implemented a personalized recommendation engine using machine learning algorithms that provided customized fitness and nutrition plans, and designed interactive features that led to a 30% increase in daily active users within three months."
             />
           </div>
-          <button onClick={() => deleteProject(index)}>Delete Project</button>
         </div>
       ))}
       <button className="add-button" onClick={addProject}>
@@ -421,6 +432,12 @@ export function Language() {
       <h1>Languages</h1>
       {userData.language.map((lang, index) => (
         <div className="resume-input-container" key={index}>
+          <button
+            className="delete-button"
+            onClick={() => deleteLanguage(index)}
+          >
+            <img className="icon" src={DeleteIcon}></img>
+          </button>
           <div className="input-container">
             <p>Language</p>
             <input
@@ -430,7 +447,6 @@ export function Language() {
               onChange={(event) => handleLanguageInputChange(index, event)}
             />
           </div>
-          <button onClick={() => deleteLanguage(index)}>Delete Language</button>
         </div>
       ))}
       <button className="add-button" onClick={addLanguage}>
@@ -480,11 +496,7 @@ export function Tool() {
       {userData.tools.map((tool, index) => (
         <div className="resume-input-container" key={index}>
           <button className="delete-button" onClick={() => deleteTool(index)}>
-            <img
-              className="icon"
-              src={DeleteIcon}
-              style={{ paddingLeft: 0 }}
-            ></img>
+            <img className="icon" src={DeleteIcon}></img>
           </button>
           <div className="input-container">
             <p>Tool</p>
@@ -514,6 +526,7 @@ export function ResumeBuilderBody() {
       <Project />
       <Language />
       <Tool />
+      <button className="finish-button">Finish</button>
     </div>
   );
 }
