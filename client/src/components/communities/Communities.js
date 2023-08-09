@@ -20,6 +20,9 @@ export function Communities() {
   ];
   return (
     <>
+      {!localStorage.getItem("loggedIn")
+        ? (window.location.href = "http://localhost:3000/login")
+        : null}
       <NavBar
         navButtonSelection="communities"
         header="Communities"

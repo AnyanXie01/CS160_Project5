@@ -51,6 +51,7 @@ export function Join() {
     try {
       const resp = await register(credential);
       alert("Successfully created!");
+      window.location.href = "http://localhost:3000/login";
     } catch (err) {
       alert(err);
       console.log(err);

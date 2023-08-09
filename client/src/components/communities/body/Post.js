@@ -35,7 +35,7 @@ export const Post = (props) => {
       );
       setPost(resp);
       setLikeNumber(Object.keys(resp.likes).length);
-      alert("Successfully like / dislike!");
+      // alert("Successfully like / dislike!");
     } catch (err) {
       alert(err);
       console.log(err);
