@@ -145,7 +145,7 @@ export const Post = (props) => {
                   pictureOfCommenter = require("../../../pictures/" +
                     getUserPicturePathFromComment(cmt));
                 } else {
-                  pictureOfCommenter = null;
+                  pictureOfCommenter = require("../../../pictures/place-holder.png");
                 }
                 const name = getUserNamePathFromComment(cmt);
                 const comment = getUserCommentFromComment(cmt);
