@@ -557,7 +557,7 @@ export function ResumeBuilderBody() {
   const handleExtractEducationData = (data) => {
     setExtractedProfileData(data);
   };
-  console.log(extractedProfileData);
+  console.log(extractedEducationData);
 
   /*it is an array of experience objects */
   const [extractedExperienceData, setExtractedExperienceData] = useState([]);
