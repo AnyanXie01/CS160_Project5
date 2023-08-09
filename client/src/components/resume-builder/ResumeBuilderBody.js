@@ -474,7 +474,7 @@ export function Language({ onExtractLanguageData }) {
             <p>Language</p>
             <input
               type="text"
-              name="lang"
+              name="language"
               placeholder="Python"
               onChange={(event) => handleLanguageInputChange(index, event)}
             />
@@ -599,18 +599,6 @@ export function ResumeBuilderBody() {
   };
   console.log(extractedToolData);
 
-  const consolidateAllData = () => {
-    const allData = {
-      profile: extractedProfileData,
-      education: extractedEducationData.education,
-      experience: extractedExperienceData.experiences,
-      project: extractedProjectData.project,
-      language: extractedLanguageData.language,
-      tool: extractedToolData.tools,
-    };
-    console.log(allData);
-  };
-
   return (
     <div className="content">
       <Profile onExtractProfileData={setExtractedProfileData} />
@@ -619,9 +607,7 @@ export function ResumeBuilderBody() {
       <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
-      <button className="finish-button" onClick={consolidateAllData}>
-        Finish
-      </button>
+      <button className="finish-button">Finish</button>
 
       <PDFDownloadLink
         document={
