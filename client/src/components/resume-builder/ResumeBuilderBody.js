@@ -570,7 +570,6 @@ export function ResumeBuilderBody() {
     setExtractedEducationData(data);
   };
   console.log(extractedEducationData);
-  console.log(extractedEducationData.education);
 
   /*it is an array of experience objects */
   const [extractedExperienceData, setExtractedExperienceData] = useState([]);
