@@ -82,7 +82,7 @@ export function Join() {
             style={{ display: "none" }}
           />
         </div>
-        <button>Create account</button>
+        <button onClick={handleClick}>Create account</button>
         <div class="switch-to-sign-up">
           <div>Already have an account? </div>
           <Link to="/login" className="link">
