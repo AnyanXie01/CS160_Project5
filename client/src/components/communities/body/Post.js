@@ -53,7 +53,7 @@ export const Post = (props) => {
       setPost(resp);
       setComments(resp.comments);
       document.getElementById("comment_input").value = "";
-      alert("Successfully make comment!");
+      // alert("Successfully make comment!");
     } catch (err) {
       alert(err);
       console.log(err);
