@@ -45,3 +45,28 @@
     }
     
 }
+
+@media screen and (max-width: 700px){
+    .bodyheader-container p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .bodyheader-container p{
+        display: none;
+    }
+
+    .logo-container{
+        display: flex;
+        width: 80vw ;
+        /* justify-content: center !important */;
+    }
+    .logo-container img{
+        width: 30px !important;
+        height: 30px !important;
+    }
+    .logo-container h2{
+        font-size: 14px !important;
+    }
+}
