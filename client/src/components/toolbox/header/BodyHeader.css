@@ -1,9 +1,9 @@
 .bodyheader-container{
     display: flex;
     box-sizing: border-box;
-    width: 70vw;
+    width: 100%;
     height: auto;
-    padding: 50px 120px 0px 0px;
+    /* padding: 50px 120px 0px 0px; */
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;

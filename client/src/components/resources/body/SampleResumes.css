@@ -78,7 +78,7 @@
 }
 @media screen and (min-width: 700px) {
     .content {
-        padding: 0px 0px 60px 0px;
+        padding: 60px 80px 60px 0px;
     }
     .title {
         gap: 30px;
@@ -88,9 +88,6 @@
     }
     .resume-button {
         width: calc(50% - 15px);
-    }
-    .sample-resume-container {
-        margin-right: 60px;
     }
 }
 @media screen and (max-width: 700px) {
@@ -108,8 +105,5 @@
     }
     .resume-button {
         width: 100%;
-    }
-    .sample-resume-container {
-        margin-right: 0px;
     }
 }

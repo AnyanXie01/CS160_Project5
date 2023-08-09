@@ -47,7 +47,11 @@ export function CareerExperience() {
     setTop(true);
   };
   return (
-    <div className="ProjectCollab-body">
+    // <>
+    //   <BodyHeader titleArr={titleArr} />
+    //   <CreatePost />
+    // </>
+    <div className="content">
       <BodyHeader titleArr={titleArr} />
       <CreatePost
         setPosts={setPosts}
@@ -56,26 +60,24 @@ export function CareerExperience() {
         forum={forum}
       ></CreatePost>
       <div className="post-nav-container">
-        <div className="post-nav-buttons">
-          <div className="latest-top-container">
-            <button onClick={latestClick} className="blue-nav-button">
-              Latest
-            </button>
-            <button onClick={topClick} className="blue-nav-button">
-              Top
-            </button>
-          </div>
-          <div className="prev-next-container">
-            <button onClick={prevClick} className="black-nav-button">
-              Prev
-            </button>
-            <button onClick={nextClick} className="black-nav-button">
-              Next
-            </button>
-          </div>
+        <div className="latest-top-container">
+          <button onClick={latestClick} className="blue-nav-button">
+            Latest
+          </button>
+          <button onClick={topClick} className="blue-nav-button">
+            Top
+          </button>
         </div>
-        <div className="page-number">
-          <div>Page {Math.floor(startingIndex / 5 )+ 1}</div>
+        <div className="prev-next-container">
+          <button onClick={prevClick} className="black-nav-button">
+            Prev
+          </button>
+          <div className="page-number">
+            <div>Page {Math.floor(startingIndex / 5) + 1}</div>
+          </div>
+          <button onClick={nextClick} className="black-nav-button">
+            Next
+          </button>
         </div>
       </div>
       {posts.map((post, index) => {
