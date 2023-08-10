@@ -19,6 +19,9 @@ export function Resources() {
   ];
   return (
     <>
+      {!localStorage.getItem("loggedIn")
+        ? (window.location.href = "http://localhost:3000/login")
+        : null}
       <NavBar navButtonSelection="resources" />
       <div className="sideBar-Body-container">
         <SideMenu header="Resources" rowsArr={sideMenuRowArr} />

@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddIcon from "./add.png";
 import DeleteIcon from "./delete.png";
+import SaveIcon from "./save.png";
+import WarningIcon from "./warning.png";
+import CheckIcon from "./check.png";
+
 import "./ResumeBuilder.css";
 import MyDocument from "./generate-pdf";
-import { PDFDownloadLink } from "@react-pdf/renderer";
 
 export function Profile({ onExtractProfileData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [profileData, setProfileData] = useState({
     name: "",
     email: "",
@@ -14,11 +18,13 @@ export function Profile({ onExtractProfileData }) {
   const extractAllProfileData = () => {
     if (profileData) {
       onExtractProfileData(profileData);
+      setIsSaved(true);
     }
   };
   const handleProfileInputChange = (event) => {
     const { name, value } = event.target;
     setProfileData((profileData) => ({ ...profileData, [name]: value }));
+    setIsSaved(false);
   };
 
   return (
@@ -54,7 +60,22 @@ export function Profile({ onExtractProfileData }) {
             placeholder="github.com/chrisdeep"
             onChange={handleProfileInputChange}
           />
-          <button onClick={extractAllProfileData}>Extract</button>
+        </div>
+      </div>
+      <div className="button-state-container">
+        <button className="add-button" aria-label ="add button" onClick={extractAllProfileData}>
+          <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+          <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+        </button>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
         </div>
       </div>
     </div>
@@ -62,6 +83,7 @@ export function Profile({ onExtractProfileData }) {
 }
 
 export function Education({ onExtractEducationData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [eduData, setEduData] = useState({
     education: [
       {
@@ -78,6 +100,7 @@ export function Education({ onExtractEducationData }) {
     const newEducation = [...eduData.education];
     newEducation[index][name] = value;
     setEduData({ ...eduData, education: newEducation });
+    setIsSaved(false);
   };
 
   const addEducation = () => {
@@ -99,6 +122,7 @@ export function Education({ onExtractEducationData }) {
     if (eduData) {
       onExtractEducationData(eduData);
     }
+    setIsSaved(true);
   };
   const deleteEducation = (index) => {
     const newEducation = [...eduData.education];
@@ -113,9 +137,10 @@ export function Education({ onExtractEducationData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteEducation(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Degree</p>
@@ -168,16 +193,34 @@ export function Education({ onExtractEducationData }) {
           </div>
         </div>
       ))}
-      <button className="add-button" onClick={addEducation}>
-        <img className="small-icon" src={AddIcon}></img>
-        <p>Add an education</p>
-      </button>
-      <button onClick={extractAllEducationData}>Extract</button>
+      <div className="button-state-container">
+        <div className="resume-button-container">
+          <button className="add-button" aria-label ="add button" onClick={addEducation}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
+            <p>Add an education</p>
+          </button>
+          <button className="add-button" aria-label ="add button" onClick={extractAllEducationData}>
+            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+          </button>
+        </div>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function Experience({ onExtractExperienceData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [userData, setUserData] = useState({
     experiences: [
       {
@@ -197,12 +240,14 @@ export function Experience({ onExtractExperienceData }) {
     if (userData) {
       onExtractExperienceData(userData);
     }
+    setIsSaved(true);
   };
   const handleExperienceInputChange = (index, event) => {
     const { name, value } = event.target;
     const newExperiences = [...userData.experiences];
     newExperiences[index][name] = value;
     setUserData({ ...userData, experiences: newExperiences });
+    setIsSaved(false);
   };
 
   const addExperience = () => {
@@ -237,9 +282,10 @@ export function Experience({ onExtractExperienceData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteExperience(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="Delete icon"></img>
           </button>
           <div className="input-container">
             <p>Position</p>
@@ -318,16 +364,34 @@ export function Experience({ onExtractExperienceData }) {
           </div>
         </div>
       ))}
-      <button className="add-button" onClick={addExperience}>
-        <img className="small-icon" src={AddIcon}></img>
-        <p>Add an experience</p>
-      </button>
-      <button onClick={extractAllExperienceData}>Extract</button>
+      <div className="button-state-container">
+        <div className="resume-button-container">
+          <button className="add-button" aria-label ="add button" onClick={addExperience}>
+            <img className="small-icon" src={AddIcon} alt="Add icon"></img>
+            <p>Add an experience</p>
+          </button>
+          <button className="add-button" aria-label ="add button" onClick={extractAllExperienceData}>
+            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+          </button>
+        </div>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function Project({ onExtractProjectData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [userData, setUserData] = useState({
     project: [
       {
@@ -341,6 +405,7 @@ export function Project({ onExtractProjectData }) {
   const extractAllProjectData = () => {
     if (userData) {
       onExtractProjectData(userData);
+      setIsSaved(true);
     }
   };
   const handleProjectInputChange = (index, event) => {
@@ -348,6 +413,7 @@ export function Project({ onExtractProjectData }) {
     const newProject = [...userData.project];
     newProject[index][name] = value;
     setUserData({ ...userData, project: newProject });
+    setIsSaved(false);
   };
 
   const addProject = () => {
@@ -377,9 +443,10 @@ export function Project({ onExtractProjectData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteProject(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Title</p>
@@ -411,16 +478,34 @@ export function Project({ onExtractProjectData }) {
           </div>
         </div>
       ))}
-      <button className="add-button" onClick={addProject}>
-        <img className="small-icon" src={AddIcon}></img>
-        <p>Add a project</p>
-      </button>
-      <button onClick={extractAllProjectData}>Extract</button>
+      <div className="button-state-container">
+        <div className="resume-button-container">
+          <button className="add-button" aria-label ="add button" onClick={addProject}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
+            <p>Add a project</p>
+          </button>
+          <button className="add-button"aria-label ="add button" onClick={extractAllProjectData}>
+            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+          </button>
+        </div>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function Language({ onExtractLanguageData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [userData, setUserData] = useState({
     language: [
       {
@@ -432,6 +517,7 @@ export function Language({ onExtractLanguageData }) {
   const extractAllLanguageData = () => {
     if (userData) {
       onExtractLanguageData(userData);
+      setIsSaved(true);
     }
   };
   const handleLanguageInputChange = (index, event) => {
@@ -439,6 +525,7 @@ export function Language({ onExtractLanguageData }) {
     const newLanguage = [...userData.language];
     newLanguage[index][name] = value;
     setUserData({ ...userData, language: newLanguage });
+    setIsSaved(false);
   };
 
   const addLanguage = () => {
@@ -466,9 +553,10 @@ export function Language({ onExtractLanguageData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteLanguage(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Language</p>
@@ -481,16 +569,34 @@ export function Language({ onExtractLanguageData }) {
           </div>
         </div>
       ))}
-      <button className="add-button" onClick={addLanguage}>
-        <img className="small-icon" src={AddIcon}></img>
-        <p>Add a language</p>
-      </button>
-      <button onClick={extractAllLanguageData}>Extract</button>
+      <div className="button-state-container">
+        <div className="resume-button-container">
+          <button className="add-button" aria-label ="add button" onClick={addLanguage}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
+            <p>Add a language</p>
+          </button>
+          <button className="add-button" aria-label ="add button" onClick={extractAllLanguageData}>
+            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+          </button>
+        </div>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
 export function Tool({ onExtractToolData }) {
+  const [isSaved, setIsSaved] = useState(true);
   const [userData, setUserData] = useState({
     tools: [
       {
@@ -502,12 +608,14 @@ export function Tool({ onExtractToolData }) {
     if (userData) {
       onExtractToolData(userData);
     }
+    setIsSaved(true);
   };
   const handleToolInputChange = (index, event) => {
     const { name, value } = event.target;
     const newTool = [...userData.tools];
     newTool[index][name] = value;
     setUserData({ ...userData, tools: newTool });
+    setIsSaved(false);
   };
 
   const addTool = () => {
@@ -533,8 +641,8 @@ export function Tool({ onExtractToolData }) {
       <h1 className="heading">Tools</h1>
       {userData.tools.map((tool, index) => (
         <div className="resume-input-container" key={index}>
-          <button className="delete-button" onClick={() => deleteTool(index)}>
-            <img className="icon" src={DeleteIcon}></img>
+          <button className="delete-button" aria-label ="delete button" onClick={() => deleteTool(index)}>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Tool</p>
@@ -547,16 +655,33 @@ export function Tool({ onExtractToolData }) {
           </div>
         </div>
       ))}
-      <button className="add-button" onClick={addTool}>
-        <img className="small-icon" src={AddIcon}></img>
-        <p>Add a tool</p>
-      </button>
-      <button onClick={extractAllToolData}>Extract</button>
+      <div className="button-state-container">
+        <div className="resume-button-container">
+          <button className="add-button" aria-label ="add button" onClick={addTool}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
+            <p>Add a tool</p>
+          </button>
+          <button className="add-button" aria-label ="add button" onClick={extractAllToolData}>
+            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
+            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
+          </button>
+        </div>
+        <div className="add-button">
+          <img
+            className="small-icon"
+            src={isSaved ? CheckIcon : WarningIcon}
+            alt={isSaved ? "Check Icon" : "Warning Icon"}
+          ></img>
+          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved changes" : "Unsaved changes"}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
-export function ResumeBuilderBody() {
+export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
   /* extractedProfileData stores the data as {name: 'a', email: 'a', github: 'a'}*/
   const [extractedProfileData, setExtractedProfileData] = useState([]);
   const handleExtractProfileData = (data) => {
@@ -599,30 +724,44 @@ export function ResumeBuilderBody() {
   };
   console.log(extractedToolData);
 
+  const MyResume = (
+    <MyDocument
+      profile={extractedProfileData}
+      education={extractedEducationData.education}
+      experience={extractedExperienceData.experiences}
+      project={extractedProjectData.project}
+      language={extractedLanguageData.language}
+      tool={extractedToolData.tools}
+    />
+  );
+
+  useEffect(() => {
+    const allData = {
+      profile: extractedProfileData,
+      education: extractedEducationData.education,
+      experience: extractedExperienceData.experiences,
+      project: extractedProjectData.project,
+      language: extractedLanguageData.language,
+      tool: extractedToolData.tools,
+    };
+    setAllExtractedData(allData);
+  }, [
+    extractedProfileData,
+    extractedEducationData,
+    extractedExperienceData,
+    extractedProjectData,
+    extractedLanguageData,
+    extractedToolData,
+  ]);
+
   return (
-    <div className="content">
+    <>
       <Profile onExtractProfileData={setExtractedProfileData} />
       <Education onExtractEducationData={setExtractedEducationData} />
       <Experience onExtractExperienceData={setExtractedExperienceData} />
       <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
-      <button className="finish-button">Finish</button>
-
-      <PDFDownloadLink
-        document={
-          <MyDocument
-            profile={extractedProfileData}
-            education={extractedEducationData.education}
-            experience={extractedExperienceData.experiences}
-            project={extractedProjectData.project}
-            language={extractedLanguageData.language}
-            tool={extractedToolData.tools}
-          ></MyDocument>
-        }
-      >
-        <button className="finish-button">Download</button>
-      </PDFDownloadLink>
-    </div>
+    </>
   );
 }
