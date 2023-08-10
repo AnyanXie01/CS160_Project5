@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import heartIcon from "./images/heart.png";
 import redHeartIcon from "./images/RedHeart.png";
 import commentIcon from "./images/comment.png";
+import deleteIcon from "./images/delete.png";
 import { likePost, makeComment, deletePost } from "../../../utils.js";
 export const Post = (props) => {
   const [post, setPost] = useState(props.post);
@@ -99,14 +100,21 @@ export const Post = (props) => {
   return (
     <>
       <div className="post-container">
-        <div className="user-container">
-          <img
-            src={postOwnerUserImageUrl}
-            style={{ width: "40px", height: "40px" }}
-          />
-          <div>
-            {post.firstName} {post.lastName}
+        <div className="image-upload">
+          <div className="user-container">
+            <img
+              src={postOwnerUserImageUrl}
+              style={{ width: "30px", height: "30px" }}
+            />
+            <div>
+              {post.firstName} {post.lastName}
+            </div>
           </div>
+          {post.userId === localStorage.getItem("userId") ? (
+            <button className="delete-button" onClick={handleDelete}>
+              <img className="small-icon" src={deleteIcon}></img>
+            </button>
+          ) : null}
         </div>
 
         <div className="header">{post.title}</div>
@@ -133,10 +141,8 @@ export const Post = (props) => {
             <img src={commentIcon} style={{ width: "20px", height: "20px" }} />
             {comments.length}
           </button>
-          {post.userId === localStorage.getItem("userId") ? (
-            <button onClick={handleDelete}>Delete</button>
-          ) : null}
         </div>
+
         {hideComment ? null : (
           <div className="comment-container">
             <div className="add-comment-container">
@@ -151,8 +157,7 @@ export const Post = (props) => {
                 style={calculateTextareaHeight(contentValue)}
               />
               <button onClick={handleMakeComment} className="submit-button">
-                {" "}
-                Submit{" "}
+                Submit
               </button>
             </div>
             <div className="comment-Block-container">
@@ -171,7 +176,7 @@ export const Post = (props) => {
                     <div className="comment-user-container">
                       <img
                         src={pictureOfCommenter}
-                        style={{ width: "35px", height: "35px" }}
+                        style={{ width: "30px", height: "30px" }}
                       />
 
                       <p className="comment-user">{name}</p>

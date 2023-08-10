@@ -78,7 +78,7 @@ export function NavBar(props) {
         <img
           src={profileImage}
           className="profile-pic nav-link"
-          style={{ width: "48px", height: "48px", cursor: "pointer" }}
+          style={{ width: "30px", height: "30px", cursor: "pointer" }}
           onClick={() => setShowOverlay(!showOverlay)}
         />
 

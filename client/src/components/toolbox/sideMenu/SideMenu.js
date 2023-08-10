@@ -7,18 +7,26 @@ export function SideMenu({ header, rowsArr }) {
   const dispatch = useDispatch();
   const [clickedButtonIndex, setClickedButtonIndex] = useState(0);
 
-  function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
+  const scrollToSection = (id, offset = 0) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+
+      const finalPosition = elementPosition - 90 - offset;
+
+      window.scrollTo({
+        top: finalPosition,
+        behavior: "smooth",
+      });
     }
-  }
+  };
 
   function handleButtonClick(index) {
-
-    if (typeof rowsArr[index][2] === 'string'){
+    if (typeof rowsArr[index][2] === "string") {
+      setClickedButtonIndex(index);
       scrollToSection(rowsArr[index][2]);
-    } else{
+    } else {
       setClickedButtonIndex(index);
       dispatch(rowsArr[index][2]());
     }
