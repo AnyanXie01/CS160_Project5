@@ -4,6 +4,8 @@
     align-items: stretch;
     width: 100%;
     flex: 1 1;
+    margin-top: 80px;
+    margin-left: 30vw;
 }
 .resume-section {
     display: flex;
@@ -129,12 +131,21 @@ input {
 }
 
 @media screen and (min-width: 700px) {
+    .form-Body-container {
+        margin-left: 30vw;
+        margin-top: 80px;
+    }
+
     .resume-section {
         width: 60vw;
     }
 }
 
 @media screen and (max-width: 700px) {
+    .form-Body-container {
+        margin-left: 0;
+        margin-top: 0px;
+    }
     .resume-section {
         width: 90vw;
     }
