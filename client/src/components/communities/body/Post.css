@@ -99,15 +99,48 @@
   }
 
   .comment-Block-container{
-    padding: 20px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    align-items: stretch;
   }
-  .comment-Block{
+  .comment-Block {
+    display: flex;
+    flex-direction: column;
     background: var(--background, #EEE);
-    width: 100%;
     border-radius: 10px;
-    background: var(--background, #EEE);
-    padding: 10px;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .comment-user-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .comment-user-container p {
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .comment {
+    display: flex;
+  }
+
+  .comment p {
+    color: var(--text, #252525);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
   }
