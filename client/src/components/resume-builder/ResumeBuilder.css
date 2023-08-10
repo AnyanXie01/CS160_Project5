@@ -76,14 +76,14 @@ input {
 }
 
 .add-button p {
-    color: var(--primary-lighter, #8090CB);
-    font-family: Manrope;
+    color: var(--primary, #455487);    font-family: Manrope;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin-top: 0;
     margin-bottom: 0;
+    align-self: auto;
 }
 
 .delete-button {

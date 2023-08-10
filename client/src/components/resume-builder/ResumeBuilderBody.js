@@ -62,25 +62,33 @@ export function Profile({ onExtractProfileData }) {
           />
         </div>
       </div>
-      <div className="button-state-container">
-        <button
-          className="add-button"
-          aria-label="add button"
-          onClick={extractAllProfileData}
-        >
-          <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-          <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-        </button>
-        <div className="add-button">
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
+        <div className="add-button" style={{ cursor: "default" }}>
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllProfileData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -151,16 +159,6 @@ export function Education({ onExtractEducationData }) {
             ></img>
           </button>
           <div className="input-container">
-            <p>Degree</p>
-            <input
-              type="text"
-              name="degree"
-              onChange={(event) => handleEducationInputChange(index, event)}
-              placeholder="Bachelor of Science (B.S.) in Computer Science"
-            />
-          </div>
-
-          <div className="input-container">
             <p>Institution</p>
             <input
               type="text"
@@ -169,19 +167,27 @@ export function Education({ onExtractEducationData }) {
               placeholder="React University"
             />
           </div>
-
+          <div className="input-container">
+            <p>Degree</p>
+            <input
+              type="text"
+              name="degree"
+              onChange={(event) => handleEducationInputChange(index, event)}
+              placeholder="Bachelor of Science (B.S.) in Computer Science"
+            />
+          </div>
           <div className="input-container">
             <p>GPA</p>
             <input
               type="text"
               name="gpa"
               onChange={(event) => handleEducationInputChange(index, event)}
-              placeholder="3.8"
+              placeholder="3.8/4.0"
             />
           </div>
 
           <div className="input-container">
-            <p>Expected Graduation Date</p>
+            <p>Graduation Date</p>
             <input
               type="text"
               name="gradDate"
@@ -196,40 +202,47 @@ export function Education({ onExtractEducationData }) {
               type="text"
               name="coursework"
               onChange={(event) => handleEducationInputChange(index, event)}
-              placeholder="CS 61A, CS 61B"
+              placeholder="User Interface Design and Development, Data Structures, Computer Architecture"
             />
           </div>
         </div>
       ))}
-      <div className="button-state-container">
-        <div className="resume-button-container">
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={addEducation}
-          >
-            <img className="small-icon" src={AddIcon} alt="add icon"></img>
-            <p>Add an education</p>
-          </button>
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={extractAllEducationData}
-          >
-            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-          </button>
-        </div>
-        <div className="add-button">
+      <button
+        className="add-button"
+        aria-label="add button"
+        onClick={addEducation}
+        style={{ alignSelf: "flex-start" }}
+      >
+        <img className="small-icon" src={AddIcon} alt="add icon"></img>
+        <p>Add</p>
+      </button>
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
+        <div className="add-button" style={{ cursor: "default" }}>
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllEducationData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -384,35 +397,42 @@ export function Experience({ onExtractExperienceData }) {
           </div>
         </div>
       ))}
-      <div className="button-state-container">
-        <div className="resume-button-container">
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={addExperience}
-          >
-            <img className="small-icon" src={AddIcon} alt="Add icon"></img>
-            <p>Add an experience</p>
-          </button>
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={extractAllExperienceData}
-          >
-            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-          </button>
-        </div>
-        <div className="add-button">
+      <button
+        className="add-button"
+        aria-label="add button"
+        onClick={addExperience}
+        style={{ alignSelf: "flex-start" }}
+      >
+        <img className="small-icon" src={AddIcon} alt="Add icon"></img>
+        <p>Add</p>
+      </button>
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
+        <div className="add-button" style={{ cursor: "default" }}>
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllExperienceData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -510,35 +530,42 @@ export function Project({ onExtractProjectData }) {
           </div>
         </div>
       ))}
-      <div className="button-state-container">
-        <div className="resume-button-container">
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={addProject}
-          >
-            <img className="small-icon" src={AddIcon} alt="add icon"></img>
-            <p>Add a project</p>
-          </button>
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={extractAllProjectData}
-          >
-            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-          </button>
-        </div>
+      <button
+        className="add-button"
+        aria-label="add button"
+        onClick={addProject}
+        style={{ alignSelf: "flex-start" }}
+      >
+        <img className="small-icon" src={AddIcon} alt="add icon"></img>
+        <p>Add</p>
+      </button>
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
         <div className="add-button">
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllProjectData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -613,35 +640,42 @@ export function Language({ onExtractLanguageData }) {
           </div>
         </div>
       ))}
-      <div className="button-state-container">
-        <div className="resume-button-container">
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={addLanguage}
-          >
-            <img className="small-icon" src={AddIcon} alt="add icon"></img>
-            <p>Add a language</p>
-          </button>
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={extractAllLanguageData}
-          >
-            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-          </button>
-        </div>
-        <div className="add-button">
+      <button
+        className="add-button"
+        aria-label="add button"
+        onClick={addLanguage}
+        style={{ alignSelf: "flex-start" }}
+      >
+        <img className="small-icon" src={AddIcon} alt="add icon"></img>
+        <p>Add</p>
+      </button>
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
+        <div className="add-button" style={{ cursor: "default" }}>
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllLanguageData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -715,35 +749,42 @@ export function Tool({ onExtractToolData }) {
           </div>
         </div>
       ))}
-      <div className="button-state-container">
-        <div className="resume-button-container">
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={addTool}
-          >
-            <img className="small-icon" src={AddIcon} alt="add icon"></img>
-            <p>Add a tool</p>
-          </button>
-          <button
-            className="add-button"
-            aria-label="add button"
-            onClick={extractAllToolData}
-          >
-            <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
-            <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
-          </button>
-        </div>
-        <div className="add-button">
+      <button
+        className="add-button"
+        aria-label="add button"
+        onClick={addTool}
+        style={{ alignSelf: "flex-start" }}
+      >
+        <img className="small-icon" src={AddIcon} alt="add icon"></img>
+        <p>Add</p>
+      </button>
+      <div
+        className="resume-button-container"
+        style={{ alignSelf: "flex-end" }}
+      >
+        <div className="add-button" style={{ cursor: "default" }}>
           <img
             className="small-icon"
             src={isSaved ? CheckIcon : WarningIcon}
             alt={isSaved ? "Check Icon" : "Warning Icon"}
           ></img>
-          <p style={isSaved ? { color: "#6BD976" } : { color: "#F95C5C" }}>
-            {isSaved ? "Saved changes" : "Unsaved changes"}
+          <p style={isSaved ? { color: "#56AE5F" } : { color: "#F95C5C" }}>
+            {isSaved ? "Saved" : "Unsaved"}
           </p>
         </div>
+        <button
+          className="add-button"
+          aria-label="save button"
+          onClick={extractAllToolData}
+          style={{
+            borderRadius: "10px",
+            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.25)",
+            backgroundColor: "var(--primary-lighter, #FAFAFA)",
+            padding: "8px 12px",
+          }}
+        >
+          <p style={{ color: "var(--primary, #455487)" }}>Save changes</p>
+        </button>
       </div>
     </div>
   );
@@ -826,10 +867,10 @@ export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
     <>
       <Profile onExtractProfileData={setExtractedProfileData} />
       <Education onExtractEducationData={setExtractedEducationData} />
-      <Experience onExtractExperienceData={setExtractedExperienceData} />
-      <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
+      <Experience onExtractExperienceData={setExtractedExperienceData} />
+      <Project onExtractProjectData={setExtractedProjectData} />
     </>
   );
 }
