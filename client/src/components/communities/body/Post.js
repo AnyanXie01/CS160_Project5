@@ -100,50 +100,47 @@ export const Post = (props) => {
   return (
     <>
       <div className="post-container">
-        <div className="user-container">
-          <img
-            src={postOwnerUserImageUrl}
-            style={{ width: "40px", height: "40px" }}
-          />
-          <div>
-            {post.firstName} {post.lastName}
-          </div>
-        </div>
-
-        <div className="header">{post.title}</div>
-        {postImageUrl && <img src={postImageUrl} style={{ width: "60%" }} />}
-        <p>{post.description}</p>
         <div className="image-upload">
-          <div className="heart-comment-container">
-            <button>
-              {post.likes[localStorage.getItem("userId")] ? (
-                <img
-                  src={redHeartIcon}
-                  style={{ width: "20px", height: "20px" }}
-                  onClick={handleLikes}
-                />
-              ) : (
-                <img
-                  src={heartIcon}
-                  style={{ width: "20px", height: "20px" }}
-                  onClick={handleLikes}
-                />
-              )}
-              {likeNumber}
-            </button>
-            <button onClick={handleHideComment}>
-              <img
-                src={commentIcon}
-                style={{ width: "20px", height: "20px" }}
-              />
-              {comments.length}
-            </button>
+          <div className="user-container">
+            <img
+              src={postOwnerUserImageUrl}
+              style={{ width: "40px", height: "40px" }}
+            />
+            <div>
+              {post.firstName} {post.lastName}
+            </div>
           </div>
           {post.userId === localStorage.getItem("userId") ? (
             <button className="delete-button" onClick={handleDelete}>
               <img className="small-icon" src={deleteIcon}></img>
             </button>
           ) : null}
+        </div>
+
+        <div className="header">{post.title}</div>
+        {postImageUrl && <img src={postImageUrl} style={{ width: "60%" }} />}
+        <p>{post.description}</p>
+        <div className="heart-comment-container">
+          <button>
+            {post.likes[localStorage.getItem("userId")] ? (
+              <img
+                src={redHeartIcon}
+                style={{ width: "20px", height: "20px" }}
+                onClick={handleLikes}
+              />
+            ) : (
+              <img
+                src={heartIcon}
+                style={{ width: "20px", height: "20px" }}
+                onClick={handleLikes}
+              />
+            )}
+            {likeNumber}
+          </button>
+          <button onClick={handleHideComment}>
+            <img src={commentIcon} style={{ width: "20px", height: "20px" }} />
+            {comments.length}
+          </button>
         </div>
 
         {hideComment ? null : (

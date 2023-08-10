@@ -698,7 +698,11 @@ export function Tool({ onExtractToolData }) {
             aria-label="delete button"
             onClick={() => deleteTool(index)}
           >
-            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
+            <img
+              className="small-icon"
+              src={DeleteIcon}
+              alt="delete icon"
+            ></img>
           </button>
           <div className="input-container">
             <p>Tool</p>
@@ -819,13 +823,13 @@ export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
   ]);
 
   return (
-    <div className="content">
+    <>
       <Profile onExtractProfileData={setExtractedProfileData} />
       <Education onExtractEducationData={setExtractedEducationData} />
       <Experience onExtractExperienceData={setExtractedExperienceData} />
       <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
-    </div>
+    </>
   );
 }

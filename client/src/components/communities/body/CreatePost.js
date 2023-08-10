@@ -30,7 +30,7 @@ export const CreatePost = (props) => {
   };
 
   const calculateTextareaHeight = (value) => {
-    return { height: `${value.split("\n").length * 20}px` };
+    return { height: `${value.split("\n").length * 24}px` };
   };
   const handleClick = async () => {
     const title = titleValue;
@@ -61,6 +61,8 @@ export const CreatePost = (props) => {
     try {
       const resp = await createPost(data, localStorage.getItem("userToken"));
       alert("Successfully created!");
+      setTitleValue("");
+      setContentValue("");
       props.setPosts([]);
       props.setCreated(!props.created);
     } catch (err) {
@@ -75,20 +77,31 @@ export const CreatePost = (props) => {
         name="postHeader"
         type="text"
         className="auto-expanding-textarea"
-        placeholder="Enter the title"
+        placeholder="Title"
         value={titleValue}
         onChange={handleTitleChange}
-        style={calculateTextareaHeight(titleValue)}
+        style={{
+          ...calculateTextareaHeight(titleValue),
+          fontSize: "20px",
+          fontWeight: 700,
+          padding: 5,
+          background: "var(--background-secondary, #FAFAFA",
+        }}
       />
+
       <textarea
         id="postText"
         name="postText"
         type="text"
         className="auto-expanding-textarea"
-        placeholder="Create a post"
+        placeholder="Post content"
         value={contentValue}
         onChange={handleContentChange}
-        style={calculateTextareaHeight(contentValue)}
+        style={{
+          ...calculateTextareaHeight(contentValue),
+          background: "var(--background-secondary, #FAFAFA",
+          padding: 5,
+        }}
       />
 
       <div class="image-upload">
@@ -96,7 +109,7 @@ export const CreatePost = (props) => {
           <img
             src={updloadImageIcon}
             alt="upload image"
-            style={{ width: "56px", height: "56px" }}
+            style={{ width: "56px", height: "56px", cursor: "pointer" }}
           />
         </label>
         <input
@@ -105,7 +118,12 @@ export const CreatePost = (props) => {
           name="postPicture"
           accept="image/*"
         />
-        <button type="submit" className="submit-button" aria-label= "Submit button" onClick={handleClick}>
+        <button
+          type="submit"
+          className="submit-button"
+          aria-label="Submit button"
+          onClick={handleClick}
+        >
           Post
         </button>
       </div>
