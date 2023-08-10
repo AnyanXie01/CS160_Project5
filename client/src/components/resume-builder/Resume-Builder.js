@@ -22,15 +22,22 @@ export function FinishButton({ setShowPDF }) {
 
 function ResumeBuilder() {
   let sideMenuRowArr = [
-    ["Profile", null],
-    ["Education", null],
-    ["Experiences", null],
-    ["Projects", null],
-    ["Languages", null],
-    ["Tools", null],
+    ["Profile", null, "profile-section"],
+    ["Education", null, "education-section"],
+    ["Experiences", null, "experience-section"],
+    ["Projects", null, "project-section"],
+    ["Languages", null, "language-section"],
+    ["Tools", null, "tool-section"],
   ];
   const [showPDF, setShowPDF] = useState(false);
   const [allExtractedData, setAllExtractedData] = useState({});
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   if (showPDF) {
     const MyResume = (
@@ -55,7 +62,7 @@ function ResumeBuilder() {
     <>
       <NavBar navButtonSelection="resumeBuilder" />
       <div className="sideBar-Body-container">
-        <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} />
+        <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} scrollToSection={scrollToSection}/>
         <div className="form-Body-container">
           <ResumeBuilderBody
             setShowPDF={setShowPDF}

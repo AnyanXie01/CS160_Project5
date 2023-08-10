@@ -21,7 +21,7 @@ export function Profile({ onExtractProfileData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="profile-section">
       <h1>Profile</h1>
       <div className="resume-input-container" style={{ paddingTop: 30 }}>
         <div className="input-container">
@@ -106,7 +106,7 @@ export function Education({ onExtractEducationData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="education-section">
       <h1>Education</h1>
       {eduData.education.map((edu, index) => (
         <div className="resume-input-container" key={index}>
@@ -230,7 +230,7 @@ export function Experience({ onExtractExperienceData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="experience-section">
       <h1>Experiences</h1>
       {userData.experiences.map((exp, index) => (
         <div className="resume-input-container" key={index}>
@@ -370,7 +370,7 @@ export function Project({ onExtractProjectData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="project-section">
       <h1>Projects</h1>
       {userData.project.map((proj, index) => (
         <div className="resume-input-container" key={index}>
@@ -459,7 +459,7 @@ export function Language({ onExtractLanguageData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="language-section">
       <h1>Languages</h1>
       {userData.language.map((lang, index) => (
         <div className="resume-input-container" key={index}>
@@ -528,7 +528,7 @@ export function Tool({ onExtractToolData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="tool-section">
       <h1 className="heading">Tools</h1>
       {userData.tools.map((tool, index) => (
         <div className="resume-input-container" key={index}>
@@ -630,12 +630,12 @@ export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
 
   return (
     <div className="content">
-      <Profile onExtractProfileData={setExtractedProfileData} />
-      <Education onExtractEducationData={setExtractedEducationData} />
-      <Experience onExtractExperienceData={setExtractedExperienceData} />
+      <Profile onExtractProfileData={setExtractedProfileData}/>
+      <Education onExtractEducationData={setExtractedEducationData}/>
+      <Experience onExtractExperienceData={setExtractedExperienceData}/>
       <Project onExtractProjectData={setExtractedProjectData} />
-      <Language onExtractLanguageData={setExtractedLanguageData} />
-      <Tool onExtractToolData={setExtractedToolData} />
+      <Language onExtractLanguageData={setExtractedLanguageData}/>
+      <Tool onExtractToolData={setExtractedToolData}/>
     </div>
   );
 }

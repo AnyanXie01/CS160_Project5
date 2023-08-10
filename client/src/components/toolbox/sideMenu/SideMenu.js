@@ -7,9 +7,22 @@ export function SideMenu({ header, rowsArr }) {
   const dispatch = useDispatch();
   const [clickedButtonIndex, setClickedButtonIndex] = useState(0);
 
+  function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   function handleButtonClick(index) {
-    setClickedButtonIndex(index);
-    dispatch(rowsArr[index][2]());
+    console.log("tool");
+    scrollToSection("tool-section");
+    if (typeof rowsArr[index][2] === 'string'){
+      scrollToSection(rowsArr[index][2]);
+    } else{
+      setClickedButtonIndex(index);
+      dispatch(rowsArr[index][2]());
+    }
   }
 
   return (
