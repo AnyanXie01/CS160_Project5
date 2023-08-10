@@ -15,9 +15,10 @@ export function ProjectCollab() {
   const [startingIndex, setStartingIndex] = useState(0);
   const [top, setTop] = useState(false);
   const [created, setCreated] = useState(true);
+  const [deleted, setDeleted] = useState(false);
   useEffect(() => {
     getPosts();
-  }, [top, created]);
+  }, [top, created, deleted]);
   const getPosts = async () => {
     try {
       const resp = await getFeedPost(
@@ -80,7 +81,14 @@ export function ProjectCollab() {
       </div>
       {posts.map((post, index) => {
         if (index >= startingIndex && index < startingIndex + 5) {
-          return <Post post={post}></Post>;
+          return (
+            <Post
+              post={post}
+              setPosts={setPosts}
+              deleted={deleted}
+              setDeleted={setDeleted}
+            ></Post>
+          );
         }
       })}
     </div>

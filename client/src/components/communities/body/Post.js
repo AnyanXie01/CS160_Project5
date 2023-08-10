@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import heartIcon from "./images/heart.png";
 import redHeartIcon from "./images/RedHeart.png";
 import commentIcon from "./images/comment.png";
-import { likePost, makeComment } from "../../../utils.js";
+import { likePost, makeComment, deletePost } from "../../../utils.js";
 export const Post = (props) => {
   const [post, setPost] = useState(props.post);
   const [loggedInUserName, setloggedInUserName] = useState(
@@ -54,6 +54,20 @@ export const Post = (props) => {
       setComments(resp.comments);
       document.getElementById("comment_input").value = "";
       // alert("Successfully make comment!");
+    } catch (err) {
+      alert(err);
+      console.log(err);
+    }
+  };
+  const handleDelete = async () => {
+    try {
+      const resp = await deletePost(
+        post._id,
+        localStorage.getItem("userId"),
+        localStorage.getItem("userToken")
+      );
+      props.setPosts([]);
+      props.setDeleted(!props.deleted);
     } catch (err) {
       alert(err);
       console.log(err);
@@ -119,6 +133,9 @@ export const Post = (props) => {
             <img src={commentIcon} style={{ width: "20px", height: "20px" }} />
             {comments.length}
           </button>
+          {post.userId === localStorage.getItem("userId") ? (
+            <button onClick={handleDelete}>Delete</button>
+          ) : null}
         </div>
         {hideComment ? null : (
           <div className="comment-container">

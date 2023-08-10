@@ -101,6 +101,24 @@ export const makeComment = async (postId, comment, userToken) => {
   return await response.json();
 };
 
+export const deletePost = async (postId, userId, userToken) => {
+  const loginUrl = `${domain}/posts/${postId}/delete`;
+  const data = { userId: userId };
+  const response = await fetch(loginUrl, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${userToken}`,
+    },
+    body: JSON.stringify(data),
+  });
+  if (response.status > 300) {
+    throw Error("Fail to create");
+  }
+  // console.log("processing");
+  return await response.json();
+};
+
 export const getUserPost = async (profileUserId, userToken) => {
   const loginUrl = `${domain}/posts/${profileUserId}/posts`;
   const response = await fetch(loginUrl, {
