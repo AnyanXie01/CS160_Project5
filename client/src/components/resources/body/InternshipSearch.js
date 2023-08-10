@@ -31,6 +31,7 @@ function OpenPosition() {
             {companyData.roles.map((role, index) => (
               <button
                 className="link-button"
+                aria-label="link button"
                 key={index}
                 onClick={() => window.open(role.link)}
               >

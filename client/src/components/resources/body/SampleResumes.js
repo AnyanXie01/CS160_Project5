@@ -5,9 +5,9 @@ import { BodyHeader } from "../../toolbox/header/BodyHeader";
 
 function Resume({ position, file }) {
   return (
-    <button className="resume-button" onClick={() => window.open(file)}>
+    <button className="resume-button" aria-label="resume button" onClick={() => window.open(file)}>
       <p>{position}</p>
-      <img className="small-icon" src={LinkIcon}></img>
+      <img className="small-icon" alt = "link icon"src={LinkIcon}></img>
     </button>
   );
 }

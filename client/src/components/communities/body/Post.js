@@ -152,7 +152,7 @@ export const Post = (props) => {
               />
               <button onClick={handleMakeComment} className="submit-button">
                 {" "}
-                submit{" "}
+                Submit{" "}
               </button>
             </div>
             <div className="comment-Block-container">
@@ -168,12 +168,17 @@ export const Post = (props) => {
                 const comment = getUserCommentFromComment(cmt);
                 return (
                   <div className="comment-Block">
-                    {" "}
-                    <img
-                      src={pictureOfCommenter}
-                      style={{ width: "40px", height: "40px" }}
-                    />
-                    {name}:{comment}
+                    <div className="comment-user-container">
+                      <img
+                        src={pictureOfCommenter}
+                        style={{ width: "35px", height: "35px" }}
+                      />
+
+                      <p className="comment-user">{name}</p>
+                    </div>
+                    <div className="comment">
+                      <p>{comment}</p>
+                    </div>
                   </div>
                 );
               })}

@@ -105,7 +105,7 @@ export const CreatePost = (props) => {
           name="postPicture"
           accept="image/*"
         />
-        <button type="submit" className="submit-button" onClick={handleClick}>
+        <button type="submit" className="submit-button" aria-label= "Submit button" onClick={handleClick}>
           Post
         </button>
       </div>

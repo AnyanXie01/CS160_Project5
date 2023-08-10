@@ -15,8 +15,7 @@ export function SideMenu({ header, rowsArr }) {
   }
 
   function handleButtonClick(index) {
-    console.log("tool");
-    scrollToSection("tool-section");
+
     if (typeof rowsArr[index][2] === 'string'){
       scrollToSection(rowsArr[index][2]);
     } else{
@@ -39,6 +38,7 @@ export function SideMenu({ header, rowsArr }) {
                   ? "var(--primary-transparent, rgba(158, 172, 225, 0.50))"
                   : "",
             }}
+            aria-label="side bar"
           >
             {" "}
             {row[1] && (

@@ -14,7 +14,7 @@ export function FinishButton({ setShowPDF }) {
   };
 
   return (
-    <button className="finish-button" onClick={handleFinishClick}>
+    <button className="finish-button" onClick={handleFinishClick} aria-label="Preview PDF">
       Preview PDF
     </button>
   );
@@ -64,11 +64,13 @@ function ResumeBuilder() {
       <div className="sideBar-Body-container">
         <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} scrollToSection={scrollToSection}/>
         <div className="form-Body-container">
-          <ResumeBuilderBody
-            setShowPDF={setShowPDF}
-            setAllExtractedData={setAllExtractedData}
-          />
-          <FinishButton setShowPDF={setShowPDF} />
+          <div className="content">
+            <ResumeBuilderBody
+              setShowPDF={setShowPDF}
+              setAllExtractedData={setAllExtractedData}
+            />
+            <FinishButton setShowPDF={setShowPDF} />
+          </div>
         </div>
       </div>
     </>

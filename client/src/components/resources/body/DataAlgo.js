@@ -33,6 +33,7 @@ function Collapsible({ title, content }) {
     <div className={`collapsible ${isOpen ? "collapsible-open" : ""}`}>
       <button
         className="collapsible-button"
+        aria-label="collapsible button"
         onClick={() => {
           setIsOpen(!isOpen);
           setIsRotated(!isRotated);
@@ -41,6 +42,7 @@ function Collapsible({ title, content }) {
         <p>{title}</p>
         <img
           className={`small-icon rotate ${isRotated ? "rotate-180" : ""}`}
+          alt="collapsible button"
           src={CollapseIcon}
         />
       </button>
@@ -62,13 +64,14 @@ function Resources({ resources }) {
       {resources.map((res, index) => (
         <button
           className="link-button"
+          aria-label="link button"
           key={index}
           onClick={() => window.open(res.link)}
         >
           <p>
             {"[" + res.type + "]"} {res.owner} - {res.name}
           </p>
-          <img className="small-icon" src={LinkIcon}></img>
+          <img className="small-icon" alt = "small icon"src={LinkIcon}></img>
         </button>
       ))}
     </div>

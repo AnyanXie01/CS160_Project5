@@ -118,6 +118,16 @@ input {
     background: var(--primary-lighter, #8090CB);
 }
 
+.resume-button-container {
+    display: flex;
+    gap: 20px;
+}
+
+.button-state-container {
+    display:flex;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 700px) {
     .resume-section {
         width: 60vw;
