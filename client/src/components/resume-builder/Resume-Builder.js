@@ -57,11 +57,13 @@ function ResumeBuilder() {
       <div className="sideBar-Body-container">
         <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} />
         <div className="form-Body-container">
-          <ResumeBuilderBody
-            setShowPDF={setShowPDF}
-            setAllExtractedData={setAllExtractedData}
-          />
-          <FinishButton setShowPDF={setShowPDF} />
+          <div className="content">
+            <ResumeBuilderBody
+              setShowPDF={setShowPDF}
+              setAllExtractedData={setAllExtractedData}
+            />
+            <FinishButton setShowPDF={setShowPDF} />
+          </div>
         </div>
       </div>
     </>
