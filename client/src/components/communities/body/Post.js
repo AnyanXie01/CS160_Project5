@@ -104,7 +104,7 @@ export const Post = (props) => {
           <div className="user-container">
             <img
               src={postOwnerUserImageUrl}
-              style={{ width: "40px", height: "40px" }}
+              style={{ width: "30px", height: "30px" }}
             />
             <div>
               {post.firstName} {post.lastName}
@@ -176,7 +176,7 @@ export const Post = (props) => {
                     <div className="comment-user-container">
                       <img
                         src={pictureOfCommenter}
-                        style={{ width: "35px", height: "35px" }}
+                        style={{ width: "30px", height: "30px" }}
                       />
 
                       <p className="comment-user">{name}</p>
