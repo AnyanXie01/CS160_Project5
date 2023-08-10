@@ -698,11 +698,7 @@ export function Tool({ onExtractToolData }) {
             aria-label="delete button"
             onClick={() => deleteTool(index)}
           >
-            <img
-              className="small-icon"
-              src={DeleteIcon}
-              alt="delete icon"
-            ></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Tool</p>

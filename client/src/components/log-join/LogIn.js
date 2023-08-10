@@ -19,12 +19,14 @@ export function LogIn() {
       localStorage.removeItem("lastName");
       localStorage.removeItem("userToken");
       localStorage.removeItem("userId");
+      localStorage.removeItem("email");
       localStorage.removeItem("userPicturePath");
       localStorage.setItem("loggedIn", true);
       localStorage.setItem("firstName", resp.user.firstName);
       localStorage.setItem("lastName", resp.user.lastName);
       localStorage.setItem("userToken", resp.token);
       localStorage.setItem("userId", resp.user._id);
+      localStorage.setItem("email", resp.user.email);
       localStorage.setItem("userPicturePath", resp.user.userPicturePath);
       alert("Successfully logged in");
       window.location.href = "http://localhost:3000/communities";

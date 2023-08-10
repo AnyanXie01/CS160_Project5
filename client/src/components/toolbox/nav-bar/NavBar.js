@@ -65,6 +65,7 @@ export function NavBar(props) {
     localStorage.removeItem("lastName");
     localStorage.removeItem("userToken");
     localStorage.removeItem("userId");
+    localStorage.removeItem("email");
     localStorage.removeItem("userPicturePath");
     window.location.href = "http://localhost:3000/login";
   };
@@ -86,8 +87,11 @@ export function NavBar(props) {
             <div className="overlay-container">
               <img className="icon" src={profileImage}></img>
               <div className="user-data-container">
-                <h1>First Last</h1>
-                <p>youremail@here.com</p>
+                <h1>
+                  {localStorage.getItem("firstName")}{" "}
+                  {localStorage.getItem("lastName")}
+                </h1>
+                <p>{localStorage.getItem("email")}</p>
               </div>
             </div>
             <div className="logout-button" onClick={handleLogOut}>

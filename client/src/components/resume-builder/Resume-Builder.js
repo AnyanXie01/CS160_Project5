@@ -14,7 +14,11 @@ export function FinishButton({ setShowPDF }) {
   };
 
   return (
-    <button className="finish-button" onClick={handleFinishClick} aria-label="Preview PDF">
+    <button
+      className="finish-button"
+      onClick={handleFinishClick}
+      aria-label="Preview PDF"
+    >
       Preview PDF
     </button>
   );
@@ -60,9 +64,16 @@ function ResumeBuilder() {
 
   return (
     <>
+      {!localStorage.getItem("loggedIn")
+        ? (window.location.href = "http://localhost:3000/login")
+        : null}
       <NavBar navButtonSelection="resumeBuilder" />
       <div className="sideBar-Body-container">
-        <SideMenu header="Resume Builder" rowsArr={sideMenuRowArr} scrollToSection={scrollToSection}/>
+        <SideMenu
+          header="Resume Builder"
+          rowsArr={sideMenuRowArr}
+          scrollToSection={scrollToSection}
+        />
         <div className="form-Body-container">
           <div className="content">
             <ResumeBuilderBody
