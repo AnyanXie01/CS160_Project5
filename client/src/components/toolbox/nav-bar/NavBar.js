@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import "./NavBar.css";
-//import profileImage from "./images/Profile.png";
+import LogoutIcon from "./images/logout.png";
 import logImage from "./images/Logo.png";
 import menu from "./images/Hamburger.png";
 import { PhoneSideMenu } from "../phone-size-sideMenu/PhoneSideMenu";
@@ -68,6 +68,38 @@ export function NavBar(props) {
     localStorage.removeItem("userPicturePath");
     window.location.href = "http://localhost:3000/login";
   };
+
+  function ProfileComponent() {
+    const [showOverlay, setShowOverlay] = useState(false);
+
+    return (
+      <div style={{ position: "relative" }}>
+        <img
+          src={profileImage}
+          className="profile-pic nav-link"
+          style={{ width: "48px", height: "48px" }}
+          onClick={() => setShowOverlay(!showOverlay)}
+        />
+
+        {showOverlay && (
+          <div className="overlay">
+            <div className="overlay-container">
+              <img className="icon" src={profileImage}></img>
+              <div className="user-data-container">
+                <h1>First Last</h1>
+                <p>youremail@here.com</p>
+              </div>
+            </div>
+            <div className="logout-button" onClick={handleLogOut}>
+              <img className="small-icon" src={LogoutIcon}></img>
+              <p>Log out</p>
+            </div>
+          </div>
+        )}
+      </div>
+    );
+  }
+
   return (
     <nav>
       <div className="nav-container">
@@ -114,14 +146,7 @@ export function NavBar(props) {
               Resources
             </button>
           </Link>
-          <Link to="/profile">
-            <img
-              src={profileImage}
-              alt="profile photo"
-              className="profile-pic nav-link"
-              style={{ width: "48px", height: "48px" }}
-            />
-          </Link>
+          <ProfileComponent></ProfileComponent>
         </div>
       </div>
       <div className="nav-small-container">
@@ -143,14 +168,7 @@ export function NavBar(props) {
             }}
           ></div>
         )}
-        <Link to="/profile">
-          <img
-            src={profileImage}
-            alt="profile image"
-            className="profile-pic nav-link"
-            style={{ width: "48px", height: "48px" }}
-          />
-        </Link>
+        <ProfileComponent></ProfileComponent>
       </div>
 
       {sideMenu ? (
