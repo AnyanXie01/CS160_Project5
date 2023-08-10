@@ -11,7 +11,7 @@ npm install
 
 nodemon index.js
 
-# for the client terminal 
+# For the client terminal 
 cd client
 
 npm install
