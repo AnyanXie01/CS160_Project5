@@ -17,6 +17,7 @@ export function SideMenu({ header, rowsArr }) {
   function handleButtonClick(index) {
 
     if (typeof rowsArr[index][2] === 'string'){
+      setClickedButtonIndex(index);
       scrollToSection(rowsArr[index][2]);
     } else{
       setClickedButtonIndex(index);
