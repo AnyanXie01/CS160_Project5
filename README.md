@@ -7,6 +7,8 @@ To run the app you need to open two terminal one for running the server and one 
 # For the server terminal
 cd server
 
+npm i nodemon
+
 npm install
 
 nodemon index.js
