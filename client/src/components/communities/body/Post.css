@@ -35,12 +35,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
 }
 
 .heart-comment-container {
     display: flex;
-    margin-bottom: 5px;
-    margin-top: -30px;
 }
 .heart-comment-container button{
     display: flex;
@@ -143,4 +142,11 @@
     font-weight: 400;
     line-height: normal;
     margin: 0;
+  }
+
+  .delete-button button {
+    background-color: transparent;
+    align-items: center;
+    justify-items: center;
+    padding: 12px;
   }

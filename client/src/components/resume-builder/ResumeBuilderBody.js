@@ -144,7 +144,11 @@ export function Education({ onExtractEducationData }) {
             aria-label="delete button"
             onClick={() => deleteEducation(index)}
           >
-            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
+            <img
+              className="small-icon"
+              src={DeleteIcon}
+              alt="delete icon"
+            ></img>
           </button>
           <div className="input-container">
             <p>Degree</p>
@@ -297,7 +301,11 @@ export function Experience({ onExtractExperienceData }) {
             aria-label="delete button"
             onClick={() => deleteExperience(index)}
           >
-            <img className="icon" src={DeleteIcon} alt="Delete icon"></img>
+            <img
+              className="small-icon"
+              src={DeleteIcon}
+              alt="Delete icon"
+            ></img>
           </button>
           <div className="input-container">
             <p>Position</p>
@@ -466,7 +474,11 @@ export function Project({ onExtractProjectData }) {
             aria-label="delete button"
             onClick={() => deleteProject(index)}
           >
-            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
+            <img
+              className="small-icon"
+              src={DeleteIcon}
+              alt="delete icon"
+            ></img>
           </button>
           <div className="input-container">
             <p>Title</p>
@@ -584,7 +596,11 @@ export function Language({ onExtractLanguageData }) {
             aria-label="delete button"
             onClick={() => deleteLanguage(index)}
           >
-            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
+            <img
+              className="small-icon"
+              src={DeleteIcon}
+              alt="delete icon"
+            ></img>
           </button>
           <div className="input-container">
             <p>Language</p>
