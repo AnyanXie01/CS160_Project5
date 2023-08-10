@@ -11,6 +11,10 @@ export function Join() {
     "proj4_3.png",
     "sc2.png",
     "place-holder.png",
+    "climate_change.jpeg",
+    "cyber.jpeg",
+    "game.png",
+    "ar.jpg"
   ];
   const fixPicturePath = (path) => {
     if (path === "") {
