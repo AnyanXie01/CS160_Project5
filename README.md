@@ -4,10 +4,14 @@ Contains both Client and Server, The server file code is from [EdRoh] (https://w
 To run the app you need to open two terminal one for running the server and one for running the client
 # For the server terminal
 cd server
+
 npm install
+
 nodemon index.js
 
 # for the client terminal 
 cd client
+
 npm install
+
 npm start
