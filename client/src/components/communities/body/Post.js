@@ -151,8 +151,7 @@ export const Post = (props) => {
                 style={calculateTextareaHeight(contentValue)}
               />
               <button onClick={handleMakeComment} className="submit-button">
-                {" "}
-                Submit{" "}
+                Submit
               </button>
             </div>
             <div className="comment-Block-container">
