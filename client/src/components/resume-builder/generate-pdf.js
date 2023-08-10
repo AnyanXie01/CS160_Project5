@@ -1,25 +1,44 @@
 import React from "react";
+
 import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer";
-import UserData from "./ResumeBuilderBody";
-// Create styles
+
 const styles = StyleSheet.create({
   page: {
-    flexDirection: "row",
-    backgroundColor: "#E4E4E4",
+    flexDirection: "column",
+    padding: 36,
   },
   section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1,
+    marginBottom: 10,
+    flexGrow: 0,
+  },
+  entry: {
+    marginBottom: 5,
+  },
+  heading: {
+    marginBottom: 2,
   },
   title: {
-    fontSize: 18,
+    fontSize: 20,
+    fontFamily: "Times-Bold",
+  },
+  bold: {
+    fontSize: 12,
     fontWeight: "bold",
-    marginBottom: 10,
+    fontFamily: "Times-Bold",
+  },
+  normal: {
+    fontSize: 12,
+    fontFamily: "Times-Roman",
+  },
+  italic: {
+    fontSize: 12,
+    fontFamily: "Times-Italic",
+  },
+  line: {
+    fontSize: 5,
   },
 });
 
-// Create Document Component
 const MyDocument = ({
   profile,
   education,
@@ -30,83 +49,192 @@ const MyDocument = ({
 }) => (
   <Document>
     <Page size="A4" style={styles.page}>
-      <View style={styles.section}>
-        <Text class="title">{profile.name}</Text>
-        <Text>
-          {profile.email} | {profile.github}
-        </Text>
+      <View>
+        {profile && profile.name && (
+          <View style={styles.section}>
+            <Text class="title" style={[styles.title, { textAlign: "center" }]}>
+              {profile.name}
+            </Text>
+            {profile && (profile.email || profile.github) && (
+              <Text style={[styles.normal, { textAlign: "center" }]}>
+                {[profile.email, profile.github].filter(Boolean).join(" | ")}
+              </Text>
+            )}
+          </View>
+        )}
 
-        <Text>EDUCATION</Text>
-        {education &&
-          education.map((edu, index) => (
-            <React.Fragment key={index}>
-              <Text>Degree:{edu.degree}</Text>
-              <br></br>
-              <Text>Institution: {edu.institution}</Text>
-              <br></br>
-              <Text>GPA: {edu.gpa}</Text>
-              <br></br>
-              <Text>Graduation Date: {edu.gradDate}</Text>
-              <br></br>
-              <Text>Course: {edu.coursework}</Text>
-              <br></br>
-            </React.Fragment>
-          ))}
+        {education && education.length > 0 && (
+          <View>
+            <View style={styles.heading}>
+              <Text style={[styles.bold, { textAlign: "center" }]}>
+                EDUCATION
+              </Text>
+              <Text style={styles.line}>
+                _______________________________________________________________________________________________________________________________________________________________________________________________
+              </Text>
+            </View>
+            <View style={styles.section}>
+              {education.map(
+                (edu, index) =>
+                  (edu.institution ||
+                    edu.degree ||
+                    edu.gradDate ||
+                    edu.gpa ||
+                    edu.coursework) && (
+                    <View key={index} style={styles.entry}>
+                      {edu.institution && (
+                        <Text style={styles.bold}>{edu.institution}</Text>
+                      )}
+                      {edu.degree && (
+                        <Text style={styles.italic}>{edu.degree}</Text>
+                      )}
+                      {edu.gradDate && (
+                        <Text style={styles.normal}>
+                          Graduation Date: {edu.gradDate}
+                        </Text>
+                      )}
+                      {edu.gpa && (
+                        <Text style={styles.normal}>
+                          Cummulative GPA: {edu.gpa}
+                        </Text>
+                      )}
+                      {edu.coursework && (
+                        <Text style={styles.normal}>
+                          • Relevant coursework: {edu.coursework}
+                        </Text>
+                      )}
+                    </View>
+                  )
+              )}
+            </View>
+          </View>
+        )}
 
-        <Text>EXPERIENCES</Text>
-        {experience &&
-          experience.map((exp, index) => (
-            <React.Fragment key={index}>
-              <Text>position: {exp.position}</Text>
-              <br></br>
-              <Text>company: {exp.company}</Text>
-              <br></br>
-              <Text>city: {exp.location}</Text>
-              <br></br>
-              <Text>startdate: {exp.startdate}</Text>
-              <br></br>
-              <Text>enddate: {exp.enddate}</Text>
-              <br></br>
-              <Text>responsibility1: {exp.responsibility1}</Text>
-              <br></br>
-              <Text>responsibility2: {exp.responsibility2}</Text>
-              <br></br>
-              <Text>responsibility3: {exp.responsibility3}</Text>
-            </React.Fragment>
-          ))}
+        {(language && language.length > 0) || (tool && tool.length > 0) ? (
+          <View>
+            <View style={styles.heading}>
+              <Text style={[styles.bold, { textAlign: "center" }]}>SKILLS</Text>
+              <Text style={styles.line}>
+                _______________________________________________________________________________________________________________________________________________________________________________________________
+              </Text>
+            </View>
+            <View style={styles.section}>
+              {language && language.length > 0 && (
+                <Text style={styles.normal}>
+                  <Text style={styles.bold}>• Languages:</Text>{" "}
+                  {language.map((lang) => lang.language).join(", ")}
+                </Text>
+              )}
+              {tool && tool.length > 0 && (
+                <Text style={styles.normal}>
+                  <Text style={styles.bold}>• Tools:</Text>{" "}
+                  {tool.map((tl) => tl.tool).join(", ")}
+                </Text>
+              )}
+            </View>
+          </View>
+        ) : null}
 
-        <Text>PROJECTS</Text>
-        {project &&
-          project.map((proj, index) => (
-            <React.Fragment key={index}>
-              <Text>projectname: {proj.projectname}</Text>
-              <br></br>
-              <Text>contribution1: {proj.cont}</Text>
-              <br></br>
-              <Text>contribution2: {proj.cont}</Text>
-              <br></br>
-            </React.Fragment>
-          ))}
-        <br></br>
+        {experience && experience.length > 0 && (
+          <View>
+            <View style={styles.heading}>
+              <Text style={[styles.bold, { textAlign: "center" }]}>
+                EXPERIENCES
+              </Text>
+              <Text style={styles.line}>
+                _______________________________________________________________________________________________________________________________________________________________________________________________
+              </Text>
+            </View>
+            <View style={styles.section}>
+              {experience.map(
+                (exp, index) =>
+                  (exp.position ||
+                    exp.company ||
+                    exp.location ||
+                    exp.startdate ||
+                    exp.enddate ||
+                    exp.responsibility1 ||
+                    exp.responsibility2 ||
+                    exp.responsibility3) && (
+                    <View key={index} style={styles.entry}>
+                      {exp.position && (
+                        <Text style={styles.bold}>{exp.position}</Text>
+                      )}
+                      {(exp.company ||
+                        exp.location ||
+                        (exp.startdate && exp.enddate)) && (
+                        <Text style={styles.italic}>
+                          {[
+                            exp.company,
+                            exp.location,
+                            exp.startdate && exp.enddate
+                              ? `${exp.startdate}-${exp.enddate}`
+                              : null,
+                          ]
+                            .filter(Boolean)
+                            .join(" | ")}
+                        </Text>
+                      )}
+                      {exp.responsibility1 && (
+                        <Text style={styles.normal}>
+                          • {exp.responsibility1}
+                        </Text>
+                      )}
+                      {exp.responsibility2 && (
+                        <Text style={styles.normal}>
+                          • {exp.responsibility2}
+                        </Text>
+                      )}
+                      {exp.responsibility3 && (
+                        <Text style={styles.normal}>
+                          • {exp.responsibility3}
+                        </Text>
+                      )}
+                    </View>
+                  )
+              )}
+            </View>
+          </View>
+        )}
 
-        <Text>LANGUAGES: </Text>
-        {language &&
-          language.map((lang, index) => (
-            <React.Fragment key={index}>
-              <Text>{lang.lang}</Text>
-              <br></br>
-            </React.Fragment>
-          ))}
-        <Text>TOOLS: </Text>
-        {tool &&
-          tool.map((tl, index) => (
-            <React.Fragment key={index}>
-              <Text>{tl.tool}</Text>
-              <br></br>
-            </React.Fragment>
-          ))}
+        {project && project.length > 0 && (
+          <View>
+            <View style={styles.heading}>
+              <Text style={[styles.bold, { textAlign: "center" }]}>
+                PROJECTS
+              </Text>
+              <Text style={styles.line}>
+                _______________________________________________________________________________________________________________________________________________________________________________________________
+              </Text>
+            </View>
+
+            <View style={styles.section}>
+              {project.map(
+                (proj, index) =>
+                  (proj.title || proj.contribution1 || proj.contribution2) && (
+                    <View key={index} style={styles.entry}>
+                      {proj.title && (
+                        <Text style={styles.bold}>{proj.title}</Text>
+                      )}
+                      {proj.contribution1 && (
+                        <Text style={styles.normal}>
+                          • {proj.contribution1}
+                        </Text>
+                      )}
+                      {proj.contribution2 && (
+                        <Text style={styles.normal}>
+                          • {proj.contribution2}
+                        </Text>
+                      )}
+                    </View>
+                  )
+              )}
+            </View>
+          </View>
+        )}
       </View>
     </Page>
   </Document>
 );
+
 export default MyDocument;
