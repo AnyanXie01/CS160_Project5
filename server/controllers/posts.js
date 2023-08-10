@@ -107,3 +107,23 @@ export const makeComment = async (req, res) => {
     res.status(404).json({ message: err.message });
   }
 };
+
+export const deletePost = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { userId } = req.body;
+    console.log(id);
+    const post = await Post.findById(id);
+    if (!post) {
+      return res.status(404).json({ message: "Post not found" });
+    }
+    if (userId !== post.userId) {
+      return res.status(404).json({ message: "Unauthorized action" });
+    }
+    await Post.deleteOne({ _id: id });
+    const Allpost = await Post.find(); // grabbing all posts from the DB.
+    res.status(201).json(Allpost);
+  } catch (err) {
+    res.status(409).json({ message: err.message });
+  }
+};
