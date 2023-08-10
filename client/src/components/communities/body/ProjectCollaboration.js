@@ -60,21 +60,21 @@ export function ProjectCollab() {
       ></CreatePost>
       <div className="post-nav-container">
         <div className="latest-top-container">
-          <button onClick={latestClick} className="blue-nav-button">
+          <button onClick={latestClick} className="blue-nav-button" aria-label="Latest">
             Latest
           </button>
-          <button onClick={topClick} className="blue-nav-button">
+          <button onClick={topClick} className="blue-nav-button" aria-label="Top">
             Top
           </button>
         </div>
         <div className="prev-next-container">
-          <button onClick={prevClick} className="black-nav-button">
+          <button onClick={prevClick} className="black-nav-button" aria-label="Previous">
             Prev
           </button>
           <div className="page-number">
             <div>Page {Math.floor(startingIndex / 5) + 1}</div>
           </div>
-          <button onClick={nextClick} className="black-nav-button">
+          <button onClick={nextClick} className="black-nav-button" aria-label="Next">
             Next
           </button>
         </div>

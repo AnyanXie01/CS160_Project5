@@ -26,6 +26,7 @@ export function SideMenu({ header, rowsArr }) {
                   ? "var(--primary-transparent, rgba(158, 172, 225, 0.50))"
                   : "",
             }}
+            aria-label="side bar"
           >
             {" "}
             {row[1] && (

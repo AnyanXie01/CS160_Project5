@@ -79,7 +79,7 @@ export function NavBar(props) {
           />
           <h2>InternConnect</h2>
         </Link>
-        <button onClick={handleLogOut}>Log out</button>
+        <button onClick={handleLogOut} aria-label="logout">Log out</button>
         <div className="nav-right-container">
           <Link to="/communities" className="nav-link">
             <button
@@ -87,7 +87,7 @@ export function NavBar(props) {
                 props.navButtonSelection === "communities"
                   ? "selected-nav-Button"
                   : ""
-              }
+              } aria-label="Communities tab"
             >
               Communities
             </button>
@@ -98,7 +98,7 @@ export function NavBar(props) {
                 props.navButtonSelection === "resumeBuilder"
                   ? "selected-nav-Button"
                   : ""
-              }
+              } aria-label="Resume Builder Tab"
             >
               Resume Builder
             </button>
@@ -109,7 +109,7 @@ export function NavBar(props) {
                 props.navButtonSelection === "resources"
                   ? "selected-nav-Button"
                   : ""
-              }
+              } aria-label="resources tab"
             >
               Resources
             </button>
@@ -117,6 +117,7 @@ export function NavBar(props) {
           <Link to="/profile">
             <img
               src={profileImage}
+              alt="profile photo"
               className="profile-pic nav-link"
               style={{ width: "48px", height: "48px" }}
             />
@@ -125,7 +126,7 @@ export function NavBar(props) {
       </div>
       <div className="nav-small-container">
         {showHamburger ? (
-          <button className="hambuger-container" onClick={showSideMenu}>
+          <button className="hambuger-container" onClick={showSideMenu} aria-label="menu">
             {" "}
             <img
               src={menu}
@@ -145,6 +146,7 @@ export function NavBar(props) {
         <Link to="/profile">
           <img
             src={profileImage}
+            alt="profile image"
             className="profile-pic nav-link"
             style={{ width: "48px", height: "48px" }}
           />

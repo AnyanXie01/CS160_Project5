@@ -102,6 +102,7 @@ export const Post = (props) => {
         <div className="user-container">
           <img
             src={postOwnerUserImageUrl}
+            alt="post owner user image"
             style={{ width: "40px", height: "40px" }}
           />
           <div>
@@ -110,31 +111,33 @@ export const Post = (props) => {
         </div>
 
         <div className="header">{post.title}</div>
-        {postImageUrl && <img src={postImageUrl} style={{ width: "60%" }} />}
+        {postImageUrl && <img src={postImageUrl} alt= "image inside the post" style={{ width: "60%" }} />}
         <p>{post.description}</p>
         <div className="heart-comment-container">
-          <button>
+          <button aria-label= "like button">
             {post.likes[localStorage.getItem("userId")] ? (
               <img
                 src={redHeartIcon}
+                alt="heart icon"
                 style={{ width: "20px", height: "20px" }}
                 onClick={handleLikes}
               />
             ) : (
               <img
                 src={heartIcon}
+                alt="heart icon"
                 style={{ width: "20px", height: "20px" }}
                 onClick={handleLikes}
               />
             )}
             {likeNumber}
           </button>
-          <button onClick={handleHideComment}>
-            <img src={commentIcon} style={{ width: "20px", height: "20px" }} />
+          <button onClick={handleHideComment} aria-label= "hide comment button">
+            <img src={commentIcon} alt= "comment icon" style={{ width: "20px", height: "20px" }} />
             {comments.length}
           </button>
           {post.userId === localStorage.getItem("userId") ? (
-            <button onClick={handleDelete}>Delete</button>
+            <button onClick={handleDelete} aria-label= "delete button">Delete</button>
           ) : null}
         </div>
         {hideComment ? null : (
@@ -150,7 +153,7 @@ export const Post = (props) => {
                 onChange={handleContentChange}
                 style={calculateTextareaHeight(contentValue)}
               />
-              <button onClick={handleMakeComment} className="submit-button">
+              <button onClick={handleMakeComment} className="submit-button" aria-label= "submit button">
                 {" "}
                 submit{" "}
               </button>
@@ -171,6 +174,7 @@ export const Post = (props) => {
                     {" "}
                     <img
                       src={pictureOfCommenter}
+                      alt="profile picture of a commenter"
                       style={{ width: "40px", height: "40px" }}
                     />
                     {name}:{comment}

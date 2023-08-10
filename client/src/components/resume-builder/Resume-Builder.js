@@ -14,7 +14,7 @@ export function FinishButton({ setShowPDF }) {
   };
 
   return (
-    <button className="finish-button" onClick={handleFinishClick}>
+    <button className="finish-button" onClick={handleFinishClick} aria-label="Preview PDF">
       Preview PDF
     </button>
   );

@@ -63,7 +63,7 @@ export function Profile({ onExtractProfileData }) {
         </div>
       </div>
       <div className="button-state-container">
-        <button className="add-button" onClick={extractAllProfileData}>
+        <button className="add-button" aria-label ="add button" onClick={extractAllProfileData}>
           <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
           <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
         </button>
@@ -137,9 +137,10 @@ export function Education({ onExtractEducationData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteEducation(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Degree</p>
@@ -194,11 +195,11 @@ export function Education({ onExtractEducationData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" onClick={addEducation}>
-            <img className="small-icon" src={AddIcon}></img>
+          <button className="add-button" aria-label ="add button" onClick={addEducation}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add an education</p>
           </button>
-          <button className="add-button" onClick={extractAllEducationData}>
+          <button className="add-button" aria-label ="add button" onClick={extractAllEducationData}>
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -281,9 +282,10 @@ export function Experience({ onExtractExperienceData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteExperience(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="Delete icon"></img>
           </button>
           <div className="input-container">
             <p>Position</p>
@@ -364,11 +366,11 @@ export function Experience({ onExtractExperienceData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" onClick={addExperience}>
-            <img className="small-icon" src={AddIcon}></img>
+          <button className="add-button" aria-label ="add button" onClick={addExperience}>
+            <img className="small-icon" src={AddIcon} alt="Add icon"></img>
             <p>Add an experience</p>
           </button>
-          <button className="add-button" onClick={extractAllExperienceData}>
+          <button className="add-button" aria-label ="add button" onClick={extractAllExperienceData}>
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -441,9 +443,10 @@ export function Project({ onExtractProjectData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteProject(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Title</p>
@@ -477,11 +480,11 @@ export function Project({ onExtractProjectData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" onClick={addProject}>
-            <img className="small-icon" src={AddIcon}></img>
+          <button className="add-button" aria-label ="add button" onClick={addProject}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a project</p>
           </button>
-          <button className="add-button" onClick={extractAllProjectData}>
+          <button className="add-button"aria-label ="add button" onClick={extractAllProjectData}>
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -550,9 +553,10 @@ export function Language({ onExtractLanguageData }) {
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
+            aria-label ="delete button"
             onClick={() => deleteLanguage(index)}
           >
-            <img className="icon" src={DeleteIcon}></img>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Language</p>
@@ -567,11 +571,11 @@ export function Language({ onExtractLanguageData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" onClick={addLanguage}>
-            <img className="small-icon" src={AddIcon}></img>
+          <button className="add-button" aria-label ="add button" onClick={addLanguage}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a language</p>
           </button>
-          <button className="add-button" onClick={extractAllLanguageData}>
+          <button className="add-button" aria-label ="add button" onClick={extractAllLanguageData}>
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -637,8 +641,8 @@ export function Tool({ onExtractToolData }) {
       <h1 className="heading">Tools</h1>
       {userData.tools.map((tool, index) => (
         <div className="resume-input-container" key={index}>
-          <button className="delete-button" onClick={() => deleteTool(index)}>
-            <img className="icon" src={DeleteIcon}></img>
+          <button className="delete-button" aria-label ="delete button" onClick={() => deleteTool(index)}>
+            <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
             <p>Tool</p>
@@ -653,11 +657,11 @@ export function Tool({ onExtractToolData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" onClick={addTool}>
-            <img className="small-icon" src={AddIcon}></img>
+          <button className="add-button" aria-label ="add button" onClick={addTool}>
+            <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a tool</p>
           </button>
-          <button className="add-button" onClick={extractAllToolData}>
+          <button className="add-button" aria-label ="add button" onClick={extractAllToolData}>
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
