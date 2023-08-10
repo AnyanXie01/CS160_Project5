@@ -28,7 +28,7 @@ export function Profile({ onExtractProfileData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="profile-section">
       <h1>Profile</h1>
       <div className="resume-input-container" style={{ paddingTop: 30 }}>
         <div className="input-container">
@@ -63,7 +63,11 @@ export function Profile({ onExtractProfileData }) {
         </div>
       </div>
       <div className="button-state-container">
-        <button className="add-button" aria-label ="add button" onClick={extractAllProfileData}>
+        <button
+          className="add-button"
+          aria-label="add button"
+          onClick={extractAllProfileData}
+        >
           <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
           <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
         </button>
@@ -131,13 +135,13 @@ export function Education({ onExtractEducationData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="education-section">
       <h1>Education</h1>
       {eduData.education.map((edu, index) => (
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
-            aria-label ="delete button"
+            aria-label="delete button"
             onClick={() => deleteEducation(index)}
           >
             <img className="icon" src={DeleteIcon} alt="delete icon"></img>
@@ -195,11 +199,19 @@ export function Education({ onExtractEducationData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" aria-label ="add button" onClick={addEducation}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={addEducation}
+          >
             <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add an education</p>
           </button>
-          <button className="add-button" aria-label ="add button" onClick={extractAllEducationData}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={extractAllEducationData}
+          >
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -276,13 +288,13 @@ export function Experience({ onExtractExperienceData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="experience-section">
       <h1>Experiences</h1>
       {userData.experiences.map((exp, index) => (
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
-            aria-label ="delete button"
+            aria-label="delete button"
             onClick={() => deleteExperience(index)}
           >
             <img className="icon" src={DeleteIcon} alt="Delete icon"></img>
@@ -366,11 +378,19 @@ export function Experience({ onExtractExperienceData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" aria-label ="add button" onClick={addExperience}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={addExperience}
+          >
             <img className="small-icon" src={AddIcon} alt="Add icon"></img>
             <p>Add an experience</p>
           </button>
-          <button className="add-button" aria-label ="add button" onClick={extractAllExperienceData}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={extractAllExperienceData}
+          >
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -437,13 +457,13 @@ export function Project({ onExtractProjectData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="project-section">
       <h1>Projects</h1>
       {userData.project.map((proj, index) => (
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
-            aria-label ="delete button"
+            aria-label="delete button"
             onClick={() => deleteProject(index)}
           >
             <img className="icon" src={DeleteIcon} alt="delete icon"></img>
@@ -480,11 +500,19 @@ export function Project({ onExtractProjectData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" aria-label ="add button" onClick={addProject}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={addProject}
+          >
             <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a project</p>
           </button>
-          <button className="add-button"aria-label ="add button" onClick={extractAllProjectData}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={extractAllProjectData}
+          >
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -547,13 +575,13 @@ export function Language({ onExtractLanguageData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="language-section">
       <h1>Languages</h1>
       {userData.language.map((lang, index) => (
         <div className="resume-input-container" key={index}>
           <button
             className="delete-button"
-            aria-label ="delete button"
+            aria-label="delete button"
             onClick={() => deleteLanguage(index)}
           >
             <img className="icon" src={DeleteIcon} alt="delete icon"></img>
@@ -571,11 +599,19 @@ export function Language({ onExtractLanguageData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" aria-label ="add button" onClick={addLanguage}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={addLanguage}
+          >
             <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a language</p>
           </button>
-          <button className="add-button" aria-label ="add button" onClick={extractAllLanguageData}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={extractAllLanguageData}
+          >
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -637,11 +673,15 @@ export function Tool({ onExtractToolData }) {
   };
 
   return (
-    <div className="resume-section">
+    <div className="resume-section" id="tool-section">
       <h1 className="heading">Tools</h1>
       {userData.tools.map((tool, index) => (
         <div className="resume-input-container" key={index}>
-          <button className="delete-button" aria-label ="delete button" onClick={() => deleteTool(index)}>
+          <button
+            className="delete-button"
+            aria-label="delete button"
+            onClick={() => deleteTool(index)}
+          >
             <img className="icon" src={DeleteIcon} alt="delete icon"></img>
           </button>
           <div className="input-container">
@@ -657,11 +697,19 @@ export function Tool({ onExtractToolData }) {
       ))}
       <div className="button-state-container">
         <div className="resume-button-container">
-          <button className="add-button" aria-label ="add button" onClick={addTool}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={addTool}
+          >
             <img className="small-icon" src={AddIcon} alt="add icon"></img>
             <p>Add a tool</p>
           </button>
-          <button className="add-button" aria-label ="add button" onClick={extractAllToolData}>
+          <button
+            className="add-button"
+            aria-label="add button"
+            onClick={extractAllToolData}
+          >
             <img className="small-icon" src={SaveIcon} alt="Save icon"></img>
             <p style={{ color: "var(--text, #252525)" }}>Save changes</p>
           </button>
@@ -755,13 +803,13 @@ export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
   ]);
 
   return (
-    <>
+    <div className="content">
       <Profile onExtractProfileData={setExtractedProfileData} />
       <Education onExtractEducationData={setExtractedEducationData} />
       <Experience onExtractExperienceData={setExtractedExperienceData} />
       <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
-    </>
+    </div>
   );
 }
