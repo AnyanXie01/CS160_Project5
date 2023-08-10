@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddIcon from "./add.png";
 import DeleteIcon from "./delete.png";
 import "./ResumeBuilder.css";
 import MyDocument from "./generate-pdf";
-import { PDFDownloadLink } from "@react-pdf/renderer";
 
 export function Profile({ onExtractProfileData }) {
   const [profileData, setProfileData] = useState({
@@ -556,7 +555,7 @@ export function Tool({ onExtractToolData }) {
   );
 }
 
-export function ResumeBuilderBody() {
+export function ResumeBuilderBody({ setShowPDF, setAllExtractedData }) {
   /* extractedProfileData stores the data as {name: 'a', email: 'a', github: 'a'}*/
   const [extractedProfileData, setExtractedProfileData] = useState([]);
   const handleExtractProfileData = (data) => {
@@ -599,6 +598,36 @@ export function ResumeBuilderBody() {
   };
   console.log(extractedToolData);
 
+  const MyResume = (
+    <MyDocument
+      profile={extractedProfileData}
+      education={extractedEducationData.education}
+      experience={extractedExperienceData.experiences}
+      project={extractedProjectData.project}
+      language={extractedLanguageData.language}
+      tool={extractedToolData.tools}
+    />
+  );
+
+  useEffect(() => {
+    const allData = {
+      profile: extractedProfileData,
+      education: extractedEducationData.education,
+      experience: extractedExperienceData.experiences,
+      project: extractedProjectData.project,
+      language: extractedLanguageData.language,
+      tool: extractedToolData.tools,
+    };
+    setAllExtractedData(allData);
+  }, [
+    extractedProfileData,
+    extractedEducationData,
+    extractedExperienceData,
+    extractedProjectData,
+    extractedLanguageData,
+    extractedToolData,
+  ]);
+
   return (
     <div className="content">
       <Profile onExtractProfileData={setExtractedProfileData} />
@@ -607,22 +636,6 @@ export function ResumeBuilderBody() {
       <Project onExtractProjectData={setExtractedProjectData} />
       <Language onExtractLanguageData={setExtractedLanguageData} />
       <Tool onExtractToolData={setExtractedToolData} />
-      <button className="finish-button">Finish</button>
-
-      <PDFDownloadLink
-        document={
-          <MyDocument
-            profile={extractedProfileData}
-            education={extractedEducationData.education}
-            experience={extractedExperienceData.experiences}
-            project={extractedProjectData.project}
-            language={extractedLanguageData.language}
-            tool={extractedToolData.tools}
-          ></MyDocument>
-        }
-      >
-        <button className="finish-button">Download</button>
-      </PDFDownloadLink>
     </div>
   );
 }
