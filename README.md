@@ -1,2 +1,13 @@
 # CS160_Project5
-Contains both Client and Server
+Contains both Client and Server, The server file code is from [EdRoh] (https://www.youtube.com/watch?v=K8YELRmUb5o&t=14695s&ab_channel=EdRoh)
+# Run the app
+To run the app you need to open two terminal one for running the server and one for running the client
+# For the server terminal
+cd server
+npm install
+nodemon index.js
+
+# for the client terminal 
+cd client
+npm install
+npm start
